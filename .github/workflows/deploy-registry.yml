@@ -1,0 +1,49 @@
+name: Build & Deploy Xpert Plugin Registry
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'official/**'
+      - 'community/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy-registry.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧱 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🏗️ Build registry JSON
+        run: npm run build:registry
+
+      - name: 📁 Prepare deploy artifacts
+        run: |
+          mkdir -p ./public
+          cp -r plugins ./public/
+
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          commit_message: "chore: update plugin registry [skip ci]"

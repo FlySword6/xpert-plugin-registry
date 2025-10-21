@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "scripts": {
+    "build:registry": "node scripts/build-registry.mjs"
+  },
+  "devDependencies": {
+  }
+}
