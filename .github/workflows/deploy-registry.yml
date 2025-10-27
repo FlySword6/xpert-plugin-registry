@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'official/**'
+      - 'partner/**'
       - 'community/**'
       - 'scripts/**'
       - '.github/workflows/deploy-registry.yml'

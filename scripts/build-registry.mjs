@@ -23,7 +23,7 @@ const __dirname = path.dirname(__filename)
  */
 
 /**
- * 读取指定目录下的插件 JSON 文件
+ * Read the plugin JSON file in the specified directory
  */
 function readPluginsFromDir(dir, verified) {
   if (!fs.existsSync(dir)) return []
@@ -47,18 +47,20 @@ function readPluginsFromDir(dir, verified) {
 }
 
 /**
- * 主构建函数
+ * Main construction function
  */
 function buildRegistry() {
   const rootDir = path.resolve(__dirname, '..')
   const officialDir = path.join(rootDir, 'official')
+  const partnerDir = path.join(rootDir, 'partner')
   const communityDir = path.join(rootDir, 'community')
   const outputDir = path.join(rootDir, 'plugins')
   const outputFile = path.join(outputDir, 'index.json')
 
   const officialPlugins = readPluginsFromDir(officialDir, true)
+  const partnerPlugins = readPluginsFromDir(partnerDir, false)
   const communityPlugins = readPluginsFromDir(communityDir, false)
-  const allPlugins = [...officialPlugins, ...communityPlugins]
+  const allPlugins = [...officialPlugins, ...partnerPlugins, ...communityPlugins]
 
   const registry = {
     updatedAt: new Date().toISOString(),
