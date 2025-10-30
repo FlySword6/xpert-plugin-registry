@@ -1,10 +1,16 @@
 {
   "name": "@xpert-ai/plugin-mineru",
-  "displayName": "Mineru Integration",
-  "description": "Provide Mineru integration",
-  "version": "0.0.4",
-  "category": "Integration",
-  "keywords": ["mineru", "integration", "connector"],
+  "displayName": {
+    "en_US": "Mineru Integration",
+    "zh_Hans": "Mineru 集成"
+  },
+  "description": {
+    "en_US": "Provide Mineru system integration and document transformer",
+    "zh_Hans": "提供 Mineru 系统集成和文档转换器"
+  },
+  "version": "0.0.6",
+  "category": "integration",
+  "keywords": ["mineru", "integration", "transformer"],
   "author": {
     "name": "XpertAI",
     "url": "https://xpertai.cn"

@@ -1,12 +1,18 @@
 {
   "name": "@xpert-ai/plugin-file-system",
-  "displayName": "File System Source",
-  "description": "Access and remote file systems.",
+  "displayName": {
+    "en_US": "File System Document Source",
+    "zh_Hans": "文件系统文档源"
+  },
+  "description": {
+    "en_US": "Provides a file system-based document source connector",
+    "zh_Hans": "提供基于文件系统的文档源连接器"
+  },
   "version": "0.0.2",
   "category": "Integration",
-  "keywords": ["filesystem", "storage", "connector"],
+  "keywords": ["filesystem", "storage", "doc source"],
   "author": {
-    "name": "XpertAI Team",
+    "name": "XpertAI",
     "url": "https://xpertai.cloud"
   },
   "repository": "https://github.com/xpert-ai/xpert-plugins",

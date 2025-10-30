@@ -1,12 +1,18 @@
 {
   "name": "@xpert-ai/plugin-dify",
-  "displayName": "Dify Integration",
-  "description": "Provide Dify integration",
+  "displayName": {
+    "en_US": "Dify Integration",
+    "zh_Hans": "Dify 集成"
+  },
+  "description": {
+    "en_US": "Provide Dify integration and external knowledgebase connector",
+    "zh_Hans": "提供 Dify 集成和外部知识库连接器"
+  },
   "version": "0.0.3",
   "category": "Integration",
-  "keywords": ["dify", "integration", "connector"],
+  "keywords": ["dify", "integration", "external knowledgebase"],
   "author": {
-    "name": "XpertAI Team",
+    "name": "XpertAI",
     "url": "https://xpertai.cloud"
   },
   "repository": "https://github.com/xpert-ai/xpert-plugins",

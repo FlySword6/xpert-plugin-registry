@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-rag-vlm",
+  "displayName": {
+    "en_US": "VLM Image Understander",
+    "zh_Hans": "VLM 图像理解器"
+  },
+  "description": {
+    "en_US": "Provides a VLM-based document image understander",
+    "zh_Hans": "提供基于 VLM 的文档图像理解器"
+  },
+  "version": "0.0.1",
+  "category": "integration",
+  "keywords": ["rag", "vlm", "integration", "transformer"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 960 960\" style=\"enable-background:new 0 0 960 960;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#135468;}\n\t.st1{fill:#FFFFFF;}\n\t.st2{fill:#6DBCDB;}\n\t.st3{fill:#333333;}\n\t.st4{fill:none;stroke:#FFFFFF;stroke-width:22.1618;stroke-linecap:round;stroke-miterlimit:10;}\n</style>\n<g>\n\t<circle class=\"st0\" cx=\"480\" cy=\"480\" r=\"300.9\"/>\n\t<path class=\"st1\" d=\"M750.4,480c0,0-121.1,130-270.4,130S209.6,480,209.6,480S330.7,350,480,350S750.4,480,750.4,480z\"/>\n\t<path class=\"st1\" d=\"M750.4,480c0,0-121.1,130-270.4,130S209.6,480,209.6,480S330.7,350,480,350S750.4,480,750.4,480z\"/>\n\t<circle class=\"st2\" cx=\"480\" cy=\"478.4\" r=\"102.8\"/>\n\t<circle class=\"st3\" cx=\"480\" cy=\"478.4\" r=\"58.6\"/>\n\t<circle class=\"st1\" cx=\"441.2\" cy=\"444.1\" r=\"24.3\"/>\n\t<line class=\"st4\" x1=\"363.1\" y1=\"323.7\" x2=\"328.1\" y2=\"286.8\"/>\n\t<line class=\"st4\" x1=\"631.9\" y1=\"286.8\" x2=\"596.9\" y2=\"323.7\"/>\n\t<line class=\"st4\" x1=\"482.7\" y1=\"300.9\" x2=\"482.7\" y2=\"256.8\"/>\n</g>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-rag-vlm"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/rag-vlm/README.md",
+  "updatedAt": "2025-10-28T03:00:00.000Z"
+}

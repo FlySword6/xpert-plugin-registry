@@ -1,10 +1,16 @@
 {
   "name": "@xpert-ai/plugin-fastgpt",
-  "displayName": "FastGPT Integration",
-  "description": "Provide FastGPT integration",
+  "displayName": {
+    "en_US": "FastGPT Integration",
+    "zh_Hans": "FastGPT 集成"
+  },
+  "description": {
+    "en_US": "Provide FastGPT integration and external knowledgebase connector",
+    "zh_Hans": "提供 FastGPT 系统集成和外部知识库连接器"
+  },
   "version": "0.0.3",
   "category": "Integration",
-  "keywords": ["fastgpt", "integration", "connector"],
+  "keywords": ["fastgpt", "integration", "external knowledgebase"],
   "author": {
     "name": "XpertAI",
     "url": "https://xpertai.cn"
