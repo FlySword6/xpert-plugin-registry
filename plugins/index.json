@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025-10-30T14:30:11.939Z",
+  "updatedAt": "2025-10-30T15:13:08.050Z",
   "total": 9,
   "official": [
     "@xpert-ai/plugin-dify",
@@ -16,14 +16,8 @@
   "plugins": [
     {
       "name": "@xpert-ai/plugin-dify",
-      "displayName": {
-        "en_US": "Dify Integration",
-        "zh_Hans": "Dify 集成"
-      },
-      "description": {
-        "en_US": "Provide Dify integration and external knowledgebase connector",
-        "zh_Hans": "提供 Dify 集成和外部知识库连接器"
-      },
+      "displayName": "Dify Integration",
+      "description": "Provide Dify integration and external knowledgebase connector",
       "version": "0.0.3",
       "category": "Integration",
       "keywords": [
@@ -50,14 +44,8 @@
     },
     {
       "name": "@xpert-ai/plugin-fastgpt",
-      "displayName": {
-        "en_US": "FastGPT Integration",
-        "zh_Hans": "FastGPT 集成"
-      },
-      "description": {
-        "en_US": "Provide FastGPT integration and external knowledgebase connector",
-        "zh_Hans": "提供 FastGPT 系统集成和外部知识库连接器"
-      },
+      "displayName": "FastGPT Integration",
+      "description": "Provide FastGPT integration and external knowledgebase connector",
       "version": "0.0.3",
       "category": "Integration",
       "keywords": [
@@ -84,14 +72,8 @@
     },
     {
       "name": "@xpert-ai/plugin-file-system",
-      "displayName": {
-        "en_US": "File System Document Source",
-        "zh_Hans": "文件系统文档源"
-      },
-      "description": {
-        "en_US": "Provides a file system-based document source connector",
-        "zh_Hans": "提供基于文件系统的文档源连接器"
-      },
+      "displayName": "File System Document Source",
+      "description": "Provides a file system-based document source connector",
       "version": "0.0.2",
       "category": "Integration",
       "keywords": [
@@ -118,14 +100,8 @@
     },
     {
       "name": "@xpert-ai/plugin-firecrawl",
-      "displayName": {
-        "en_US": "Firecrawl Integration",
-        "zh_Hans": "Firecrawl 集成"
-      },
-      "description": {
-        "en_US": "Provide Firecrawl system integration and document source",
-        "zh_Hans": "提供 Firecrawl 系统集成和文档源"
-      },
+      "displayName": "Firecrawl Integration",
+      "description": "Provide Firecrawl system integration and document source",
       "version": "0.0.1",
       "category": "integration",
       "keywords": [
@@ -152,14 +128,8 @@
     },
     {
       "name": "@xpert-ai/plugin-lark",
-      "displayName": {
-        "en_US": "Lark Integration",
-        "zh_Hans": "Lark 集成"
-      },
-      "description": {
-        "en_US": "Provide Lark system integration and document source",
-        "zh_Hans": "提供飞书系统集成和文档源"
-      },
+      "displayName": "Lark Integration",
+      "description": "Provide Lark system integration and document source",
       "version": "0.0.6",
       "category": "integration",
       "keywords": [
@@ -187,14 +157,8 @@
     },
     {
       "name": "@xpert-ai/plugin-mineru",
-      "displayName": {
-        "en_US": "Mineru Integration",
-        "zh_Hans": "Mineru 集成"
-      },
-      "description": {
-        "en_US": "Provide Mineru system integration and document transformer",
-        "zh_Hans": "提供 Mineru 系统集成和文档转换器"
-      },
+      "displayName": "Mineru Integration",
+      "description": "Provide Mineru system integration and document transformer",
       "version": "0.0.6",
       "category": "integration",
       "keywords": [
@@ -221,14 +185,8 @@
     },
     {
       "name": "@xpert-ai/plugin-rag-vlm",
-      "displayName": {
-        "en_US": "VLM Image Understander",
-        "zh_Hans": "VLM 图像理解器"
-      },
-      "description": {
-        "en_US": "Provides a VLM-based document image understander",
-        "zh_Hans": "提供基于 VLM 的文档图像理解器"
-      },
+      "displayName": "VLM Image Understander",
+      "description": "Provides a VLM-based document image understander",
       "version": "0.0.1",
       "category": "integration",
       "keywords": [
@@ -256,14 +214,8 @@
     },
     {
       "name": "@xpert-ai/plugin-ragflow",
-      "displayName": {
-        "en_US": "RAGFlow Integration",
-        "zh_Hans": "RAGFlow 集成"
-      },
-      "description": {
-        "en_US": "Provide RAGFlow integration and external knowledge base",
-        "zh_Hans": "提供 RAGFlow 系统集成和外部知识库"
-      },
+      "displayName": "RAGFlow Integration",
+      "description": "Provide RAGFlow integration and external knowledge base",
       "version": "0.0.1",
       "category": "integration",
       "keywords": [
@@ -290,14 +242,8 @@
     },
     {
       "name": "@xpert-ai/plugin-unstructured",
-      "displayName": {
-        "en_US": "Unstructured Integration",
-        "zh_Hans": "Unstructured 集成"
-      },
-      "description": {
-        "en_US": "Provide Unstructured system integration and document transformer",
-        "zh_Hans": "提供 Unstructured 系统集成和文档转换器"
-      },
+      "displayName": "Unstructured Integration",
+      "description": "Provide Unstructured system integration and document transformer",
       "version": "0.0.1",
       "category": "integration",
       "keywords": [
