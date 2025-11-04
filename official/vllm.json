@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-vllm",
+  "displayName": {
+    "en_US": "vLLM Model Provider",
+    "zh_Hans": "vLLM 模型提供者"
+  },
+  "description": {
+    "en_US": "Provide vLLM model provider adapter",
+    "zh_Hans": "提供 vLLM 模型提供者适配器"
+  },
+  "version": "0.0.2",
+  "category": "model",
+  "keywords": ["vllm", "model"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg height=\"1em\" style=\"flex:none;line-height:1\" viewBox=\"0 0 24 24\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><title>vLLM</title><path d=\"M0 4.973h9.324V23L0 4.973z\" fill=\"#FDB515\"></path><path d=\"M13.986 4.351L22.378 0l-6.216 23H9.324l4.662-18.649z\" fill=\"#30A2FF\"></path></svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-vllm"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/vllm/README.md",
+  "updatedAt": "2025-11-01T03:00:00.000Z"
+}
