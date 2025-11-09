@@ -8,7 +8,7 @@
     "en_US": "Provide vLLM model provider adapter",
     "zh_Hans": "提供 vLLM 模型提供者适配器"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "category": "model",
   "keywords": ["vllm", "model"],
   "author": {
