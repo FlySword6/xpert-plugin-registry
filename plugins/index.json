@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2025-11-09T16:23:22.775Z",
-  "total": 17,
+  "updatedAt": "2025-12-10T06:23:15.973Z",
+  "total": 21,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
@@ -9,16 +9,20 @@
     "@xpert-ai/plugin-firecrawl",
     "@xpert-ai/plugin-hana",
     "@xpert-ai/plugin-lark",
+    "@xpert-ai/plugin-context-editing",
     "@xpert-ai/plugin-milvus",
     "@xpert-ai/plugin-mineru",
     "@xpert-ai/plugin-mysql",
     "@xpert-ai/plugin-openai-compatible",
+    "@xpert-ai/plugin-openrouter",
+    "@xpert-ai/plugin-pdfium",
     "@xpert-ai/plugin-rag-vlm",
     "@xpert-ai/plugin-ragflow",
     "@xpert-ai/plugin-unstructured",
     "@xpert-ai/plugin-vllm",
     "@xpert-ai/plugin-volcengine",
-    "@xpert-ai/plugin-xinference"
+    "@xpert-ai/plugin-xinference",
+    "@xpert-ai/plugin-zip"
   ],
   "community": [],
   "plugins": [
@@ -52,7 +56,7 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-calculator"
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/calculator/README.md",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/calculator/README.md",
       "updatedAt": "2025-11-10T03:00:00.000Z"
     },
     {
@@ -223,7 +227,7 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-hana"
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/hana/README.md",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/hana/README.md",
       "updatedAt": "2025-11-06T03:00:00.000Z"
     },
     {
@@ -260,6 +264,40 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/lark/README.md",
       "updatedAt": "2025-10-28T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-context-editing",
+      "displayName": {
+        "en_US": "Context editing middleware",
+        "zh_Hans": "上下文编辑中间件"
+      },
+      "description": {
+        "en_US": "Context Editing Middleware that automatically prunes tool results to manage context size. This middleware mirrors Anthropic's context editing capabilities by clearing older tool results once the conversation grows beyond a configurable token threshold. The implementation is intentionally model-agnostic so it can be used with any AI model.",
+        "zh_Hans": "提供上下文编辑中间件，自动修剪工具结果以管理上下文大小。该中间件通过在对话超过可配置的令牌阈值时清除较旧的工具结果，模拟了Anthropic的上下文编辑功能。该实现故意与模型无关，因此可以与任何AI模型一起使用。"
+      },
+      "version": "0.0.1",
+      "category": "middleware",
+      "keywords": [
+        "context",
+        "middleware",
+        "agent"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\">\n  <rect x=\"4\" y=\"4\" width=\"56\" height=\"56\" rx=\"8\" ry=\"8\" fill=\"#4c4180\"/>\n  \n  <rect x=\"9.5\" y=\"11\" width=\"17\" height=\"17\" rx=\"2\" ry=\"2\" fill=\"#93d9f8\"/>\n  \n  <rect x=\"9.5\" y=\"33\" width=\"17\" height=\"4\" rx=\"2\" ry=\"2\" fill=\"#d6e0f0\"/>\n  <rect x=\"9.5\" y=\"41\" width=\"13\" height=\"4\" rx=\"2\" ry=\"2\" fill=\"#d6e0f0\"/>\n  \n  <rect x=\"33\" y=\"11\" width=\"23\" height=\"4\" rx=\"2\" ry=\"2\" fill=\"#d6e0f0\"/>\n  <rect x=\"46\" y=\"19\" width=\"10\" height=\"4\" rx=\"2\" ry=\"2\" fill=\"#d6e0f0\"/>\n  <rect x=\"46\" y=\"27\" width=\"10\" height=\"4\" rx=\"2\" ry=\"2\" fill=\"#d6e0f0\"/>\n  \n  <path d=\"M38.1,24.2c-2.1,0-3.9,1.8-3.9,3.9v13.7c-1.1-1.3-2.7-2.1-4.4-2.1c-3.2,0-5.8,2.6-5.8,5.8l0,4c0,8.1,6.6,14.7,14.7,14.7h10.6c8.1,0,14.7-6.6,14.7-14.7l0-4c0-3.2-2.6-5.8-5.8-5.8c-0.7,0-1.4,0.1-2,0.4v-1.1c0-2.1-1.8-3.9-3.9-3.9s-3.9,1.8-3.9,3.9v-2c0-2.1-1.8-3.9-3.9-3.9s-3.9,1.8-3.9,3.9v-13C42,26,40.2,24.2,38.1,24.2z\" fill=\"#fec0b4\"/>\n  <path d=\"M38.1,24.2v20.4L36.4,42c-0.9-1.1-2.3-1.8-3.9-1.8c-2.8,0-5.1,2.3-5.1,5.1l0,4c0,7.1,5.8,12.9,12.9,12.9h8.6l0-31.3C48.3,30.6,46.7,32.2,44.6,32.2v4.6c0,2.8-2.3,5.1-5.1,5.1s-5.1-2.3-5.1-5.1v-13C34.2,24.2,36,26,38.1,24.2z\" fill=\"#ffab9e\"/>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-context-editing"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/context-editing/README.md",
+      "updatedAt": "2025-12-09T03:00:00.000Z"
     },
     {
       "name": "@xpert-ai/plugin-milvus",
@@ -359,7 +397,7 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mysql"
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/mysql/README.md",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mysql/README.md",
       "updatedAt": "2025-11-06T03:00:00.000Z"
     },
     {
@@ -392,8 +430,74 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-openai-compatible"
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/openai-compatible/README.md",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/openai-compatible/README.md",
       "updatedAt": "2025-11-01T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-openrouter",
+      "displayName": {
+        "en_US": "OpenRouter Model Provider",
+        "zh_Hans": "OpenRouter 模型提供者"
+      },
+      "description": {
+        "en_US": "Provide OpenRouter model provider integration",
+        "zh_Hans": "提供 OpenRouter 模型提供者集成"
+      },
+      "version": "0.0.1",
+      "category": "model",
+      "keywords": [
+        "openrouter",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-2 1L12 15.5l7-3.5-2-1-5 2.5z\"/></svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-openrouter"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/openrouter/README.md",
+      "updatedAt": "2025-11-30T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-pdfium",
+      "displayName": {
+        "en_US": "PDFium Toolset",
+        "zh_Hans": "PDFium 工具集"
+      },
+      "description": {
+        "en_US": "Provides a tool to parse PDF files into markdown and images.",
+        "zh_Hans": "提供解析 PDF 文件成 markdown + images 的工具"
+      },
+      "version": "0.0.6",
+      "category": "tools",
+      "keywords": [
+        "pdf",
+        "toolset"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"75.320129mm\" height=\"92.604164mm\" viewBox=\"0 0 75.320129 92.604164\">\n  <g transform=\"translate(53.548057 -183.975276) scale(1.4843)\">\n    <path fill=\"#ff2116\" d=\"M-29.632812 123.94727c-3.551967 0-6.44336 2.89347-6.44336 6.44531v49.49804c0 3.55185 2.891393 6.44532 6.44336 6.44532H8.2167969c3.5519661 0 6.4433591-2.89335 6.4433591-6.44532v-40.70117s.101353-1.19181-.416015-2.35156c-.484969-1.08711-1.275391-1.84375-1.275391-1.84375a1.0584391 1.0584391 0 0 0-.0059-.008l-9.3906254-9.21094a1.0584391 1.0584391 0 0 0-.015625-.0156s-.8017392-.76344-1.9902344-1.27344c-1.39939552-.6005-2.8417968-.53711-2.8417968-.53711l.021484-.002z\" color=\"#000\" font-family=\"sans-serif\" overflow=\"visible\" paint-order=\"markers fill stroke\" style=\"line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000000;solid-opacity:1\"/>\n    <path fill=\"#f5f5f5\" d=\"M-29.632812 126.06445h28.3789058a1.0584391 1.0584391 0 0 0 .021484 0s1.13480448.011 1.96484378.36719c.79889772.34282 1.36536982.86176 1.36914062.86524.0000125.00001.00391.004.00391.004l9.3671868 9.18945s.564354.59582.837891 1.20899c.220779.49491.234375 1.40039.234375 1.40039a1.0584391 1.0584391 0 0 0-.002.0449v40.74609c0 2.41592-1.910258 4.32813-4.3261717 4.32813H-29.632812c-2.415914 0-4.326172-1.91209-4.326172-4.32813v-49.49804c0-2.41603 1.910258-4.32813 4.326172-4.32813z\" color=\"#000\" font-family=\"sans-serif\" overflow=\"visible\" paint-order=\"markers fill stroke\" style=\"line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000000;solid-opacity:1\"/>\n    <path fill=\"#ff2116\" d=\"M-23.40766 161.09299c-1.45669-1.45669.11934-3.45839 4.39648-5.58397l2.69124-1.33743 1.04845-2.29399c.57665-1.26169 1.43729-3.32036 1.91254-4.5748l.8641-2.28082-.59546-1.68793c-.73217-2.07547-.99326-5.19438-.52872-6.31588.62923-1.51909 2.69029-1.36323 3.50626.26515.63727 1.27176.57212 3.57488-.18329 6.47946l-.6193 2.38125.5455.92604c.30003.50932 1.1764 1.71867 1.9475 2.68743l1.44924 1.80272 1.8033728-.23533c5.72900399-.74758 7.6912472.523 7.6912472 2.34476 0 2.29921-4.4984914 2.48899-8.2760865-.16423-.8499666-.59698-1.4336605-1.19001-1.4336605-1.19001s-2.3665326.48178-3.531704.79583c-1.202707.32417-1.80274.52719-3.564509 1.12186 0 0-.61814.89767-1.02094 1.55026-1.49858 2.4279-3.24833 4.43998-4.49793 5.1723-1.3991.81993-2.86584.87582-3.60433.13733zm2.28605-.81668c.81883-.50607 2.47616-2.46625 3.62341-4.28553l.46449-.73658-2.11497 1.06339c-3.26655 1.64239-4.76093 3.19033-3.98386 4.12664.43653.52598.95874.48237 2.01093-.16792zm21.21809-5.95578c.80089-.56097.68463-1.69142-.22082-2.1472-.70466-.35471-1.2726074-.42759-3.1031574-.40057-1.1249.0767-2.9337647.3034-3.2403347.37237 0 0 .993716.68678 1.434896.93922.58731.33544 2.0145161.95811 3.0565161 1.27706 1.02785.31461 1.6224.28144 2.0729-.0409zm-8.53152-3.54594c-.4847-.50952-1.30889-1.57296-1.83152-2.3632-.68353-.89643-1.02629-1.52887-1.02629-1.52887s-.4996 1.60694-.90948 2.57394l-1.27876 3.16076-.37075.71695s1.971043-.64627 2.97389-.90822c1.0621668-.27744 3.21787-.70134 3.21787-.70134zm-2.74938-11.02573c.12363-1.0375.1761-2.07346-.15724-2.59587-.9246-1.01077-2.04057-.16787-1.85154 2.23517.0636.8084.26443 2.19033.53292 3.04209l.48817 1.54863.34358-1.16638c.18897-.64151.47882-2.02015.64411-3.06364z\"/>\n    <path fill=\"#2c2c2c\" d=\"M-20.930423 167.83862h2.364986q1.133514 0 1.840213.2169.706698.20991 1.189489.9446.482795.72769.482795 1.75625 0 .94459-.391832 1.6233-.391833.67871-1.056548.97958-.65772.30087-2.02913.30087h-.818651v3.72941h-1.581322zm1.581322 1.22447v3.33058h.783664q1.049552 0 1.44838-.39184.405826-.39183.405826-1.27345 0-.65772-.265887-1.06355-.265884-.41282-.587747-.50378-.314866-.098-1.000572-.098zm5.50664-1.22447h2.148082q1.560333 0 2.4909318.55276.9375993.55276 1.4133973 1.6443.482791 1.09153.482791 2.42096 0 1.3994-.4338151 2.49793-.4268149 1.09153-1.3154348 1.76324-.8816233.67172-2.5189212.67172h-2.267031zm1.581326 1.26645v7.018h.657715q1.378411 0 2.001144-.9516.6227329-.95858.6227329-2.5539 0-3.5125-2.6238769-3.5125zm6.4722254-1.26645h5.30372941v1.26645H-4.2075842v2.85478h2.9807225v1.26646h-2.9807225v4.16322h-1.5813254z\" font-family=\"Franklin Gothic Medium Cond\" letter-spacing=\"0\" style=\"line-height:125%;-inkscape-font-specification:'Franklin Gothic Medium Cond'\" word-spacing=\"4.26000023\"/>\n  </g>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-pdfium"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/pdfium/README.md",
+      "updatedAt": "2025-11-30T03:00:00.000Z"
     },
     {
       "name": "@xpert-ai/plugin-rag-vlm",
@@ -561,7 +665,7 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-volcengine"
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/volcengine/README.md",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/volcengine/README.md",
       "updatedAt": "2025-11-01T03:00:00.000Z"
     },
     {
@@ -594,8 +698,41 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-xinference"
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/xinference/README.md",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/xinference/README.md",
       "updatedAt": "2025-11-10T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-zip",
+      "displayName": {
+        "en_US": "Zip Toolset",
+        "zh_Hans": "压缩工具集"
+      },
+      "description": {
+        "en_US": "Provide zip and unzip tools",
+        "zh_Hans": "提供压缩和解压工具"
+      },
+      "version": "0.0.9",
+      "category": "tools",
+      "keywords": [
+        "zip",
+        "toolset"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" shape-rendering=\"geometricPrecision\" text-rendering=\"geometricPrecision\" image-rendering=\"optimizeQuality\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" viewBox=\"0 0 421 511.605\"><path fill=\"#E44B4D\" d=\"M95.705.014h199.094L421 136.548v317.555c0 31.54-25.961 57.502-57.502 57.502H95.705c-31.55 0-57.502-25.873-57.502-57.502V57.515C38.203 25.886 64.076.014 95.705.014z\"/><path fill=\"#CD4445\" d=\"M341.028 133.408h-.019L421 188.771v-52.066h-54.357c-9.458-.15-17.998-1.274-25.615-3.297z\"/><path fill=\"#FBCFD0\" d=\"M294.8 0L421 136.533v.172h-54.357c-45.068-.718-69.33-23.397-71.843-61.384V0z\"/><path fill=\"#CD4445\" fill-rule=\"nonzero\" d=\"M0 431.901V253.404l.028-1.261c.668-16.446 14.333-29.706 30.936-29.706h7.238v50.589h342.975c12.862 0 23.373 10.51 23.373 23.371v135.504c0 12.83-10.543 23.373-23.373 23.373H23.373C10.541 455.274 0 444.75 0 431.901z\"/><path fill=\"#963232\" fill-rule=\"nonzero\" d=\"M143.448 240.364a8.496 8.496 0 01-8.496-8.497 8.496 8.496 0 018.496-8.497h163.176a8.496 8.496 0 018.496 8.497 8.496 8.496 0 01-8.496 8.497H143.448zm0-59.176a8.496 8.496 0 010-16.993h172.304a8.496 8.496 0 110 16.993H143.448z\"/><path fill=\"#fff\" fill-rule=\"nonzero\" d=\"M11.329 276.171v154.728c0 7.793 6.38 14.178 14.179 14.178H380.175c7.799 0 14.178-6.379 14.178-14.178V297.405c0-7.798-6.388-14.178-14.178-14.178H37.892c-12.618-.096-19.586-1.638-26.563-7.056z\"/><path fill=\"#1A1A1A\" fill-rule=\"nonzero\" d=\"M175.261 401.572h-70.625v-16.379l33.544-43.764-.393-.785h-27.516l-2.359-20.965h66.825v16.378l-33.151 43.764.393.786h33.282v20.965zm11.792 0v-81.893h26.206v81.893h-26.206zm84.514-19.785h-17.034v19.785h-26.206v-81.893h41.275c18.781 0 28.171 10.089 28.171 30.267 0 11.094-2.446 19.305-7.338 24.634-1.834 2.009-4.367 3.713-7.599 5.11-3.232 1.398-6.989 2.097-11.269 2.097zm-17.034-41.143v20.178h6.028c3.145 0 5.437-.328 6.879-.983 1.441-.655 2.162-2.162 2.162-4.52v-9.172c0-2.359-.721-3.866-2.162-4.521-1.442-.655-3.734-.982-6.879-.982h-6.028z\"/></svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-zip"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/zip/README.md",
+      "updatedAt": "2025-11-30T03:00:00.000Z"
     }
   ]
 }
