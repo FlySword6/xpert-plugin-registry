@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-openrouter",
+  "displayName": {
+    "en_US": "OpenRouter Model Provider",
+    "zh_Hans": "OpenRouter 模型提供者"
+  },
+  "description": {
+    "en_US": "Provide OpenRouter model provider integration",
+    "zh_Hans": "提供 OpenRouter 模型提供者集成"
+  },
+  "version": "0.0.1",
+  "category": "model",
+  "keywords": ["openrouter", "model"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-2 1L12 15.5l7-3.5-2-1-5 2.5z\"/></svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-openrouter"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/openrouter/README.md",
+  "updatedAt": "2025-11-30T03:00:00.000Z"
+}
