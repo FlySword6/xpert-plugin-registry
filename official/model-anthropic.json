@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-anthropic",
+  "displayName": {
+    "en_US": "Anthropic Model Provider",
+    "zh_Hans": "Anthropic 模型提供者"
+  },
+  "description": {
+    "en_US": "Provide Anthropic model provider adapter",
+    "zh_Hans": "提供 Anthropic 模型提供者适配器"
+  },
+  "version": "0.0.1",
+  "category": "model",
+  "keywords": ["anthropic", "model"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" rx=\"6\" fill=\"#CA9F7B\"/>\n<path d=\"M15.3843 6.43481H12.9687L17.3739 17.5652H19.7896L15.3843 6.43481ZM8.40522 6.43481L4 17.5652H6.4633L7.36417 15.2279H11.9729L12.8737 17.5652H15.337L10.9318 6.43481H8.40522ZM8.16104 13.1607L9.66852 9.24907L11.176 13.1607H8.16104Z\" fill=\"#191918\"/>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-anthropic"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/anthropic/README.md",
+  "updatedAt": "2025-12-18T03:00:00.000Z"
+}

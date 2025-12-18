@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-gemini",
+  "displayName": {
+    "en_US": "Gemini Model Provider",
+    "zh_Hans": "Gemini 模型提供者"
+  },
+  "description": {
+    "en_US": "Provide Gemini model provider adapter",
+    "zh_Hans": "提供 Gemini 模型提供者适配器"
+  },
+  "version": "0.0.2",
+  "category": "model",
+  "keywords": ["gemini", "model"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" rx=\"6\" fill=\"url(#paint0_linear_7301_16076)\"/>\n<path d=\"M20 12.0116C15.7043 12.42 12.3692 15.757 11.9995 20C11.652 15.8183 8.20301 12.361 4 12.0181C8.21855 11.6991 11.6656 8.1853 12.006 4C12.2833 8.19653 15.8057 11.7005 20 12.0116Z\" fill=\"white\" fill-opacity=\"0.88\"/>\n<defs>\n<linearGradient id=\"paint0_linear_7301_16076\" x1=\"-9\" y1=\"29.5\" x2=\"19.4387\" y2=\"1.43791\" gradientUnits=\"userSpaceOnUse\">\n<stop offset=\"0.192878\" stop-color=\"#1C7DFF\"/>\n<stop offset=\"0.520213\" stop-color=\"#1C69FF\"/>\n<stop offset=\"1\" stop-color=\"#F0DCD6\"/>\n</linearGradient>\n</defs>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-gemini"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/gemini/README.md",
+  "updatedAt": "2025-12-18T03:00:00.000Z"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-model-fallback",
+  "displayName": {
+    "en_US": "Model Fallback Middleware",
+    "zh_Hans": "模型回退中间件"
+  },
+  "description": {
+    "en_US": "Automatically fallback to alternative models when the primary model fails. Useful for handling model outages, cost optimization, and provider redundancy.",
+    "zh_Hans": "当主模型失败时自动回退到备用模型。用于处理模型故障、成本优化和提供商冗余。"
+  },
+  "version": "0.0.2",
+  "category": "middleware",
+  "keywords": ["model", "middleware", "agent"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg width=\"800px\" height=\"800px\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\" data-iconid=\"446085\" data-svgname=\"Transfer\">\n  <g id=\"Layer_2\" data-name=\"Layer 2\">\n    <g id=\"invisible_box\" data-name=\"invisible box\">\n      <rect width=\"48\" height=\"48\" fill=\"none\"></rect>\n    </g>\n    <g id=\"icons_Q2\" data-name=\"icons Q2\">\n      <g>\n        <path d=\"M19,26a2,2,0,0,0-2,2V40H7V28a2,2,0,0,0-4,0V42a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V28A2,2,0,0,0,19,26Z\"></path>\n        <path d=\"M43,26a2,2,0,0,0-2,2V40H31V28a2,2,0,0,0-4,0V42a2,2,0,0,0,2,2H43a2,2,0,0,0,2-2V28A2,2,0,0,0,43,26Z\"></path>\n        <path d=\"M34,16v1.2l-2.6-2.6a1.9,1.9,0,0,0-3,.2,2.1,2.1,0,0,0,.2,2.7l6,5.9a1.9,1.9,0,0,0,2.8,0l6-5.9a2.1,2.1,0,0,0,.2-2.7,1.9,1.9,0,0,0-3-.2L38,17.2V16a14,14,0,0,0-28,0v6a2,2,0,0,0,4,0V16a10,10,0,0,1,20,0Z\"></path>\n      </g>\n    </g>\n  </g>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-model-fallback"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/model-fallback/README.md",
+  "updatedAt": "2025-12-18T03:00:00.000Z"
+}

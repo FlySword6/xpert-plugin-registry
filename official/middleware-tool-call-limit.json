@@ -1,0 +1,30 @@
+{
+  "name": "@xpert-ai/plugin-tool-call-limit",
+  "displayName": {
+    "en_US": "Tool Call Limit Middleware",
+    "zh_Hans": "工具调用限制中间件"
+  },
+  "description": {
+    "en_US": "Track tool call counts and enforce limits during agent execution. Supports thread-level (persistent) and run-level (per invocation) limits with configurable exit behaviors.",
+    "zh_Hans": "跟踪工具调用次数并在代理执行期间强制执行限制。支持线程级（持久）和运行级（每次调用）限制，具有可配置的退出行为。"
+  },
+  "version": "0.0.1",
+  "category": "middleware",
+  "keywords": ["tool", "middleware", "agent"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"800px\" height=\"800px\" viewBox=\"0 0 512 512\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <title>upper-limit</title>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"drop\" fill=\"#000000\" transform=\"translate(85.333333, 64.000000)\">\n            <path d=\"M170.666667,42.6666667 L28.992,160.704 L56.32,193.493333 L149.333333,115.989333 L149.333333,384 L192,384 L192,115.989333 L284.992,193.493333 L312.32,160.704 L170.666667,42.6666667 Z M1.42108547e-14,42.6666667 L341.333333,42.6666667 L341.333333,0 L1.42108547e-14,0 L1.42108547e-14,42.6666667 Z\" id=\"Mask\">\n\n</path>\n        </g>\n    </g>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-tool-call-limit"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/tool-call-limit/README.md",
+  "updatedAt": "2025-12-18T03:00:00.000Z"
+}
