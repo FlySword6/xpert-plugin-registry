@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2025-12-15T07:05:16.792Z",
-  "total": 22,
+  "updatedAt": "2025-12-18T14:49:41.702Z",
+  "total": 27,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
@@ -10,19 +10,24 @@
     "@xpert-ai/plugin-hana",
     "@xpert-ai/plugin-lark",
     "@xpert-ai/plugin-context-editing",
+    "@xpert-ai/plugin-model-fallback",
+    "@xpert-ai/plugin-tool-call-limit",
     "@xpert-ai/plugin-milvus",
     "@xpert-ai/plugin-mineru",
+    "@xpert-ai/plugin-anthropic",
+    "@xpert-ai/plugin-deepseek",
+    "@xpert-ai/plugin-gemini",
     "@xpert-ai/plugin-moonshot",
-    "@xpert-ai/plugin-mysql",
     "@xpert-ai/plugin-openai-compatible",
     "@xpert-ai/plugin-openrouter",
+    "@xpert-ai/plugin-vllm",
+    "@xpert-ai/plugin-volcengine",
+    "@xpert-ai/plugin-xinference",
+    "@xpert-ai/plugin-mysql",
     "@xpert-ai/plugin-pdfium",
     "@xpert-ai/plugin-rag-vlm",
     "@xpert-ai/plugin-ragflow",
     "@xpert-ai/plugin-unstructured",
-    "@xpert-ai/plugin-vllm",
-    "@xpert-ai/plugin-volcengine",
-    "@xpert-ai/plugin-xinference",
     "@xpert-ai/plugin-zip"
   ],
   "community": [],
@@ -301,6 +306,74 @@
       "updatedAt": "2025-12-09T03:00:00.000Z"
     },
     {
+      "name": "@xpert-ai/plugin-model-fallback",
+      "displayName": {
+        "en_US": "Model Fallback Middleware",
+        "zh_Hans": "模型回退中间件"
+      },
+      "description": {
+        "en_US": "Automatically fallback to alternative models when the primary model fails. Useful for handling model outages, cost optimization, and provider redundancy.",
+        "zh_Hans": "当主模型失败时自动回退到备用模型。用于处理模型故障、成本优化和提供商冗余。"
+      },
+      "version": "0.0.2",
+      "category": "middleware",
+      "keywords": [
+        "model",
+        "middleware",
+        "agent"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"800px\" height=\"800px\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\" data-iconid=\"446085\" data-svgname=\"Transfer\">\n  <g id=\"Layer_2\" data-name=\"Layer 2\">\n    <g id=\"invisible_box\" data-name=\"invisible box\">\n      <rect width=\"48\" height=\"48\" fill=\"none\"></rect>\n    </g>\n    <g id=\"icons_Q2\" data-name=\"icons Q2\">\n      <g>\n        <path d=\"M19,26a2,2,0,0,0-2,2V40H7V28a2,2,0,0,0-4,0V42a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V28A2,2,0,0,0,19,26Z\"></path>\n        <path d=\"M43,26a2,2,0,0,0-2,2V40H31V28a2,2,0,0,0-4,0V42a2,2,0,0,0,2,2H43a2,2,0,0,0,2-2V28A2,2,0,0,0,43,26Z\"></path>\n        <path d=\"M34,16v1.2l-2.6-2.6a1.9,1.9,0,0,0-3,.2,2.1,2.1,0,0,0,.2,2.7l6,5.9a1.9,1.9,0,0,0,2.8,0l6-5.9a2.1,2.1,0,0,0,.2-2.7,1.9,1.9,0,0,0-3-.2L38,17.2V16a14,14,0,0,0-28,0v6a2,2,0,0,0,4,0V16a10,10,0,0,1,20,0Z\"></path>\n      </g>\n    </g>\n  </g>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-model-fallback"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/model-fallback/README.md",
+      "updatedAt": "2025-12-18T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-tool-call-limit",
+      "displayName": {
+        "en_US": "Tool Call Limit Middleware",
+        "zh_Hans": "工具调用限制中间件"
+      },
+      "description": {
+        "en_US": "Track tool call counts and enforce limits during agent execution. Supports thread-level (persistent) and run-level (per invocation) limits with configurable exit behaviors.",
+        "zh_Hans": "跟踪工具调用次数并在代理执行期间强制执行限制。支持线程级（持久）和运行级（每次调用）限制，具有可配置的退出行为。"
+      },
+      "version": "0.0.1",
+      "category": "middleware",
+      "keywords": [
+        "tool",
+        "middleware",
+        "agent"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"800px\" height=\"800px\" viewBox=\"0 0 512 512\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <title>upper-limit</title>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"drop\" fill=\"#000000\" transform=\"translate(85.333333, 64.000000)\">\n            <path d=\"M170.666667,42.6666667 L28.992,160.704 L56.32,193.493333 L149.333333,115.989333 L149.333333,384 L192,384 L192,115.989333 L284.992,193.493333 L312.32,160.704 L170.666667,42.6666667 Z M1.42108547e-14,42.6666667 L341.333333,42.6666667 L341.333333,0 L1.42108547e-14,0 L1.42108547e-14,42.6666667 Z\" id=\"Mask\">\n\n</path>\n        </g>\n    </g>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-tool-call-limit"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/tool-call-limit/README.md",
+      "updatedAt": "2025-12-18T03:00:00.000Z"
+    },
+    {
       "name": "@xpert-ai/plugin-milvus",
       "displayName": {
         "en_US": "Milvus vector database",
@@ -368,6 +441,105 @@
       "updatedAt": "2025-10-28T03:00:00.000Z"
     },
     {
+      "name": "@xpert-ai/plugin-anthropic",
+      "displayName": {
+        "en_US": "Anthropic Model Provider",
+        "zh_Hans": "Anthropic 模型提供者"
+      },
+      "description": {
+        "en_US": "Provide Anthropic model provider adapter",
+        "zh_Hans": "提供 Anthropic 模型提供者适配器"
+      },
+      "version": "0.0.1",
+      "category": "model",
+      "keywords": [
+        "anthropic",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" rx=\"6\" fill=\"#CA9F7B\"/>\n<path d=\"M15.3843 6.43481H12.9687L17.3739 17.5652H19.7896L15.3843 6.43481ZM8.40522 6.43481L4 17.5652H6.4633L7.36417 15.2279H11.9729L12.8737 17.5652H15.337L10.9318 6.43481H8.40522ZM8.16104 13.1607L9.66852 9.24907L11.176 13.1607H8.16104Z\" fill=\"#191918\"/>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-anthropic"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/anthropic/README.md",
+      "updatedAt": "2025-12-18T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-deepseek",
+      "displayName": {
+        "en_US": "DeepSeek Model Provider",
+        "zh_Hans": "DeepSeek 模型提供者"
+      },
+      "description": {
+        "en_US": "Provide DeepSeek model provider adapter",
+        "zh_Hans": "提供 DeepSeek 模型提供者适配器"
+      },
+      "version": "0.0.1",
+      "category": "model",
+      "keywords": [
+        "deepseek",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"60\" height=\"50\" viewBox=\"0 0 60 50\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" xmlns:serif=\"http://www.serif.com/\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;\">\n    <path id=\"path\" d=\"M55.613,3.471C55.018,3.179 54.761,3.735 54.413,4.018C54.294,4.109 54.193,4.227 54.092,4.337C53.222,5.266 52.206,5.876 50.878,5.803C48.936,5.694 47.278,6.305 45.813,7.79C45.501,5.959 44.466,4.865 42.891,4.164C42.067,3.799 41.233,3.435 40.656,2.642C40.253,2.077 40.143,1.448 39.942,0.829C39.814,0.455 39.685,0.073 39.255,0.009C38.788,-0.064 38.605,0.328 38.421,0.656C37.689,1.995 37.405,3.471 37.432,4.965C37.496,8.327 38.916,11.006 41.737,12.91C42.058,13.129 42.14,13.347 42.039,13.666C41.847,14.323 41.618,14.96 41.416,15.616C41.288,16.035 41.096,16.127 40.647,15.944C39.099,15.297 37.762,14.341 36.58,13.184C34.575,11.243 32.761,9.102 30.499,7.425C29.968,7.033 29.436,6.669 28.887,6.323C26.579,4.082 29.189,2.241 29.794,2.022C30.425,1.795 30.013,1.011 27.971,1.02C25.928,1.029 24.06,1.713 21.679,2.624C21.331,2.761 20.964,2.861 20.589,2.943C18.427,2.533 16.183,2.441 13.838,2.706C9.424,3.198 5.898,5.284 3.306,8.847C0.191,13.129 -0.541,17.994 0.356,23.069C1.3,28.417 4.029,32.845 8.224,36.308C12.575,39.897 17.584,41.656 23.3,41.319C26.771,41.118 30.636,40.654 34.996,36.964C36.095,37.51 37.249,37.729 39.163,37.893C40.638,38.03 42.058,37.82 43.157,37.592C44.878,37.228 44.759,35.633 44.137,35.342C39.09,32.991 40.198,33.948 39.191,33.173C41.755,30.139 45.62,26.987 47.132,16.773C47.251,15.962 47.15,15.452 47.132,14.796C47.122,14.395 47.214,14.241 47.672,14.195C48.936,14.049 50.163,13.703 51.29,13.083C54.56,11.298 55.878,8.364 56.19,4.847C56.236,4.309 56.181,3.753 55.613,3.471ZM27.119,35.123C22.228,31.278 19.856,30.012 18.876,30.066C17.96,30.121 18.125,31.169 18.326,31.852C18.537,32.526 18.812,32.991 19.196,33.583C19.462,33.975 19.645,34.558 18.931,34.996C17.356,35.971 14.617,34.667 14.489,34.604C11.301,32.727 8.636,30.249 6.758,26.859C4.945,23.597 3.892,20.099 3.718,16.363C3.672,15.461 3.938,15.142 4.835,14.979C6.017,14.76 7.235,14.714 8.416,14.887C13.408,15.616 17.658,17.848 21.221,21.384C23.254,23.397 24.793,25.802 26.377,28.153C28.062,30.649 29.876,33.028 32.184,34.977C32.999,35.661 33.649,36.18 34.272,36.563C32.395,36.772 29.262,36.818 27.119,35.123ZM29.464,20.044C29.464,19.643 29.784,19.325 30.187,19.325C30.279,19.325 30.361,19.343 30.435,19.37C30.535,19.407 30.627,19.461 30.7,19.543C30.828,19.671 30.902,19.853 30.902,20.044C30.902,20.445 30.581,20.764 30.178,20.764C29.775,20.764 29.464,20.445 29.464,20.044ZM36.745,23.78C36.278,23.971 35.811,24.135 35.362,24.153C34.666,24.19 33.906,23.907 33.494,23.561C32.853,23.023 32.395,22.723 32.202,21.784C32.12,21.384 32.166,20.764 32.239,20.409C32.404,19.643 32.221,19.151 31.68,18.705C31.241,18.34 30.682,18.24 30.068,18.24C29.839,18.24 29.629,18.14 29.473,18.058C29.216,17.93 29.006,17.612 29.207,17.22C29.271,17.092 29.583,16.783 29.656,16.728C30.49,16.254 31.451,16.409 32.34,16.764C33.164,17.101 33.787,17.721 34.684,18.596C35.6,19.652 35.765,19.944 36.287,20.737C36.7,21.356 37.075,21.994 37.331,22.723C37.487,23.179 37.286,23.552 36.745,23.78Z\" style=\"fill:rgb(77,107,254);fill-rule:nonzero;\"/>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-deepseek"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/deepseek/README.md",
+      "updatedAt": "2025-12-18T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-gemini",
+      "displayName": {
+        "en_US": "Gemini Model Provider",
+        "zh_Hans": "Gemini 模型提供者"
+      },
+      "description": {
+        "en_US": "Provide Gemini model provider adapter",
+        "zh_Hans": "提供 Gemini 模型提供者适配器"
+      },
+      "version": "0.0.2",
+      "category": "model",
+      "keywords": [
+        "gemini",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"24\" height=\"24\" rx=\"6\" fill=\"url(#paint0_linear_7301_16076)\"/>\n<path d=\"M20 12.0116C15.7043 12.42 12.3692 15.757 11.9995 20C11.652 15.8183 8.20301 12.361 4 12.0181C8.21855 11.6991 11.6656 8.1853 12.006 4C12.2833 8.19653 15.8057 11.7005 20 12.0116Z\" fill=\"white\" fill-opacity=\"0.88\"/>\n<defs>\n<linearGradient id=\"paint0_linear_7301_16076\" x1=\"-9\" y1=\"29.5\" x2=\"19.4387\" y2=\"1.43791\" gradientUnits=\"userSpaceOnUse\">\n<stop offset=\"0.192878\" stop-color=\"#1C7DFF\"/>\n<stop offset=\"0.520213\" stop-color=\"#1C69FF\"/>\n<stop offset=\"1\" stop-color=\"#F0DCD6\"/>\n</linearGradient>\n</defs>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-gemini"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/gemini/README.md",
+      "updatedAt": "2025-12-18T03:00:00.000Z"
+    },
+    {
       "name": "@xpert-ai/plugin-moonshot",
       "displayName": {
         "en_US": "Moonshot Model Provider",
@@ -399,40 +571,6 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/moonshot/README.md",
       "updatedAt": "2025-12-15T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-mysql",
-      "displayName": {
-        "en_US": "MySQL Database",
-        "zh_Hans": "MySQL 数据库"
-      },
-      "description": {
-        "en_US": "Provide MySQL database adapter",
-        "zh_Hans": "提供 MySQL 数据库适配器"
-      },
-      "version": "0.0.2",
-      "category": "database",
-      "keywords": [
-        "mysql",
-        "database",
-        "bi"
-      ],
-      "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cn"
-      },
-      "repository": "https://github.com/xpert-ai/xpert-plugins",
-      "icon": {
-        "type": "svg",
-        "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<svg width=\"800px\" height=\"800px\" viewBox=\"-18.458 -22.75 191.151 191.151\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M-18.458 6.58h191.151v132.49H-18.458V6.58z\" fill=\"none\"/><path d=\"M40.054 113.583h-5.175c-.183-8.735-.687-16.947-1.511-24.642h-.046l-7.879 24.642h-3.94l-7.832-24.642h-.045c-.581 7.388-.947 15.602-1.099 24.642H7.81c.304-10.993 1.068-21.299 2.289-30.919h6.414l7.465 22.719h.046l7.511-22.719h6.137c1.344 11.268 2.138 21.575 2.382 30.919M62.497 90.771c-2.107 11.434-4.887 19.742-8.337 24.928-2.688 3.992-5.633 5.99-8.84 5.99-.855 0-1.91-.258-3.16-.77v-2.757c.611.088 1.328.138 2.152.138 1.498 0 2.702-.412 3.62-1.238 1.098-1.006 1.647-2.137 1.647-3.388 0-.858-.428-2.612-1.282-5.268L42.618 90.77h5.084l4.076 13.19c.916 2.995 1.298 5.086 1.145 6.277 2.229-5.953 3.786-12.444 4.673-19.468h4.901v.002z\" fill=\"#5d87a1\"/><path d=\"M131.382 113.583h-14.7V82.664h4.945v27.113h9.755v3.806zM112.834 114.33l-5.684-2.805c.504-.414.986-.862 1.42-1.381 2.416-2.838 3.621-7.035 3.621-12.594 0-10.229-4.014-15.346-12.045-15.346-3.938 0-7.01 1.298-9.207 3.895-2.414 2.84-3.619 7.022-3.619 12.551 0 5.435 1.068 9.422 3.205 11.951 1.955 2.291 4.902 3.438 8.843 3.438 1.47 0 2.819-.18 4.048-.543l7.4 4.308 2.018-3.474zm-18.413-6.934c-1.252-2.014-1.878-5.248-1.878-9.707 0-7.785 2.365-11.682 7.1-11.682 2.475 0 4.289.932 5.449 2.792 1.25 2.017 1.879 5.222 1.879 9.619 0 7.849-2.367 11.774-7.099 11.774-2.476.001-4.29-.928-5.451-2.796M85.165 105.013c0 2.622-.962 4.773-2.884 6.458-1.924 1.678-4.504 2.519-7.737 2.519-3.024 0-5.956-.966-8.794-2.888l1.329-2.655c2.442 1.223 4.653 1.831 6.638 1.831 1.863 0 3.319-.413 4.375-1.232 1.055-.822 1.684-1.975 1.684-3.433 0-1.837-1.281-3.407-3.631-4.722-2.167-1.19-6.501-3.678-6.501-3.678-2.349-1.712-3.525-3.55-3.525-6.578 0-2.506.877-4.529 2.632-6.068 1.757-1.545 4.024-2.315 6.803-2.315 2.87 0 5.479.769 7.829 2.291l-1.192 2.656c-2.01-.854-3.994-1.281-5.951-1.281-1.585 0-2.809.381-3.66 1.146-.858.762-1.387 1.737-1.387 2.933 0 1.828 1.308 3.418 3.722 4.759 2.196 1.192 6.638 3.723 6.638 3.723 2.409 1.709 3.612 3.53 3.612 6.534\" fill=\"#f8981d\"/><path d=\"M137.59 72.308c-2.99-.076-5.305.225-7.248 1.047-.561.224-1.453.224-1.531.933.303.3.338.784.601 1.198.448.747 1.229 1.752 1.942 2.276.783.6 1.569 1.194 2.393 1.717 1.453.899 3.1 1.422 4.516 2.318.825.521 1.645 1.195 2.471 1.756.406.299.666.784 1.193.971v-.114c-.264-.336-.339-.822-.598-1.196l-1.122-1.082c-1.084-1.456-2.431-2.727-3.884-3.771-1.196-.824-3.812-1.944-4.297-3.322l-.076-.076c.822-.077 1.797-.375 2.578-.604 1.271-.335 2.43-.259 3.734-.594.6-.15 1.195-.338 1.797-.523v-.337c-.676-.673-1.158-1.567-1.869-2.203-1.902-1.643-3.998-3.25-6.164-4.595-1.16-.749-2.652-1.231-3.887-1.868-.445-.225-1.195-.336-1.457-.71-.67-.822-1.047-1.904-1.533-2.877-1.08-2.053-2.129-4.331-3.061-6.502-.674-1.456-1.084-2.91-1.906-4.257-3.85-6.35-8.031-10.196-14.457-13.971-1.381-.786-3.024-1.121-4.779-1.533l-2.803-.148c-.598-.262-1.197-.973-1.719-1.309-2.132-1.344-7.621-4.257-9.189-.411-1.01 2.431 1.494 4.821 2.354 6.054.635.856 1.458 1.83 1.902 2.802.263.635.337 1.309.6 1.98.598 1.644 1.157 3.473 1.943 5.007.41.782.857 1.604 1.381 2.312.3.414.822.597.936 1.272-.521.744-.562 1.867-.861 2.801-1.344 4.221-.819 9.45 1.086 12.552.596.934 2.018 2.99 3.92 2.202 1.684-.672 1.311-2.801 1.795-4.668.111-.451.038-.747.262-1.043v.073c.521 1.045 1.047 2.052 1.53 3.1 1.159 1.829 3.177 3.735 4.858 5.002.895.676 1.604 1.832 2.725 2.245V74.1h-.074c-.227-.335-.559-.485-.857-.745-.674-.673-1.42-1.495-1.943-2.241-1.566-2.093-2.952-4.41-4.182-6.801-.602-1.16-1.121-2.428-1.606-3.586-.226-.447-.226-1.121-.601-1.346-.562.821-1.381 1.532-1.791 2.538-.711 1.609-.785 3.588-1.049 5.646l-.147.072c-1.19-.299-1.604-1.53-2.056-2.575-1.119-2.654-1.307-6.914-.336-9.976.26-.783 1.385-3.249.936-3.995-.225-.715-.973-1.122-1.383-1.685-.482-.708-1.01-1.604-1.346-2.39-.896-2.091-1.347-4.408-2.312-6.498-.451-.974-1.234-1.982-1.868-2.879-.712-1.008-1.495-1.718-2.058-2.913-.186-.411-.447-1.083-.148-1.53.073-.3.225-.412.523-.487.484-.409 1.867.111 2.352.336 1.385.56 2.543 1.083 3.699 1.867.523.375 1.084 1.085 1.755 1.272h.786c1.193.26 2.538.072 3.661.41 1.979.636 3.772 1.569 5.38 2.576 4.893 3.103 8.928 7.512 11.652 12.778.447.858.637 1.644 1.045 2.539.787 1.832 1.76 3.7 2.541 5.493.785 1.755 1.533 3.547 2.654 5.005.559.784 2.805 1.195 3.812 1.606.745.335 1.905.633 2.577 1.044 1.271.783 2.537 1.682 3.732 2.543.595.448 2.465 1.382 2.576 2.13M99.484 39.844a5.82 5.82 0 0 0-1.529.188v.075h.072c.301.597.824 1.011 1.197 1.532.301.599.562 1.193.857 1.791l.072-.074c.527-.373.789-.971.789-1.868-.227-.264-.262-.522-.451-.784-.22-.374-.705-.56-1.007-.86\" fill=\"#5d87a1\"/><path d=\"M141.148 113.578h.774v-3.788h-1.161l-.947 2.585-1.029-2.585h-1.118v3.788h.731v-2.882h.041l1.078 2.882h.557l1.074-2.882v2.882zm-6.235 0h.819v-3.146h1.072v-.643h-3.008v.643h1.115l.002 3.146z\" fill=\"#f8981d\"/></svg>"
-      },
-      "verified": true,
-      "source": {
-        "type": "npm",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mysql"
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mysql/README.md",
-      "updatedAt": "2025-11-06T03:00:00.000Z"
     },
     {
       "name": "@xpert-ai/plugin-openai-compatible",
@@ -499,6 +637,139 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/openrouter/README.md",
       "updatedAt": "2025-11-30T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-vllm",
+      "displayName": {
+        "en_US": "vLLM Model Provider",
+        "zh_Hans": "vLLM 模型提供者"
+      },
+      "description": {
+        "en_US": "Provide vLLM model provider adapter",
+        "zh_Hans": "提供 vLLM 模型提供者适配器"
+      },
+      "version": "0.0.4",
+      "category": "model",
+      "keywords": [
+        "vllm",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg height=\"1em\" style=\"flex:none;line-height:1\" viewBox=\"0 0 24 24\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><title>vLLM</title><path d=\"M0 4.973h9.324V23L0 4.973z\" fill=\"#FDB515\"></path><path d=\"M13.986 4.351L22.378 0l-6.216 23H9.324l4.662-18.649z\" fill=\"#30A2FF\"></path></svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-vllm"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/vllm/README.md",
+      "updatedAt": "2025-12-15T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-volcengine",
+      "displayName": {
+        "en_US": "Volcengine Model Provider",
+        "zh_Hans": "火山方舟模型提供者"
+      },
+      "description": {
+        "en_US": "Provide Volcengine model provider adapter",
+        "zh_Hans": "提供火山方舟模型提供者适配器"
+      },
+      "version": "0.0.1",
+      "category": "model",
+      "keywords": [
+        "volcengine",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg height=\"1em\" style=\"flex:none;line-height:1\" viewBox=\"0 0 24 24\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><title>Volcengine</title><path d=\"M19.44 10.153l-2.936 11.586a.215.215 0 00.214.261h5.87a.215.215 0 00.214-.261l-2.95-11.586a.214.214 0 00-.412 0zM3.28 12.778l-2.275 8.96A.214.214 0 001.22 22h4.532a.212.212 0 00.214-.165.214.214 0 000-.097l-2.276-8.96a.214.214 0 00-.41 0z\" fill=\"#00E5E5\"></path><path d=\"M7.29 5.359L3.148 21.738a.215.215 0 00.203.261h8.29a.214.214 0 00.215-.261L7.7 5.358a.214.214 0 00-.41 0z\" fill=\"#006EFF\"></path><path d=\"M14.44.15a.214.214 0 00-.41 0L8.366 21.739a.214.214 0 00.214.261H19.9a.216.216 0 00.171-.078.214.214 0 00.044-.183L14.439.15z\" fill=\"#006EFF\"></path><path d=\"M10.278 7.741L6.685 21.736a.214.214 0 00.214.264h7.17a.215.215 0 00.214-.264L10.688 7.741a.214.214 0 00-.41 0z\" fill=\"#00E5E5\"></path></svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-volcengine"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/volcengine/README.md",
+      "updatedAt": "2025-11-01T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-xinference",
+      "displayName": {
+        "en_US": "Xinference Model Provider",
+        "zh_Hans": "Xinference 模型提供者"
+      },
+      "description": {
+        "en_US": "Provide Xinference model provider adapter",
+        "zh_Hans": "提供 Xinference 模型提供者适配器"
+      },
+      "version": "0.0.1",
+      "category": "model",
+      "keywords": [
+        "xinference",
+        "model"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"Xorbits Square\" clip-path=\"url(#clip0_9850_26870)\">\n<path id=\"Vector\" d=\"M8.00391 12.3124C8.69334 13.0754 9.47526 13.7494 10.3316 14.3188C11.0667 14.8105 11.8509 15.2245 12.6716 15.5541C14.1617 14.1465 15.3959 12.4907 16.3192 10.6606L21.7051 0L12.3133 7.38353C10.5832 8.74456 9.12178 10.416 8.00391 12.3124Z\" fill=\"url(#paint0_linear_9850_26870)\"/>\n<path id=\"Vector_2\" d=\"M7.23504 18.9512C6.56092 18.5012 5.92386 18.0265 5.3221 17.5394L2.06445 24L7.91975 19.3959C7.69034 19.2494 7.46092 19.103 7.23504 18.9512Z\" fill=\"url(#paint1_linear_9850_26870)\"/>\n<path id=\"Vector_3\" d=\"M19.3161 8.57474C21.0808 10.9147 21.5961 13.5159 20.3996 15.3053C18.6526 17.9189 13.9161 17.8183 9.82024 15.0812C5.72435 12.3441 3.82024 8.0065 5.56729 5.39297C6.76377 3.60356 9.36318 3.0865 12.2008 3.81886C7.29318 1.73474 2.62376 1.94121 0.813177 4.64474C-1.45976 8.04709 1.64435 14.1177 7.74494 18.1889C13.8455 22.26 20.6361 22.8124 22.9091 19.4118C24.7179 16.703 23.1173 12.3106 19.3161 8.57474Z\" fill=\"url(#paint2_linear_9850_26870)\"/>\n</g>\n<defs>\n<linearGradient id=\"paint0_linear_9850_26870\" x1=\"2.15214\" y1=\"24.3018\" x2=\"21.2921\" y2=\"0.0988218\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#E9A85E\"/>\n<stop offset=\"1\" stop-color=\"#F52B76\"/>\n</linearGradient>\n<linearGradient id=\"paint1_linear_9850_26870\" x1=\"2.06269\" y1=\"24.2294\" x2=\"21.2027\" y2=\"0.028252\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#E9A85E\"/>\n<stop offset=\"1\" stop-color=\"#F52B76\"/>\n</linearGradient>\n<linearGradient id=\"paint2_linear_9850_26870\" x1=\"-0.613606\" y1=\"3.843\" x2=\"21.4449\" y2=\"18.7258\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#6A0CF5\"/>\n<stop offset=\"1\" stop-color=\"#AB66F3\"/>\n</linearGradient>\n<clipPath id=\"clip0_9850_26870\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-xinference"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/xinference/README.md",
+      "updatedAt": "2025-11-10T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-mysql",
+      "displayName": {
+        "en_US": "MySQL Database",
+        "zh_Hans": "MySQL 数据库"
+      },
+      "description": {
+        "en_US": "Provide MySQL database adapter",
+        "zh_Hans": "提供 MySQL 数据库适配器"
+      },
+      "version": "0.0.2",
+      "category": "database",
+      "keywords": [
+        "mysql",
+        "database",
+        "bi"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<svg width=\"800px\" height=\"800px\" viewBox=\"-18.458 -22.75 191.151 191.151\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M-18.458 6.58h191.151v132.49H-18.458V6.58z\" fill=\"none\"/><path d=\"M40.054 113.583h-5.175c-.183-8.735-.687-16.947-1.511-24.642h-.046l-7.879 24.642h-3.94l-7.832-24.642h-.045c-.581 7.388-.947 15.602-1.099 24.642H7.81c.304-10.993 1.068-21.299 2.289-30.919h6.414l7.465 22.719h.046l7.511-22.719h6.137c1.344 11.268 2.138 21.575 2.382 30.919M62.497 90.771c-2.107 11.434-4.887 19.742-8.337 24.928-2.688 3.992-5.633 5.99-8.84 5.99-.855 0-1.91-.258-3.16-.77v-2.757c.611.088 1.328.138 2.152.138 1.498 0 2.702-.412 3.62-1.238 1.098-1.006 1.647-2.137 1.647-3.388 0-.858-.428-2.612-1.282-5.268L42.618 90.77h5.084l4.076 13.19c.916 2.995 1.298 5.086 1.145 6.277 2.229-5.953 3.786-12.444 4.673-19.468h4.901v.002z\" fill=\"#5d87a1\"/><path d=\"M131.382 113.583h-14.7V82.664h4.945v27.113h9.755v3.806zM112.834 114.33l-5.684-2.805c.504-.414.986-.862 1.42-1.381 2.416-2.838 3.621-7.035 3.621-12.594 0-10.229-4.014-15.346-12.045-15.346-3.938 0-7.01 1.298-9.207 3.895-2.414 2.84-3.619 7.022-3.619 12.551 0 5.435 1.068 9.422 3.205 11.951 1.955 2.291 4.902 3.438 8.843 3.438 1.47 0 2.819-.18 4.048-.543l7.4 4.308 2.018-3.474zm-18.413-6.934c-1.252-2.014-1.878-5.248-1.878-9.707 0-7.785 2.365-11.682 7.1-11.682 2.475 0 4.289.932 5.449 2.792 1.25 2.017 1.879 5.222 1.879 9.619 0 7.849-2.367 11.774-7.099 11.774-2.476.001-4.29-.928-5.451-2.796M85.165 105.013c0 2.622-.962 4.773-2.884 6.458-1.924 1.678-4.504 2.519-7.737 2.519-3.024 0-5.956-.966-8.794-2.888l1.329-2.655c2.442 1.223 4.653 1.831 6.638 1.831 1.863 0 3.319-.413 4.375-1.232 1.055-.822 1.684-1.975 1.684-3.433 0-1.837-1.281-3.407-3.631-4.722-2.167-1.19-6.501-3.678-6.501-3.678-2.349-1.712-3.525-3.55-3.525-6.578 0-2.506.877-4.529 2.632-6.068 1.757-1.545 4.024-2.315 6.803-2.315 2.87 0 5.479.769 7.829 2.291l-1.192 2.656c-2.01-.854-3.994-1.281-5.951-1.281-1.585 0-2.809.381-3.66 1.146-.858.762-1.387 1.737-1.387 2.933 0 1.828 1.308 3.418 3.722 4.759 2.196 1.192 6.638 3.723 6.638 3.723 2.409 1.709 3.612 3.53 3.612 6.534\" fill=\"#f8981d\"/><path d=\"M137.59 72.308c-2.99-.076-5.305.225-7.248 1.047-.561.224-1.453.224-1.531.933.303.3.338.784.601 1.198.448.747 1.229 1.752 1.942 2.276.783.6 1.569 1.194 2.393 1.717 1.453.899 3.1 1.422 4.516 2.318.825.521 1.645 1.195 2.471 1.756.406.299.666.784 1.193.971v-.114c-.264-.336-.339-.822-.598-1.196l-1.122-1.082c-1.084-1.456-2.431-2.727-3.884-3.771-1.196-.824-3.812-1.944-4.297-3.322l-.076-.076c.822-.077 1.797-.375 2.578-.604 1.271-.335 2.43-.259 3.734-.594.6-.15 1.195-.338 1.797-.523v-.337c-.676-.673-1.158-1.567-1.869-2.203-1.902-1.643-3.998-3.25-6.164-4.595-1.16-.749-2.652-1.231-3.887-1.868-.445-.225-1.195-.336-1.457-.71-.67-.822-1.047-1.904-1.533-2.877-1.08-2.053-2.129-4.331-3.061-6.502-.674-1.456-1.084-2.91-1.906-4.257-3.85-6.35-8.031-10.196-14.457-13.971-1.381-.786-3.024-1.121-4.779-1.533l-2.803-.148c-.598-.262-1.197-.973-1.719-1.309-2.132-1.344-7.621-4.257-9.189-.411-1.01 2.431 1.494 4.821 2.354 6.054.635.856 1.458 1.83 1.902 2.802.263.635.337 1.309.6 1.98.598 1.644 1.157 3.473 1.943 5.007.41.782.857 1.604 1.381 2.312.3.414.822.597.936 1.272-.521.744-.562 1.867-.861 2.801-1.344 4.221-.819 9.45 1.086 12.552.596.934 2.018 2.99 3.92 2.202 1.684-.672 1.311-2.801 1.795-4.668.111-.451.038-.747.262-1.043v.073c.521 1.045 1.047 2.052 1.53 3.1 1.159 1.829 3.177 3.735 4.858 5.002.895.676 1.604 1.832 2.725 2.245V74.1h-.074c-.227-.335-.559-.485-.857-.745-.674-.673-1.42-1.495-1.943-2.241-1.566-2.093-2.952-4.41-4.182-6.801-.602-1.16-1.121-2.428-1.606-3.586-.226-.447-.226-1.121-.601-1.346-.562.821-1.381 1.532-1.791 2.538-.711 1.609-.785 3.588-1.049 5.646l-.147.072c-1.19-.299-1.604-1.53-2.056-2.575-1.119-2.654-1.307-6.914-.336-9.976.26-.783 1.385-3.249.936-3.995-.225-.715-.973-1.122-1.383-1.685-.482-.708-1.01-1.604-1.346-2.39-.896-2.091-1.347-4.408-2.312-6.498-.451-.974-1.234-1.982-1.868-2.879-.712-1.008-1.495-1.718-2.058-2.913-.186-.411-.447-1.083-.148-1.53.073-.3.225-.412.523-.487.484-.409 1.867.111 2.352.336 1.385.56 2.543 1.083 3.699 1.867.523.375 1.084 1.085 1.755 1.272h.786c1.193.26 2.538.072 3.661.41 1.979.636 3.772 1.569 5.38 2.576 4.893 3.103 8.928 7.512 11.652 12.778.447.858.637 1.644 1.045 2.539.787 1.832 1.76 3.7 2.541 5.493.785 1.755 1.533 3.547 2.654 5.005.559.784 2.805 1.195 3.812 1.606.745.335 1.905.633 2.577 1.044 1.271.783 2.537 1.682 3.732 2.543.595.448 2.465 1.382 2.576 2.13M99.484 39.844a5.82 5.82 0 0 0-1.529.188v.075h.072c.301.597.824 1.011 1.197 1.532.301.599.562 1.193.857 1.791l.072-.074c.527-.373.789-.971.789-1.868-.227-.264-.262-.522-.451-.784-.22-.374-.705-.56-1.007-.86\" fill=\"#5d87a1\"/><path d=\"M141.148 113.578h.774v-3.788h-1.161l-.947 2.585-1.029-2.585h-1.118v3.788h.731v-2.882h.041l1.078 2.882h.557l1.074-2.882v2.882zm-6.235 0h.819v-3.146h1.072v-.643h-3.008v.643h1.115l.002 3.146z\" fill=\"#f8981d\"/></svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mysql"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mysql/README.md",
+      "updatedAt": "2025-11-06T03:00:00.000Z"
     },
     {
       "name": "@xpert-ai/plugin-pdfium",
@@ -635,105 +906,6 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/unstructured/README.md",
       "updatedAt": "2025-10-28T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-vllm",
-      "displayName": {
-        "en_US": "vLLM Model Provider",
-        "zh_Hans": "vLLM 模型提供者"
-      },
-      "description": {
-        "en_US": "Provide vLLM model provider adapter",
-        "zh_Hans": "提供 vLLM 模型提供者适配器"
-      },
-      "version": "0.0.4",
-      "category": "model",
-      "keywords": [
-        "vllm",
-        "model"
-      ],
-      "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cn"
-      },
-      "repository": "https://github.com/xpert-ai/xpert-plugins",
-      "icon": {
-        "type": "svg",
-        "value": "<svg height=\"1em\" style=\"flex:none;line-height:1\" viewBox=\"0 0 24 24\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><title>vLLM</title><path d=\"M0 4.973h9.324V23L0 4.973z\" fill=\"#FDB515\"></path><path d=\"M13.986 4.351L22.378 0l-6.216 23H9.324l4.662-18.649z\" fill=\"#30A2FF\"></path></svg>"
-      },
-      "verified": true,
-      "source": {
-        "type": "npm",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-vllm"
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/vllm/README.md",
-      "updatedAt": "2025-12-15T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-volcengine",
-      "displayName": {
-        "en_US": "Volcengine Model Provider",
-        "zh_Hans": "火山方舟模型提供者"
-      },
-      "description": {
-        "en_US": "Provide Volcengine model provider adapter",
-        "zh_Hans": "提供火山方舟模型提供者适配器"
-      },
-      "version": "0.0.1",
-      "category": "model",
-      "keywords": [
-        "volcengine",
-        "model"
-      ],
-      "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cn"
-      },
-      "repository": "https://github.com/xpert-ai/xpert-plugins",
-      "icon": {
-        "type": "svg",
-        "value": "<svg height=\"1em\" style=\"flex:none;line-height:1\" viewBox=\"0 0 24 24\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><title>Volcengine</title><path d=\"M19.44 10.153l-2.936 11.586a.215.215 0 00.214.261h5.87a.215.215 0 00.214-.261l-2.95-11.586a.214.214 0 00-.412 0zM3.28 12.778l-2.275 8.96A.214.214 0 001.22 22h4.532a.212.212 0 00.214-.165.214.214 0 000-.097l-2.276-8.96a.214.214 0 00-.41 0z\" fill=\"#00E5E5\"></path><path d=\"M7.29 5.359L3.148 21.738a.215.215 0 00.203.261h8.29a.214.214 0 00.215-.261L7.7 5.358a.214.214 0 00-.41 0z\" fill=\"#006EFF\"></path><path d=\"M14.44.15a.214.214 0 00-.41 0L8.366 21.739a.214.214 0 00.214.261H19.9a.216.216 0 00.171-.078.214.214 0 00.044-.183L14.439.15z\" fill=\"#006EFF\"></path><path d=\"M10.278 7.741L6.685 21.736a.214.214 0 00.214.264h7.17a.215.215 0 00.214-.264L10.688 7.741a.214.214 0 00-.41 0z\" fill=\"#00E5E5\"></path></svg>"
-      },
-      "verified": true,
-      "source": {
-        "type": "npm",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-volcengine"
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/volcengine/README.md",
-      "updatedAt": "2025-11-01T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-xinference",
-      "displayName": {
-        "en_US": "Xinference Model Provider",
-        "zh_Hans": "Xinference 模型提供者"
-      },
-      "description": {
-        "en_US": "Provide Xinference model provider adapter",
-        "zh_Hans": "提供 Xinference 模型提供者适配器"
-      },
-      "version": "0.0.1",
-      "category": "model",
-      "keywords": [
-        "xinference",
-        "model"
-      ],
-      "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cn"
-      },
-      "repository": "https://github.com/xpert-ai/xpert-plugins",
-      "icon": {
-        "type": "svg",
-        "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"Xorbits Square\" clip-path=\"url(#clip0_9850_26870)\">\n<path id=\"Vector\" d=\"M8.00391 12.3124C8.69334 13.0754 9.47526 13.7494 10.3316 14.3188C11.0667 14.8105 11.8509 15.2245 12.6716 15.5541C14.1617 14.1465 15.3959 12.4907 16.3192 10.6606L21.7051 0L12.3133 7.38353C10.5832 8.74456 9.12178 10.416 8.00391 12.3124Z\" fill=\"url(#paint0_linear_9850_26870)\"/>\n<path id=\"Vector_2\" d=\"M7.23504 18.9512C6.56092 18.5012 5.92386 18.0265 5.3221 17.5394L2.06445 24L7.91975 19.3959C7.69034 19.2494 7.46092 19.103 7.23504 18.9512Z\" fill=\"url(#paint1_linear_9850_26870)\"/>\n<path id=\"Vector_3\" d=\"M19.3161 8.57474C21.0808 10.9147 21.5961 13.5159 20.3996 15.3053C18.6526 17.9189 13.9161 17.8183 9.82024 15.0812C5.72435 12.3441 3.82024 8.0065 5.56729 5.39297C6.76377 3.60356 9.36318 3.0865 12.2008 3.81886C7.29318 1.73474 2.62376 1.94121 0.813177 4.64474C-1.45976 8.04709 1.64435 14.1177 7.74494 18.1889C13.8455 22.26 20.6361 22.8124 22.9091 19.4118C24.7179 16.703 23.1173 12.3106 19.3161 8.57474Z\" fill=\"url(#paint2_linear_9850_26870)\"/>\n</g>\n<defs>\n<linearGradient id=\"paint0_linear_9850_26870\" x1=\"2.15214\" y1=\"24.3018\" x2=\"21.2921\" y2=\"0.0988218\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#E9A85E\"/>\n<stop offset=\"1\" stop-color=\"#F52B76\"/>\n</linearGradient>\n<linearGradient id=\"paint1_linear_9850_26870\" x1=\"2.06269\" y1=\"24.2294\" x2=\"21.2027\" y2=\"0.028252\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#E9A85E\"/>\n<stop offset=\"1\" stop-color=\"#F52B76\"/>\n</linearGradient>\n<linearGradient id=\"paint2_linear_9850_26870\" x1=\"-0.613606\" y1=\"3.843\" x2=\"21.4449\" y2=\"18.7258\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#6A0CF5\"/>\n<stop offset=\"1\" stop-color=\"#AB66F3\"/>\n</linearGradient>\n<clipPath id=\"clip0_9850_26870\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>"
-      },
-      "verified": true,
-      "source": {
-        "type": "npm",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-xinference"
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/xinference/README.md",
-      "updatedAt": "2025-11-10T03:00:00.000Z"
     },
     {
       "name": "@xpert-ai/plugin-zip",
