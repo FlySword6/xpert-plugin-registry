@@ -1,0 +1,29 @@
+{
+  "name": "@xpert-ai/plugin-long-term-memory",
+  "displayName": {
+    "en_US": "Long Term Memory Middleware",
+    "zh_Hans": "长期记忆中间件"
+  },
+  "description": {
+    "en_US": "is an extensible middleware layer designed to provide agents with persistent, structured, and retrievable long-term memory across sessions, tasks, and workflows.",
+    "zh_Hans": "是一层可扩展的中间件，用于为智能体提供跨会话、跨任务、跨工作流的持久化长期记忆能力。"
+  },
+  "category": "middleware",
+  "keywords": ["memory", "context", "middleware", "agent"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 64 64\" style=\"enable-background:new 0 0 64 64;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#C75C5C;}\n\t.st1{opacity:0.2;fill:#231F20;}\n\t.st2{fill:#4F5D73;}\n\t.st3{fill:#E0E0D1;}\n\t.st4{fill:#F5CF87;}\n</style>\n<circle class=\"st0\" cx=\"32\" cy=\"32\" r=\"32\"/>\n<path class=\"st1\" d=\"M48,52c0,1.1-0.9,2-2,2H18c-1.1,0-2-0.9-2-2V16c0-1.1,0.9-2,2-2h23c1.1,0,7,5.9,7,7V52z\"/>\n<path class=\"st2\" d=\"M48,50c0,1.1-0.9,2-2,2H18c-1.1,0-2-0.9-2-2V14c0-1.1,0.9-2,2-2h23c1.1,0,7,5.9,7,7V50z\"/>\n<path class=\"st3\" d=\"M44,46c0,1.1-0.9,2-2,2H22c-1.1,0-2-0.9-2-2V26c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2V46z\"/>\n<rect x=\"20\" y=\"12\" class=\"st4\" width=\"4\" height=\"6\"/>\n<rect x=\"26\" y=\"12\" class=\"st4\" width=\"4\" height=\"6\"/>\n<rect x=\"32\" y=\"12\" class=\"st4\" width=\"4\" height=\"6\"/>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-long-term-memory"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/long-term-memory/README.md",
+  "updatedAt": "2026-01-08T03:00:00.000Z"
+}
