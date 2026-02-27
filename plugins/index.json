@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-01-09T05:21:42.745Z",
-  "total": 28,
+  "updatedAt": "2026-02-27T12:40:13.261Z",
+  "total": 29,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
@@ -13,6 +13,7 @@
     "@xpert-ai/plugin-long-term-memory",
     "@xpert-ai/plugin-model-fallback",
     "@xpert-ai/plugin-tool-call-limit",
+    "@xpert-ai/plugin-web-tools",
     "@xpert-ai/plugin-milvus",
     "@xpert-ai/plugin-mineru",
     "@xpert-ai/plugin-anthropic",
@@ -76,7 +77,6 @@
         "en_US": "Provide Dify integration and external knowledgebase connector",
         "zh_Hans": "提供 Dify 集成和外部知识库连接器"
       },
-      "version": "0.0.3",
       "category": "Integration",
       "keywords": [
         "dify",
@@ -407,6 +407,39 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/tool-call-limit/README.md",
       "updatedAt": "2025-12-18T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-web-tools",
+      "displayName": {
+        "en_US": "Web Tools Middleware",
+        "zh_Hans": "网页工具中间件"
+      },
+      "description": {
+        "en_US": "A middleware that provides web fetch and web search tools for agents. Enables fetching web page content (as markdown, text, or HTML) and searching the internet via Exa MCP.",
+        "zh_Hans": "提供网页工具中间件，允许代理获取网页内容（以markdown、文本或HTML格式）并通过Exa MCP搜索互联网。"
+      },
+      "category": "middleware",
+      "keywords": [
+        "web search",
+        "middleware",
+        "agent"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 24 24\\\"><path d=\\\"M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z\\\"/></svg>\""
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-web-tools"
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/web-tools/README.md",
+      "updatedAt": "2026-02-27T03:00:00.000Z"
     },
     {
       "name": "@xpert-ai/plugin-milvus",
