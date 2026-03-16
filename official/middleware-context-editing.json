@@ -8,7 +8,6 @@
     "en_US": "Context Editing Middleware that automatically prunes tool results to manage context size. This middleware mirrors Anthropic's context editing capabilities by clearing older tool results once the conversation grows beyond a configurable token threshold. The implementation is intentionally model-agnostic so it can be used with any AI model.",
     "zh_Hans": "提供上下文编辑中间件，自动修剪工具结果以管理上下文大小。该中间件通过在对话超过可配置的令牌阈值时清除较旧的工具结果，模拟了Anthropic的上下文编辑功能。该实现故意与模型无关，因此可以与任何AI模型一起使用。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": ["context", "middleware", "agent"],
   "author": {

@@ -8,7 +8,6 @@
     "en_US": "Provide Xinference model provider adapter",
     "zh_Hans": "提供 Xinference 模型提供者适配器"
   },
-  "version": "0.0.1",
   "category": "model",
   "keywords": ["xinference", "model"],
   "author": {

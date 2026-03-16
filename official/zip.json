@@ -8,7 +8,6 @@
     "en_US": "Provide zip and unzip tools",
     "zh_Hans": "提供压缩和解压工具"
   },
-  "version": "0.0.9",
   "category": "tools",
   "keywords": ["zip", "toolset"],
   "author": {

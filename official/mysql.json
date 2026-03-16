@@ -8,7 +8,6 @@
     "en_US": "Provide MySQL database adapter",
     "zh_Hans": "提供 MySQL 数据库适配器"
   },
-  "version": "0.0.2",
   "category": "database",
   "keywords": ["mysql", "database", "bi"],
   "author": {

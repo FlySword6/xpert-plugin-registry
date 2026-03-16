@@ -8,7 +8,6 @@
     "en_US": "Provide FastGPT integration and external knowledgebase connector",
     "zh_Hans": "提供 FastGPT 系统集成和外部知识库连接器"
   },
-  "version": "0.0.3",
   "category": "Integration",
   "keywords": ["fastgpt", "integration", "external knowledgebase"],
   "author": {

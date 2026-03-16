@@ -8,7 +8,6 @@
     "en_US": "Provide Firecrawl system integration and document source",
     "zh_Hans": "提供 Firecrawl 系统集成和文档源"
   },
-  "version": "0.0.1",
   "category": "integration",
   "keywords": ["firecrawl", "integration", "doc source"],
   "author": {

@@ -8,7 +8,6 @@
     "en_US": "Provide OpenAI compatible model provider integration",
     "zh_Hans": "提供 OpenAI 兼容模型提供者集成"
   },
-  "version": "0.0.1",
   "category": "model",
   "keywords": ["openai", "model"],
   "author": {

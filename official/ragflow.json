@@ -8,7 +8,6 @@
     "en_US": "Provide RAGFlow integration and external knowledge base",
     "zh_Hans": "提供 RAGFlow 系统集成和外部知识库"
   },
-  "version": "0.0.1",
   "category": "integration",
   "keywords": ["ragflow", "integration", "external knowledge"],
   "author": {

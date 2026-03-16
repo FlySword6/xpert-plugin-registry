@@ -8,7 +8,6 @@
     "en_US": "Provide SAP HANA database adapter",
     "zh_Hans": "提供 SAP HANA 数据库适配器"
   },
-  "version": "latest",
   "category": "database",
   "keywords": ["hana", "sap", "database", "bi"],
   "author": {

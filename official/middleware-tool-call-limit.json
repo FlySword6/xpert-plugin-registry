@@ -8,7 +8,6 @@
     "en_US": "Track tool call counts and enforce limits during agent execution. Supports thread-level (persistent) and run-level (per invocation) limits with configurable exit behaviors.",
     "zh_Hans": "跟踪工具调用次数并在代理执行期间强制执行限制。支持线程级（持久）和运行级（每次调用）限制，具有可配置的退出行为。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": ["tool", "middleware", "agent"],
   "author": {

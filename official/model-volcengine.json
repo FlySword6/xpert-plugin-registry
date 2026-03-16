@@ -8,7 +8,6 @@
     "en_US": "Provide Volcengine model provider adapter",
     "zh_Hans": "提供火山方舟模型提供者适配器"
   },
-  "version": "0.0.1",
   "category": "model",
   "keywords": ["volcengine", "model"],
   "author": {

@@ -8,7 +8,6 @@
     "en_US": "Provides a file system-based document source connector",
     "zh_Hans": "提供基于文件系统的文档源连接器"
   },
-  "version": "0.0.2",
   "category": "Integration",
   "keywords": ["filesystem", "storage", "doc source"],
   "author": {

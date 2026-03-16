@@ -8,7 +8,6 @@
     "en_US": "Automatically fallback to alternative models when the primary model fails. Useful for handling model outages, cost optimization, and provider redundancy.",
     "zh_Hans": "当主模型失败时自动回退到备用模型。用于处理模型故障、成本优化和提供商冗余。"
   },
-  "version": "0.0.2",
   "category": "middleware",
   "keywords": ["model", "middleware", "agent"],
   "author": {

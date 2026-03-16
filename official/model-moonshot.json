@@ -8,7 +8,6 @@
     "en_US": "Provide Moonshot model provider adapter",
     "zh_Hans": "提供 Moonshot 模型提供者适配器"
   },
-  "version": "0.0.2",
   "category": "model",
   "keywords": ["moonshot", "model"],
   "author": {
