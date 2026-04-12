@@ -1,0 +1,36 @@
+{
+  "name": "@xpert-ai/plugin-view-image",
+  "displayName": {
+    "en_US": "View Image",
+    "zh_Hans": "看图中间件"
+  },
+  "description": {
+    "en_US": "Adds an on-demand `view_image` tool that loads sandbox image files and temporarily injects them into the next model call.",
+    "zh_Hans": "提供按需调用的 `view_image` 工具，用于读取 sandbox 中的图片文件，并在下一次模型调用时临时注入图片。"
+  },
+  "version": "0.0.1",
+  "category": "middleware",
+  "keywords": [
+    "image",
+    "vision",
+    "middleware",
+    "sandbox",
+    "multimodal"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\">\n  <defs>\n    <linearGradient id=\"view-image-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n      <stop offset=\"0%\" stop-color=\"#005f73\"/>\n      <stop offset=\"100%\" stop-color=\"#0a9396\"/>\n    </linearGradient>\n  </defs>\n  <rect x=\"6\" y=\"10\" width=\"52\" height=\"38\" rx=\"8\" fill=\"url(#view-image-gradient)\"/>\n  <circle cx=\"22\" cy=\"24\" r=\"5\" fill=\"#e9d8a6\"/>\n  <path d=\"M14 42l10-11 9 8 8-10 9 13H14z\" fill=\"#94d2bd\"/>\n  <path d=\"M22 54c3.6-4.6 8.5-7 14.8-7 6.4 0 11.2 2.4 14.9 7\" fill=\"none\" stroke=\"#001219\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n  <circle cx=\"32\" cy=\"54\" r=\"10\" fill=\"#ee9b00\"/>\n  <circle cx=\"32\" cy=\"54\" r=\"4.5\" fill=\"#001219\"/>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-view-image"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/view-image/README.md",
+  "updatedAt": "2026-04-12T06:29:49.000Z"
+}

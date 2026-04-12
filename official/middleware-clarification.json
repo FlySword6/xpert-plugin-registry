@@ -1,0 +1,36 @@
+{
+  "name": "@xpert-ai/plugin-clarification",
+  "displayName": {
+    "en_US": "Clarification Middleware",
+    "zh_Hans": "澄清中间件"
+  },
+  "description": {
+    "en_US": "Adds an `ask_clarification` tool, rewrites mixed tool batches to clarification-only, and turns clarification requests into readable ToolMessages that end the current run.",
+    "zh_Hans": "提供 `ask_clarification` 工具，将混合工具批次改写为仅澄清调用，并把澄清请求转换为会结束当前轮的可读 ToolMessage。"
+  },
+  "version": "0.0.1",
+  "category": "middleware",
+  "keywords": [
+    "agent",
+    "middleware",
+    "clarification",
+    "tool message",
+    "human in the loop"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" fill=\"none\">\n  <rect x=\"8\" y=\"10\" width=\"48\" height=\"34\" rx=\"10\" fill=\"currentColor\" opacity=\"0.14\"/>\n  <path d=\"M20 23c0-6.075 4.925-11 11-11h2c6.075 0 11 4.925 11 11v7c0 6.075-4.925 11-11 11h-8l-7 7v-7c-2.209 0-4-1.791-4-4V23Z\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n  <path d=\"M29 27a4 4 0 1 1 6.11 3.402C34.108 31.038 33 31.94 33 34\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n  <circle cx=\"33\" cy=\"40\" r=\"2.5\" fill=\"currentColor\"/>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-clarification"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/clarification/README.md",
+  "updatedAt": "2026-04-12T06:29:49.000Z"
+}

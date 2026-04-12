@@ -1,0 +1,36 @@
+{
+  "name": "@xpert-ai/plugin-dangling-tool-call",
+  "displayName": {
+    "en_US": "Dangling Tool Call Middleware",
+    "zh_Hans": "悬空工具调用处理中间件"
+  },
+  "description": {
+    "en_US": "Repairs message history with missing tool responses by inserting synthetic error ToolMessages before the next model call.",
+    "zh_Hans": "在下一次模型调用前，为缺失工具响应的消息历史补入合成错误 ToolMessage，修复悬空工具调用。"
+  },
+  "version": "0.0.1",
+  "category": "middleware",
+  "keywords": [
+    "agent",
+    "middleware",
+    "tool call",
+    "tool message",
+    "history repair"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M7 7L3 12L7 17\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M17 7L21 12L17 17\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M10 19H14\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n  <path d=\"M10 5H14\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n  <circle cx=\"12\" cy=\"12\" r=\"2.5\" fill=\"currentColor\"/>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-dangling-tool-call"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/dangling-tool-call/README.md",
+  "updatedAt": "2026-04-12T06:29:49.000Z"
+}

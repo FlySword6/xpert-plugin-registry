@@ -1,0 +1,36 @@
+{
+  "name": "@xpert-ai/plugin-loop-guard",
+  "displayName": {
+    "en_US": "Loop Guard Middleware",
+    "zh_Hans": "循环工具调用防护中间件"
+  },
+  "description": {
+    "en_US": "Detect repeated tool-call batches, warn on the next model turn, and stop the run when the repetition becomes unproductive.",
+    "zh_Hans": "检测重复的工具调用批次，在下一轮模型调用前提醒，并在重复失去产出时终止运行。"
+  },
+  "version": "0.0.1",
+  "category": "middleware",
+  "keywords": [
+    "agent",
+    "middleware",
+    "tool loop",
+    "loop guard",
+    "tool guard"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\" fill=\"none\">\n<path d=\"M23 31c6-11 17-18 29-18 10 0 19 4 26 10l7-8v22H63l9-10c-5-4-11-7-20-7-9 0-18 5-23 13\" fill=\"currentColor\"/>\n<path d=\"M77 69c-6 11-17 18-29 18-10 0-19-4-26-10l-7 8V63h22l-9 10c5 4 11 7 20 7 9 0 18-5 23-13\" fill=\"currentColor\"/>\n<path d=\"M51 34l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9l3-9z\" fill=\"#FFF4E6\"/>\n<circle cx=\"50\" cy=\"50\" r=\"42\" stroke=\"currentColor\" stroke-width=\"4\"/>\n</svg>"
+  },
+  "verified": true,
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-loop-guard"
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/loop-guard/README.md",
+  "updatedAt": "2026-04-12T06:29:49.000Z"
+}
