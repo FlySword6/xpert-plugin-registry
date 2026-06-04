@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-03T11:29:34.050Z",
-  "total": 48,
+  "updatedAt": "2026-06-04T08:23:11.808Z",
+  "total": 49,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
@@ -51,7 +51,8 @@
     "@xpert-ai/plugin-zip"
   ],
   "community": [
-    "@xpert-ai/plugin-sales-ontology"
+    "@xpert-ai/plugin-sales-ontology",
+    "@xpert-ai/plugin-sites"
   ],
   "plugins": [
     {
@@ -1786,6 +1787,144 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/sales-ontology#readme",
       "updatedAt": "2026-06-03T00:00:00.000Z",
+      "verified": false
+    },
+    {
+      "name": "@xpert-ai/plugin-sites",
+      "packageName": "@xpert-ai/plugin-sites",
+      "displayName": {
+        "en_US": "Sites",
+        "zh_Hans": "站点"
+      },
+      "description": {
+        "en_US": "Sites plugin for creating, saving, deploying, inspecting, and managing hosted sites from data-xpert Assistants.",
+        "zh_Hans": "面向 data-xpert Assistant 的站点创建、保存、发布、检查和托管管理插件。"
+      },
+      "version": "0.0.1",
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "sites",
+        "hosting",
+        "middleware",
+        "view-extension",
+        "assistant-template",
+        "site-hosting",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "community/apps/sites"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/sites",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 8h18\"/><path d=\"M7 6h.01\"/><path d=\"M10 6h.01\"/><path d=\"M8 13h8\"/><path d=\"M8 16h5\"/></svg>",
+        "color": "#4f46e5"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-sites",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-sites"
+      },
+      "targetApps": [
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app",
+            "site-hosting"
+          ],
+          "capabilities": [
+            "sites-core",
+            "sites-workbench",
+            "sites-builder-assistant-template",
+            "sites-local-hosting"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "app",
+                "name": "sites",
+                "displayName": "Sites",
+                "description": "Create, save, deploy, inspect, and manage access for hosted Sites projects from data-xpert Assistants.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 8h18\"/><path d=\"M7 6h.01\"/><path d=\"M10 6h.01\"/><path d=\"M8 13h8\"/><path d=\"M8 16h5\"/></svg>",
+                  "color": "#4f46e5"
+                },
+                "operations": [
+                  {
+                    "name": "create-sites-projects",
+                    "displayName": "Create Sites projects",
+                    "description": "Create local Sites projects with hosting metadata and storage shape.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "save-sites-versions",
+                    "displayName": "Save deployable versions",
+                    "description": "Save reviewable deployment candidates before production publish.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "deploy-sites-versions",
+                    "displayName": "Deploy Sites versions",
+                    "description": "Publish approved saved versions and return production URLs.",
+                    "access": "admin"
+                  },
+                  {
+                    "name": "preview-sites-deployments",
+                    "displayName": "Preview Sites deployments",
+                    "description": "Open deployed Sites URLs in the Workbench browser preview.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "sites_workbench",
+                "displayName": "Sites Workbench",
+                "description": "Workbench view for Sites projects, versions, deployments, access, and environment values."
+              },
+              {
+                "type": "tool",
+                "name": "SitesMiddleware",
+                "displayName": "Sites Agent Tools",
+                "description": "Assistant middleware tools for project creation, saved versions, production deployments, access control, hosted environment values, and deployment preview events."
+              },
+              {
+                "type": "assistant-template",
+                "name": "sites-builder-assistant",
+                "displayName": "Sites Builder Assistant Template",
+                "description": "Prebuilt assistant template for creating and managing hosted Sites."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/sites#readme",
+            "updatedAt": "2026-06-04T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "SitesMiddleware"
+            ],
+            "viewProviders": [
+              "sites"
+            ],
+            "templateProviders": [
+              "sitesTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/sites#readme",
+      "updatedAt": "2026-06-04T00:00:00.000Z",
       "verified": false
     }
   ]
