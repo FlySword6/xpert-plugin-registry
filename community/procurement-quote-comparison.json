@@ -1,0 +1,118 @@
+{
+  "name": "@xpert-ai/plugin-procurement-quote-comparison",
+  "packageName": "@xpert-ai/plugin-procurement-quote-comparison",
+  "displayName": {
+    "en_US": "Procurement Quote Comparison",
+    "zh_Hans": "采购比价"
+  },
+  "description": {
+    "en_US": "Procurement quote comparison plugin for creating procurement cases, parsing requirements and supplier quotes, and reviewing AI recommendations.",
+    "zh_Hans": "用于创建采购比价项目、解析采购需求和供应商报价，并审核 AI 推荐结果的采购比价插件。"
+  },
+  "version": "0.0.1",
+  "level": "system",
+  "category": "middleware",
+  "keywords": [
+    "procurement",
+    "quote-comparison",
+    "middleware",
+    "view-extension",
+    "remote-component",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "community/apps/procurement-quote-comparison"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/procurement-quote-comparison",
+  "icon": {
+    "type": "svg",
+    "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z\" stroke=\"currentColor\" stroke-width=\"1.6\"/><path d=\"M8 8h8M8 12h8M8 16h4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>",
+    "color": "#0f766e"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-procurement-quote-comparison",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-procurement-quote-comparison"
+  },
+  "targetApps": ["data-xpert"],
+  "targetAppMeta": {
+    "data-xpert": {
+      "types": ["workbench-view", "assistant-tool", "business-app"],
+      "capabilities": [
+        "procurement_quote_comparison",
+        "procurement-quote-comparison-workbench",
+        "procurement-document-parsing",
+        "procurement-quote-comparison-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "procurement-quote-comparison",
+            "displayName": "Procurement Quote Comparison",
+            "description": "Create procurement comparison cases, parse requirement and supplier quote documents, and review AI comparison recommendations.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z\" stroke=\"currentColor\" stroke-width=\"1.6\"/><path d=\"M8 8h8M8 12h8M8 16h4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>",
+              "color": "#0f766e"
+            },
+            "operations": [
+              {
+                "name": "create-procurement-cases",
+                "displayName": "Create procurement cases",
+                "description": "Create procurement cases from requirement documents and uploaded quote files.",
+                "access": "write"
+              },
+              {
+                "name": "parse-procurement-documents",
+                "displayName": "Parse procurement documents",
+                "description": "Use assistant tools to save structured requirement and supplier quote results.",
+                "access": "write"
+              },
+              {
+                "name": "review-procurement-recommendations",
+                "displayName": "Review procurement recommendations",
+                "description": "Review item matches, risks, and AI-generated supplier recommendations.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "workbench",
+            "displayName": "Procurement Quote Comparison Workbench",
+            "description": "Workbench view for procurement cases, supplier quotes, risks, and recommendations."
+          },
+          {
+            "type": "tool",
+            "name": "ProcurementQuoteComparisonMiddleware",
+            "displayName": "Procurement Quote Comparison Tools",
+            "description": "Assistant middleware tools for saving requirement parsing, supplier quotes, item matches, risks, and recommendations."
+          },
+          {
+            "type": "assistant-template",
+            "name": "procurement-quote-comparison-assistant",
+            "displayName": "Procurement Quote Comparison Assistant Template",
+            "description": "Prebuilt assistant workflow template for procurement requirement parsing, supplier quote comparison, risk review, and recommendation reporting."
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/procurement-quote-comparison#readme",
+        "updatedAt": "2026-06-07T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": ["ProcurementQuoteComparisonMiddleware"],
+        "viewProviders": ["procurement_quote_comparison"],
+        "templateProviders": ["procurementQuoteComparisonTemplates"]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/procurement-quote-comparison#readme",
+  "updatedAt": "2026-06-07T00:00:00.000Z"
+}

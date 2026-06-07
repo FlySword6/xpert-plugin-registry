@@ -1,0 +1,119 @@
+{
+  "name": "@xpert-ai/plugin-smart-maintenance",
+  "packageName": "@xpert-ai/plugin-smart-maintenance",
+  "displayName": {
+    "en_US": "Smart Maintenance",
+    "zh_Hans": "智能维保"
+  },
+  "description": {
+    "en_US": "Smart maintenance app plugin for AI-assisted maintenance report intake, work order review, service data import, and lightweight processing loops.",
+    "zh_Hans": "用于 AI 辅助维保报修受理、工单审核、服务数据导入和轻量处理闭环的智能维保插件。"
+  },
+  "version": "0.0.1",
+  "level": "organization",
+  "category": "middleware",
+  "keywords": [
+    "maintenance",
+    "work-order",
+    "middleware",
+    "view-extension",
+    "remote-component",
+    "agent-tool",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "community/apps/smart-maintenance"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/smart-maintenance",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"36\" fill=\"transparent\"/><rect x=\"52\" y=\"42\" width=\"152\" height=\"172\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M92 72H164\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M86 118H132\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M86 150H122\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M144 132L172 104\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M162 150L190 122\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><circle cx=\"128\" cy=\"74\" r=\"18\" fill=\"#CCFBF1\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M76 198L110 164L132 186L180 138\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    "color": "#0f766e"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-smart-maintenance",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-smart-maintenance"
+  },
+  "targetApps": ["data-xpert"],
+  "targetAppMeta": {
+    "data-xpert": {
+      "types": ["workbench-view", "assistant-tool", "business-app"],
+      "capabilities": [
+        "smart_maintenance",
+        "maintenance-report-entry",
+        "maintenance-review-desk",
+        "smart-maintenance-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "smart-maintenance",
+            "displayName": "Smart Maintenance",
+            "description": "Create AI-assisted maintenance work orders from repair reports, import service data, and review processing status.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"36\" fill=\"transparent\"/><rect x=\"52\" y=\"42\" width=\"152\" height=\"172\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M92 72H164\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M86 118H132\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M86 150H122\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M144 132L172 104\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M162 150L190 122\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><circle cx=\"128\" cy=\"74\" r=\"18\" fill=\"#CCFBF1\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M76 198L110 164L132 186L180 138\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+              "color": "#0f766e"
+            },
+            "operations": [
+              {
+                "name": "create-maintenance-work-orders",
+                "displayName": "Create maintenance work orders",
+                "description": "Generate reviewable maintenance work orders from natural-language repair reports.",
+                "access": "write"
+              },
+              {
+                "name": "import-maintenance-service-data",
+                "displayName": "Import service data",
+                "description": "Import candidate customers, projects, locations, devices, departments, roles and parts.",
+                "access": "write"
+              },
+              {
+                "name": "review-maintenance-work-orders",
+                "displayName": "Review maintenance work orders",
+                "description": "Review, supplement, confirm processing, close or reject smart maintenance work orders.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "workbench",
+            "displayName": "Smart Maintenance Workbench",
+            "description": "Workbench view for maintenance data import, report intake, work order review and processing status."
+          },
+          {
+            "type": "tool",
+            "name": "SmartMaintenanceMiddleware",
+            "displayName": "Smart Maintenance Tools",
+            "description": "Assistant middleware tools for saving generated work orders, importing service data, searching work orders and preparing supplement drafts."
+          },
+          {
+            "type": "assistant-template",
+            "name": "smart-maintenance-assistant",
+            "displayName": "Smart Maintenance Assistant Template",
+            "description": "Prebuilt assistant workflow template for maintenance report intake, work order generation, service data import and review support."
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/smart-maintenance#readme",
+        "updatedAt": "2026-06-07T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": ["SmartMaintenanceMiddleware"],
+        "viewProviders": ["smart_maintenance"],
+        "templateProviders": ["smartMaintenanceTemplates"]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/smart-maintenance#readme",
+  "updatedAt": "2026-06-07T00:00:00.000Z"
+}
