@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-04T08:23:11.808Z",
-  "total": 49,
+  "updatedAt": "2026-06-07T15:42:41.790Z",
+  "total": 51,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
@@ -51,8 +51,10 @@
     "@xpert-ai/plugin-zip"
   ],
   "community": [
+    "@xpert-ai/plugin-procurement-quote-comparison",
     "@xpert-ai/plugin-sales-ontology",
-    "@xpert-ai/plugin-sites"
+    "@xpert-ai/plugin-sites",
+    "@xpert-ai/plugin-smart-maintenance"
   ],
   "plugins": [
     {
@@ -1619,6 +1621,137 @@
       "updatedAt": "2025-11-30T03:00:00.000Z"
     },
     {
+      "name": "@xpert-ai/plugin-procurement-quote-comparison",
+      "packageName": "@xpert-ai/plugin-procurement-quote-comparison",
+      "displayName": {
+        "en_US": "Procurement Quote Comparison",
+        "zh_Hans": "采购比价"
+      },
+      "description": {
+        "en_US": "Procurement quote comparison plugin for creating procurement cases, parsing requirements and supplier quotes, and reviewing AI recommendations.",
+        "zh_Hans": "用于创建采购比价项目、解析采购需求和供应商报价，并审核 AI 推荐结果的采购比价插件。"
+      },
+      "version": "0.0.1",
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "procurement",
+        "quote-comparison",
+        "middleware",
+        "view-extension",
+        "remote-component",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "community/apps/procurement-quote-comparison"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/procurement-quote-comparison",
+      "icon": {
+        "type": "svg",
+        "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z\" stroke=\"currentColor\" stroke-width=\"1.6\"/><path d=\"M8 8h8M8 12h8M8 16h4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>",
+        "color": "#0f766e"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-procurement-quote-comparison",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-procurement-quote-comparison"
+      },
+      "targetApps": [
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "procurement_quote_comparison",
+            "procurement-quote-comparison-workbench",
+            "procurement-document-parsing",
+            "procurement-quote-comparison-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "app",
+                "name": "procurement-quote-comparison",
+                "displayName": "Procurement Quote Comparison",
+                "description": "Create procurement comparison cases, parse requirement and supplier quote documents, and review AI comparison recommendations.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-13Z\" stroke=\"currentColor\" stroke-width=\"1.6\"/><path d=\"M8 8h8M8 12h8M8 16h4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>",
+                  "color": "#0f766e"
+                },
+                "operations": [
+                  {
+                    "name": "create-procurement-cases",
+                    "displayName": "Create procurement cases",
+                    "description": "Create procurement cases from requirement documents and uploaded quote files.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "parse-procurement-documents",
+                    "displayName": "Parse procurement documents",
+                    "description": "Use assistant tools to save structured requirement and supplier quote results.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-procurement-recommendations",
+                    "displayName": "Review procurement recommendations",
+                    "description": "Review item matches, risks, and AI-generated supplier recommendations.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "workbench",
+                "displayName": "Procurement Quote Comparison Workbench",
+                "description": "Workbench view for procurement cases, supplier quotes, risks, and recommendations."
+              },
+              {
+                "type": "tool",
+                "name": "ProcurementQuoteComparisonMiddleware",
+                "displayName": "Procurement Quote Comparison Tools",
+                "description": "Assistant middleware tools for saving requirement parsing, supplier quotes, item matches, risks, and recommendations."
+              },
+              {
+                "type": "assistant-template",
+                "name": "procurement-quote-comparison-assistant",
+                "displayName": "Procurement Quote Comparison Assistant Template",
+                "description": "Prebuilt assistant workflow template for procurement requirement parsing, supplier quote comparison, risk review, and recommendation reporting."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/procurement-quote-comparison#readme",
+            "updatedAt": "2026-06-07T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "ProcurementQuoteComparisonMiddleware"
+            ],
+            "viewProviders": [
+              "procurement_quote_comparison"
+            ],
+            "templateProviders": [
+              "procurementQuoteComparisonTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/procurement-quote-comparison#readme",
+      "updatedAt": "2026-06-07T00:00:00.000Z",
+      "verified": false
+    },
+    {
       "name": "@xpert-ai/plugin-sales-ontology",
       "packageName": "@xpert-ai/plugin-sales-ontology",
       "displayName": {
@@ -1925,6 +2058,138 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/sites#readme",
       "updatedAt": "2026-06-04T00:00:00.000Z",
+      "verified": false
+    },
+    {
+      "name": "@xpert-ai/plugin-smart-maintenance",
+      "packageName": "@xpert-ai/plugin-smart-maintenance",
+      "displayName": {
+        "en_US": "Smart Maintenance",
+        "zh_Hans": "智能维保"
+      },
+      "description": {
+        "en_US": "Smart maintenance app plugin for AI-assisted maintenance report intake, work order review, service data import, and lightweight processing loops.",
+        "zh_Hans": "用于 AI 辅助维保报修受理、工单审核、服务数据导入和轻量处理闭环的智能维保插件。"
+      },
+      "version": "0.0.1",
+      "level": "organization",
+      "category": "middleware",
+      "keywords": [
+        "maintenance",
+        "work-order",
+        "middleware",
+        "view-extension",
+        "remote-component",
+        "agent-tool",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "community/apps/smart-maintenance"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/smart-maintenance",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"36\" fill=\"transparent\"/><rect x=\"52\" y=\"42\" width=\"152\" height=\"172\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M92 72H164\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M86 118H132\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M86 150H122\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M144 132L172 104\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M162 150L190 122\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><circle cx=\"128\" cy=\"74\" r=\"18\" fill=\"#CCFBF1\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M76 198L110 164L132 186L180 138\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+        "color": "#0f766e"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-smart-maintenance",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-smart-maintenance"
+      },
+      "targetApps": [
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "smart_maintenance",
+            "maintenance-report-entry",
+            "maintenance-review-desk",
+            "smart-maintenance-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "app",
+                "name": "smart-maintenance",
+                "displayName": "Smart Maintenance",
+                "description": "Create AI-assisted maintenance work orders from repair reports, import service data, and review processing status.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"36\" fill=\"transparent\"/><rect x=\"52\" y=\"42\" width=\"152\" height=\"172\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M92 72H164\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M86 118H132\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M86 150H122\" stroke=\"#94A3B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M144 132L172 104\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M162 150L190 122\" stroke=\"#14B8A6\" stroke-width=\"12\" stroke-linecap=\"round\"/><circle cx=\"128\" cy=\"74\" r=\"18\" fill=\"#CCFBF1\" stroke=\"#0F766E\" stroke-width=\"8\"/><path d=\"M76 198L110 164L132 186L180 138\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+                  "color": "#0f766e"
+                },
+                "operations": [
+                  {
+                    "name": "create-maintenance-work-orders",
+                    "displayName": "Create maintenance work orders",
+                    "description": "Generate reviewable maintenance work orders from natural-language repair reports.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "import-maintenance-service-data",
+                    "displayName": "Import service data",
+                    "description": "Import candidate customers, projects, locations, devices, departments, roles and parts.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-maintenance-work-orders",
+                    "displayName": "Review maintenance work orders",
+                    "description": "Review, supplement, confirm processing, close or reject smart maintenance work orders.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "workbench",
+                "displayName": "Smart Maintenance Workbench",
+                "description": "Workbench view for maintenance data import, report intake, work order review and processing status."
+              },
+              {
+                "type": "tool",
+                "name": "SmartMaintenanceMiddleware",
+                "displayName": "Smart Maintenance Tools",
+                "description": "Assistant middleware tools for saving generated work orders, importing service data, searching work orders and preparing supplement drafts."
+              },
+              {
+                "type": "assistant-template",
+                "name": "smart-maintenance-assistant",
+                "displayName": "Smart Maintenance Assistant Template",
+                "description": "Prebuilt assistant workflow template for maintenance report intake, work order generation, service data import and review support."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/smart-maintenance#readme",
+            "updatedAt": "2026-06-07T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "SmartMaintenanceMiddleware"
+            ],
+            "viewProviders": [
+              "smart_maintenance"
+            ],
+            "templateProviders": [
+              "smartMaintenanceTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/apps/smart-maintenance#readme",
+      "updatedAt": "2026-06-07T00:00:00.000Z",
       "verified": false
     }
   ]
