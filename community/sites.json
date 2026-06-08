@@ -9,7 +9,6 @@
     "en_US": "Sites plugin for creating, saving, deploying, inspecting, and managing hosted sites from data-xpert Assistants.",
     "zh_Hans": "面向 data-xpert Assistant 的站点创建、保存、发布、检查和托管管理插件。"
   },
-  "version": "0.0.1",
   "level": "system",
   "category": "middleware",
   "keywords": [

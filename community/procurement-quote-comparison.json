@@ -9,7 +9,6 @@
     "en_US": "Procurement quote comparison plugin for creating procurement cases, parsing requirements and supplier quotes, and reviewing AI recommendations.",
     "zh_Hans": "用于创建采购比价项目、解析采购需求和供应商报价，并审核 AI 推荐结果的采购比价插件。"
   },
-  "version": "0.0.1",
   "level": "system",
   "category": "middleware",
   "keywords": [

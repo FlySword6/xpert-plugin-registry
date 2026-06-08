@@ -9,7 +9,6 @@
     "en_US": "Sales Ontology business decision plugin for data-xpert ontology, Assistant tools, and Workbench action governance.",
     "zh_Hans": "面向 data-xpert 业务本体、Assistant 工具和 Workbench 动作治理的销售业务决策插件。"
   },
-  "version": "0.0.1",
   "level": "system",
   "category": "middleware",
   "keywords": [
