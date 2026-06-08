@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T15:42:41.790Z",
+  "updatedAt": "2026-06-08T03:22:46.758Z",
   "total": 51,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -1631,7 +1631,6 @@
         "en_US": "Procurement quote comparison plugin for creating procurement cases, parsing requirements and supplier quotes, and reviewing AI recommendations.",
         "zh_Hans": "用于创建采购比价项目、解析采购需求和供应商报价，并审核 AI 推荐结果的采购比价插件。"
       },
-      "version": "0.0.1",
       "level": "system",
       "category": "middleware",
       "keywords": [
@@ -1762,7 +1761,6 @@
         "en_US": "Sales Ontology business decision plugin for data-xpert ontology, Assistant tools, and Workbench action governance.",
         "zh_Hans": "面向 data-xpert 业务本体、Assistant 工具和 Workbench 动作治理的销售业务决策插件。"
       },
-      "version": "0.0.1",
       "level": "system",
       "category": "middleware",
       "keywords": [
@@ -1933,7 +1931,6 @@
         "en_US": "Sites plugin for creating, saving, deploying, inspecting, and managing hosted sites from data-xpert Assistants.",
         "zh_Hans": "面向 data-xpert Assistant 的站点创建、保存、发布、检查和托管管理插件。"
       },
-      "version": "0.0.1",
       "level": "system",
       "category": "middleware",
       "keywords": [
@@ -2071,8 +2068,7 @@
         "en_US": "Smart maintenance app plugin for AI-assisted maintenance report intake, work order review, service data import, and lightweight processing loops.",
         "zh_Hans": "用于 AI 辅助维保报修受理、工单审核、服务数据导入和轻量处理闭环的智能维保插件。"
       },
-      "version": "0.0.1",
-      "level": "organization",
+      "level": "system",
       "category": "middleware",
       "keywords": [
         "maintenance",
