@@ -1,0 +1,570 @@
+{
+  "name": "@xpert-ai/community-sales",
+  "packageName": "@xpert-ai/community-sales",
+  "version": "0.2.16",
+  "displayName": {
+    "en_US": "Sales",
+    "zh_Hans": "Sales"
+  },
+  "description": {
+    "en_US": "Practical sales workflows that help sellers prepare meetings, follow up after calls, plan deals, review pipeline, find internal answers, and reuse saved preferences.",
+    "zh_Hans": "Practical sales workflows that help sellers prepare meetings, follow up after calls, plan deals, review pipeline, find internal answers, and reuse saved preferences."
+  },
+  "level": "organization",
+  "category": "tools",
+  "keywords": [
+    "sales",
+    "competitive-brief",
+    "account-intelligence",
+    "meeting-preparation",
+    "product-feedback",
+    "forecasting",
+    "pipeline",
+    "coaching",
+    "follow-up"
+  ],
+  "author": {
+    "name": "XpertAI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins",
+    "directory": "community/roles/sales"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/roles/sales",
+  "icon": {
+    "type": "svg",
+    "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9 6V5a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v1m-9 4h12m-15 0h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9Zm0 0V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    "color": "#FB6A22"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/community-sales",
+    "url": "https://www.npmjs.com/package/@xpert-ai/community-sales"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "assistant-template",
+        "skill",
+        "app",
+        "xpertai-bundle"
+      ],
+      "capabilities": [
+        "sales",
+        "competitive-brief",
+        "account-intelligence",
+        "meeting-preparation",
+        "product-feedback",
+        "forecasting",
+        "pipeline",
+        "coaching"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "skill",
+            "name": "analyze-account-signals",
+            "displayName": "Analyze Account Signals",
+            "description": "Analyze Account Signals workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "build-business-case",
+            "displayName": "Build Business Case",
+            "description": "Build Business Case workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "build-competitive-brief",
+            "displayName": "Build Competitive Brief",
+            "description": "Build Competitive Brief workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "enrich-company-and-contact-data",
+            "displayName": "Enrich Company And Contact Data",
+            "description": "Enrich Company And Contact Data workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "find-customer-quotes",
+            "displayName": "Find Customer Quotes",
+            "description": "Find Customer Quotes workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "find-key-internal-sources",
+            "displayName": "Find Key Internal Sources",
+            "description": "Find Key Internal Sources workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "follow-up-after-call",
+            "displayName": "Follow Up After Call",
+            "description": "Follow Up After Call workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "get-rep-call-feedback",
+            "displayName": "Get Rep Call Feedback",
+            "description": "Get Rep Call Feedback workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "hubspot",
+            "displayName": "Hubspot",
+            "description": "Hubspot workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "index",
+            "displayName": "Index",
+            "description": "Index workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "plan-deal-strategy",
+            "displayName": "Plan Deal Strategy",
+            "description": "Plan Deal Strategy workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "prepare-for-meeting",
+            "displayName": "Prepare For Meeting",
+            "description": "Prepare For Meeting workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "prioritize-accounts",
+            "displayName": "Prioritize Accounts",
+            "description": "Prioritize Accounts workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "review-forecast",
+            "displayName": "Review Forecast",
+            "description": "Review Forecast workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "review-rep-call-trends",
+            "displayName": "Review Rep Call Trends",
+            "description": "Review Rep Call Trends workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "sales-company-research",
+            "displayName": "Sales Company Research",
+            "description": "Sales Company Research workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "salesforce",
+            "displayName": "Salesforce",
+            "description": "Salesforce workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "suggest-sales-next-step",
+            "displayName": "Suggest Sales Next Step",
+            "description": "Suggest Sales Next Step workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "user-context",
+            "displayName": "User Context",
+            "description": "User Context workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "zoominfo",
+            "displayName": "Zoominfo",
+            "description": "Zoominfo workflow skill.",
+            "tags": [
+              "skill",
+              "sales"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "slack",
+            "displayName": "Slack",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "microsoft_teams",
+            "displayName": "Microsoft Teams",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "zoom",
+            "displayName": "Zoom",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "granola",
+            "displayName": "Granola",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "fireflies",
+            "displayName": "Fireflies",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "otter_ai",
+            "displayName": "Otter Ai",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "salesforce",
+            "displayName": "Salesforce",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "hubspot",
+            "displayName": "Hubspot",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "close",
+            "displayName": "Close",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "zoho",
+            "displayName": "Zoho",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "pipedrive",
+            "displayName": "Pipedrive",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "zoominfo",
+            "displayName": "Zoominfo",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "clay",
+            "displayName": "Clay",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "hg_insights",
+            "displayName": "Hg Insights",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "rox",
+            "displayName": "Rox",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "apollo",
+            "displayName": "Apollo",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "actively",
+            "displayName": "Actively",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "meticulate",
+            "displayName": "Meticulate",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "gmail",
+            "displayName": "Gmail",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "outlook_email",
+            "displayName": "Outlook Email",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "outreach",
+            "displayName": "Outreach",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "notion",
+            "displayName": "Notion",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "google_drive",
+            "displayName": "Google Drive",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "microsoft_sharepoint",
+            "displayName": "Microsoft Sharepoint",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "google_calendar",
+            "displayName": "Google Calendar",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "outlook_calendar",
+            "displayName": "Outlook Calendar",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "calendly",
+            "displayName": "Calendly",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "monday",
+            "displayName": "Monday",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "docusign",
+            "displayName": "Docusign",
+            "description": "Workspace app connector requirement for Sales.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "assistant-template",
+            "name": "sales-assistant",
+            "displayName": "Sales Assistant",
+            "description": "Assistant template for Sales workflows."
+          }
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/roles/sales#readme",
+  "updatedAt": "2026-06-11T00:00:00.000Z"
+}

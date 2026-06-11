@@ -1,0 +1,468 @@
+{
+  "name": "@xpert-ai/community-data-analytics",
+  "packageName": "@xpert-ai/community-data-analytics",
+  "version": "0.1.34",
+  "displayName": {
+    "en_US": "Data Analytics",
+    "zh_Hans": "Data Analytics"
+  },
+  "description": {
+    "en_US": "Analyze product usage, investigate metric movements, prepare KPI reports, build high-quality dashboards and notebooks, create source-backed semantic layers, guide first-run analytics setup, and generate analytics-grade report apps.",
+    "zh_Hans": "Analyze product usage, investigate metric movements, prepare KPI reports, build high-quality dashboards and notebooks, create source-backed semantic layers, guide first-run analytics setup, and generate analytics-grade report apps."
+  },
+  "level": "organization",
+  "category": "tools",
+  "keywords": [
+    "data-analytics",
+    "analytics",
+    "business-context",
+    "dashboards",
+    "funnel-analysis",
+    "kpi-reporting",
+    "market-sizing",
+    "metric-diagnostics",
+    "post-launch-updates",
+    "product-analysis",
+    "retention",
+    "root-cause-analysis",
+    "scorecards",
+    "validation",
+    "visualization",
+    "jupyter-notebooks",
+    "databricks",
+    "bigquery",
+    "snowflake",
+    "deepnote",
+    "mixpanel",
+    "mixpanel-headless",
+    "metabase",
+    "thoughtspot",
+    "onboarding",
+    "semantic-layer"
+  ],
+  "author": {
+    "name": "XpertAI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins",
+    "directory": "community/roles/data-analytics"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/roles/data-analytics",
+  "icon": {
+    "type": "svg",
+    "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 19V5m0 14h16M7 15l3.2-3.2 2.6 2.6L18 8\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    "color": "#0285FF"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/community-data-analytics",
+    "url": "https://www.npmjs.com/package/@xpert-ai/community-data-analytics"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "assistant-template",
+        "skill",
+        "mcp-server",
+        "app",
+        "xpertai-bundle"
+      ],
+      "capabilities": [
+        "data-analytics",
+        "analytics",
+        "business-context",
+        "dashboards",
+        "funnel-analysis",
+        "kpi-reporting",
+        "market-sizing",
+        "metric-diagnostics"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "skill",
+            "name": "analyze-data-quality",
+            "displayName": "Analyze Data Quality",
+            "description": "Analyze Data Quality workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "build-dashboard",
+            "displayName": "Build Dashboard",
+            "description": "Build Dashboard workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "build-report",
+            "displayName": "Build Report",
+            "description": "Build Report workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "design-kpis",
+            "displayName": "Design Kpis",
+            "description": "Design Kpis workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "gather-business-context",
+            "displayName": "Gather Business Context",
+            "description": "Gather Business Context workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "index",
+            "displayName": "Index",
+            "description": "Index workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "jupyter-notebooks",
+            "displayName": "Jupyter Notebooks",
+            "description": "Jupyter Notebooks workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "kpi-reporting",
+            "displayName": "Kpi Reporting",
+            "description": "Kpi Reporting workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "market-sizing",
+            "displayName": "Market Sizing",
+            "description": "Market Sizing workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "metric-diagnostics",
+            "displayName": "Metric Diagnostics",
+            "description": "Metric Diagnostics workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "product-business-analysis",
+            "displayName": "Product Business Analysis",
+            "description": "Product Business Analysis workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "spreadsheets",
+            "displayName": "Spreadsheets",
+            "description": "Spreadsheets workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "user-context",
+            "displayName": "User Context",
+            "description": "User Context workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "validate-data",
+            "displayName": "Validate Data",
+            "description": "Validate Data workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "skill",
+            "name": "visualize-data",
+            "displayName": "Visualize Data",
+            "description": "Visualize Data workflow skill.",
+            "tags": [
+              "skill",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "tool",
+            "name": "datascienceWidgets",
+            "displayName": "DatascienceWidgets",
+            "description": "Plugin-managed MCP server for Data Analytics.",
+            "tags": [
+              "mcp-server",
+              "data-analytics"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "slack",
+            "displayName": "Slack",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "teams",
+            "displayName": "Teams",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "notion",
+            "displayName": "Notion",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "gmail",
+            "displayName": "Gmail",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "outlook_email",
+            "displayName": "Outlook Email",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "outlook_calendar",
+            "displayName": "Outlook Calendar",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "google_calendar",
+            "displayName": "Google Calendar",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "google_drive",
+            "displayName": "Google Drive",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "databricks",
+            "displayName": "Databricks",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "bigquery",
+            "displayName": "Bigquery",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "snowflake",
+            "displayName": "Snowflake",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "sharepoint",
+            "displayName": "Sharepoint",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "github",
+            "displayName": "Github",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "required"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "statsig",
+            "displayName": "Statsig",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "hex",
+            "displayName": "Hex",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "deepnote",
+            "displayName": "Deepnote",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "amplitude",
+            "displayName": "Amplitude",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "mixpanel",
+            "displayName": "Mixpanel",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "omni-analytics",
+            "displayName": "Omni Analytics",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "metabase",
+            "displayName": "Metabase",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "app",
+            "name": "thoughtspot",
+            "displayName": "Thoughtspot",
+            "description": "Workspace app connector requirement for Data Analytics.",
+            "tags": [
+              "app",
+              "optional"
+            ]
+          },
+          {
+            "type": "assistant-template",
+            "name": "data-analytics-assistant",
+            "displayName": "Data Analytics Assistant",
+            "description": "Assistant template for Data Analytics workflows."
+          }
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/roles/data-analytics#readme",
+  "updatedAt": "2026-06-11T00:00:00.000Z"
+}
