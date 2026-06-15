@@ -1,9 +1,11 @@
 {
-  "updatedAt": "2026-06-14T14:17:48.059Z",
-  "total": 57,
+  "updatedAt": "2026-06-15T12:04:24.529Z",
+  "total": 60,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
+    "@xpert-ai/plugin-drawio",
+    "@xpert-ai/plugin-excalidraw",
     "@xpert-ai/plugin-fastgpt",
     "@xpert-ai/plugin-file-system",
     "@xpert-ai/plugin-firecrawl",
@@ -11,6 +13,7 @@
     "@xpert-ai/plugin-dingtalk",
     "@xpert-ai/plugin-lark",
     "@xpert-ai/plugin-wecom",
+    "@xpert-ai/plugin-lucidchart",
     "@xpert-ai/plugin-advisor",
     "@xpert-ai/plugin-clarification",
     "@xpert-ai/plugin-context-editing",
@@ -127,6 +130,354 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/dify/README.md",
       "updatedAt": "2025-10-21T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-drawio",
+      "packageName": "@xpert-ai/plugin-drawio",
+      "version": "0.1.0",
+      "displayName": {
+        "en_US": "draw.io",
+        "zh_Hans": "draw.io 绘图"
+      },
+      "description": {
+        "en_US": "draw.io/diagrams.net app plugin for Agent-created diagrams, reviewable XML versions, Mermaid drafts, and an embedded editor workbench.",
+        "zh_Hans": "面向 Agent 自动绘图的 draw.io/diagrams.net 插件，支持可审核 XML 版本、Mermaid 草稿和嵌入式编辑工作台。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "drawio",
+        "diagrams-net",
+        "diagram",
+        "mermaid",
+        "agent-drawing",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/drawio"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/drawio",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"42\" y=\"48\" width=\"172\" height=\"132\" rx=\"20\" fill=\"#FFFFFF\" stroke=\"#F59E0B\" stroke-width=\"10\"/><rect x=\"72\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#92400E\" stroke-width=\"7\"/><rect x=\"144\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DBEAFE\" stroke=\"#1D4ED8\" stroke-width=\"7\"/><rect x=\"108\" y=\"136\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DCFCE7\" stroke=\"#15803D\" stroke-width=\"7\"/><path d=\"M118 101H144\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M158 118L138 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M96 118L116 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M76 206C99 188 126 184 154 195C170 201 187 198 202 184\" stroke=\"#F59E0B\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+        "color": "#f59e0b"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-drawio",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-drawio"
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "drawio",
+            "drawio-workbench",
+            "drawio-agent-drawing",
+            "drawio-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "skill",
+                "name": "index",
+                "displayName": "draw.io Agent Drawing",
+                "description": "Workflow skill for Agent-managed draw.io diagrams, Mermaid drafts, XML versions, and Workbench review.",
+                "tags": [
+                  "skill",
+                  "drawio",
+                  "agent-drawing"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "drawio-assistant",
+                "displayName": "draw.io Drawing Assistant",
+                "description": "Assistant template for draw.io diagram workflows."
+              },
+              {
+                "type": "app",
+                "name": "drawio",
+                "displayName": "draw.io",
+                "description": "Workbench and Agent middleware tools for draw.io diagrams."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "drawio",
+            "drawio-workbench",
+            "drawio-agent-drawing",
+            "drawio-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "app",
+                "name": "drawio",
+                "displayName": "draw.io",
+                "description": "Create, update, review, version, import, export, and convert Agent-generated draw.io diagrams.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"42\" y=\"48\" width=\"172\" height=\"132\" rx=\"20\" fill=\"#FFFFFF\" stroke=\"#F59E0B\" stroke-width=\"10\"/><rect x=\"72\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#92400E\" stroke-width=\"7\"/><rect x=\"144\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DBEAFE\" stroke=\"#1D4ED8\" stroke-width=\"7\"/><rect x=\"108\" y=\"136\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DCFCE7\" stroke=\"#15803D\" stroke-width=\"7\"/><path d=\"M118 101H144\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M158 118L138 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M96 118L116 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M76 206C99 188 126 184 154 195C170 201 187 198 202 184\" stroke=\"#F59E0B\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+                  "color": "#f59e0b"
+                },
+                "operations": [
+                  {
+                    "name": "create-drawio-diagrams",
+                    "displayName": "Create draw.io diagrams",
+                    "description": "Create reviewable draw.io diagram records with XML or Mermaid drafts.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "save-drawio-versions",
+                    "displayName": "Save draw.io versions",
+                    "description": "Save complete or patched diagrams.net XML scenes as reviewable versions.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-drawio-workbench",
+                    "displayName": "Review diagrams in Workbench",
+                    "description": "Review, edit, import, export, restore, archive, and ask the Assistant to update diagrams.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "drawio_workbench",
+                "displayName": "draw.io Workbench",
+                "description": "Workbench view for draw.io diagram versions, Mermaid drafts, import/export, and Agent redraw requests."
+              },
+              {
+                "type": "tool",
+                "name": "DrawioMiddleware",
+                "displayName": "draw.io Agent Tools",
+                "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, and failure-reporting draw.io diagrams."
+              },
+              {
+                "type": "assistant-template",
+                "name": "drawio-assistant",
+                "displayName": "draw.io Drawing Assistant Template",
+                "description": "Prebuilt assistant template for draw.io diagram generation and version management."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/drawio#readme",
+            "updatedAt": "2026-06-15T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "DrawioMiddleware"
+            ],
+            "viewProviders": [
+              "drawio"
+            ],
+            "templateProviders": [
+              "drawioTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/drawio#readme",
+      "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-excalidraw",
+      "packageName": "@xpert-ai/plugin-excalidraw",
+      "version": "0.1.0",
+      "displayName": {
+        "en_US": "Excalidraw",
+        "zh_Hans": "Excalidraw 绘图"
+      },
+      "description": {
+        "en_US": "Excalidraw app plugin for Agent-created diagrams, reviewable scene versions, Mermaid drafts, and an editable workbench.",
+        "zh_Hans": "面向 Agent 自动绘图的 Excalidraw 插件，支持可审核场景版本、Mermaid 草稿和可编辑工作台。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "excalidraw",
+        "diagram",
+        "whiteboard",
+        "mermaid",
+        "agent-drawing",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/excalidraw"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/excalidraw",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#6965DB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#14B8A6\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#6965DB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#14B8A6\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#14B8A6\"/></svg>",
+        "color": "#6965db"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-excalidraw",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-excalidraw"
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "excalidraw",
+            "diagram-workbench",
+            "agent-drawing",
+            "excalidraw-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "skill",
+                "name": "index",
+                "displayName": "Excalidraw Agent Drawing",
+                "description": "Workflow skill for Agent-managed Excalidraw diagrams, Mermaid drafts, scene versions, and Workbench review.",
+                "tags": [
+                  "skill",
+                  "excalidraw",
+                  "agent-drawing"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "excalidraw-assistant",
+                "displayName": "Excalidraw Drawing Assistant",
+                "description": "Assistant template for Excalidraw drawing workflows."
+              },
+              {
+                "type": "app",
+                "name": "excalidraw",
+                "displayName": "Excalidraw",
+                "description": "Workbench and Agent middleware tools for Excalidraw diagrams."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "excalidraw",
+            "diagram-workbench",
+            "agent-drawing",
+            "excalidraw-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "app",
+                "name": "excalidraw",
+                "displayName": "Excalidraw",
+                "description": "Create, update, review, version, import, export, and convert Agent-generated Excalidraw scenes.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#6965DB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#14B8A6\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#6965DB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#14B8A6\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#14B8A6\"/></svg>",
+                  "color": "#6965db"
+                },
+                "operations": [
+                  {
+                    "name": "create-excalidraw-drawings",
+                    "displayName": "Create Excalidraw drawings",
+                    "description": "Create reviewable Excalidraw drawing records with JSON scenes or Mermaid drafts.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "save-excalidraw-versions",
+                    "displayName": "Save Excalidraw versions",
+                    "description": "Save complete scenes or targeted element patches as reviewable Excalidraw versions.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-excalidraw-workbench",
+                    "displayName": "Review drawings in Workbench",
+                    "description": "Review, edit, import, export, convert Mermaid, restore, archive, and ask the Assistant to update drawings.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "excalidraw_workbench",
+                "displayName": "Excalidraw Workbench",
+                "description": "Workbench view for Excalidraw scene versions, Mermaid conversion, import/export, and Agent redraw requests."
+              },
+              {
+                "type": "tool",
+                "name": "ExcalidrawMiddleware",
+                "displayName": "Excalidraw Agent Tools",
+                "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, and failure-reporting Excalidraw drawings."
+              },
+              {
+                "type": "assistant-template",
+                "name": "excalidraw-assistant",
+                "displayName": "Excalidraw Drawing Assistant Template",
+                "description": "Prebuilt assistant template for Excalidraw drawing generation and version management."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/excalidraw#readme",
+            "updatedAt": "2026-06-15T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "ExcalidrawMiddleware"
+            ],
+            "viewProviders": [
+              "excalidraw"
+            ],
+            "templateProviders": [
+              "excalidrawTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/excalidraw#readme",
+      "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-fastgpt",
@@ -360,6 +711,180 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/wecom/README.md",
       "updatedAt": "2026-03-16T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-lucidchart",
+      "packageName": "@xpert-ai/plugin-lucidchart",
+      "version": "0.1.0",
+      "displayName": {
+        "en_US": "Lucidchart",
+        "zh_Hans": "Lucidchart 绘图"
+      },
+      "description": {
+        "en_US": "Lucidchart app plugin for Agent-created Standard Import drafts, Lucid document references, reviewable versions, and a workbench.",
+        "zh_Hans": "面向 Agent 自动绘图的 Lucidchart 插件，支持 Standard Import 草稿、Lucid 文档引用、可审核版本和工作台。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "lucidchart",
+        "standard-import",
+        "diagram",
+        "mermaid",
+        "agent-drawing",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/lucidchart"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
+        "color": "#2563eb"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-lucidchart",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-lucidchart"
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "lucidchart",
+            "lucidchart-workbench",
+            "lucidchart-agent-drawing",
+            "lucidchart-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "skill",
+                "name": "index",
+                "displayName": "Lucidchart Agent Drawing",
+                "description": "Workflow skill for Agent-managed Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, and Workbench review.",
+                "tags": [
+                  "skill",
+                  "lucidchart",
+                  "agent-drawing"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "lucidchart-assistant",
+                "displayName": "Lucidchart Drawing Assistant",
+                "description": "Assistant template for Lucidchart draft workflows."
+              },
+              {
+                "type": "app",
+                "name": "lucidchart",
+                "displayName": "Lucidchart",
+                "description": "Workbench and Agent middleware tools for Lucidchart drafts."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "lucidchart",
+            "lucidchart-workbench",
+            "lucidchart-agent-drawing",
+            "lucidchart-assistant-template"
+          ],
+          "marketplace": {
+            "contents": [
+              {
+                "type": "app",
+                "name": "lucidchart",
+                "displayName": "Lucidchart",
+                "description": "Create, update, review, version, import, and register Agent-generated Lucidchart Standard Import drafts and Lucid links.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
+                  "color": "#2563eb"
+                },
+                "operations": [
+                  {
+                    "name": "create-lucidchart-documents",
+                    "displayName": "Create Lucidchart documents",
+                    "description": "Create reviewable Lucidchart document records with Standard Import JSON, Mermaid drafts, or external Lucid links.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "save-lucidchart-versions",
+                    "displayName": "Save Lucidchart versions",
+                    "description": "Save complete or patched Lucid Standard Import document.json versions.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-lucidchart-workbench",
+                    "displayName": "Review Lucidchart drafts",
+                    "description": "Review, import, export JSON, restore, archive, register Lucid links, and ask the Assistant to update drafts.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "lucidchart_workbench",
+                "displayName": "Lucidchart Workbench",
+                "description": "Workbench view for Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, versions, and Agent redraw requests."
+              },
+              {
+                "type": "tool",
+                "name": "LucidchartMiddleware",
+                "displayName": "Lucidchart Agent Tools",
+                "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, external-link registration, and failure-reporting Lucidchart documents."
+              },
+              {
+                "type": "assistant-template",
+                "name": "lucidchart-assistant",
+                "displayName": "Lucidchart Drawing Assistant Template",
+                "description": "Prebuilt assistant template for Lucidchart draft generation and version management."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
+            "updatedAt": "2026-06-15T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "LucidchartMiddleware"
+            ],
+            "viewProviders": [
+              "lucidchart"
+            ],
+            "templateProviders": [
+              "lucidchartTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
+      "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-advisor",
