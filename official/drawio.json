@@ -1,0 +1,151 @@
+{
+  "name": "@xpert-ai/plugin-drawio",
+  "packageName": "@xpert-ai/plugin-drawio",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "draw.io",
+    "zh_Hans": "draw.io 绘图"
+  },
+  "description": {
+    "en_US": "draw.io/diagrams.net app plugin for Agent-created diagrams, reviewable XML versions, Mermaid drafts, and an embedded editor workbench.",
+    "zh_Hans": "面向 Agent 自动绘图的 draw.io/diagrams.net 插件，支持可审核 XML 版本、Mermaid 草稿和嵌入式编辑工作台。"
+  },
+  "level": "system",
+  "category": "middleware",
+  "keywords": [
+    "drawio",
+    "diagrams-net",
+    "diagram",
+    "mermaid",
+    "agent-drawing",
+    "workbench",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/drawio"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/drawio",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"42\" y=\"48\" width=\"172\" height=\"132\" rx=\"20\" fill=\"#FFFFFF\" stroke=\"#F59E0B\" stroke-width=\"10\"/><rect x=\"72\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#92400E\" stroke-width=\"7\"/><rect x=\"144\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DBEAFE\" stroke=\"#1D4ED8\" stroke-width=\"7\"/><rect x=\"108\" y=\"136\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DCFCE7\" stroke=\"#15803D\" stroke-width=\"7\"/><path d=\"M118 101H144\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M158 118L138 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M96 118L116 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M76 206C99 188 126 184 154 195C170 201 187 198 202 184\" stroke=\"#F59E0B\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+    "color": "#f59e0b"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-drawio",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-drawio"
+  },
+  "targetApps": ["xpert", "data-xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "types": ["assistant-template", "skill", "app", "xpertai-bundle"],
+      "capabilities": [
+        "drawio",
+        "drawio-workbench",
+        "drawio-agent-drawing",
+        "drawio-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "skill",
+            "name": "index",
+            "displayName": "draw.io Agent Drawing",
+            "description": "Workflow skill for Agent-managed draw.io diagrams, Mermaid drafts, XML versions, and Workbench review.",
+            "tags": ["skill", "drawio", "agent-drawing"]
+          },
+          {
+            "type": "assistant-template",
+            "name": "drawio-assistant",
+            "displayName": "draw.io Drawing Assistant",
+            "description": "Assistant template for draw.io diagram workflows."
+          },
+          {
+            "type": "app",
+            "name": "drawio",
+            "displayName": "draw.io",
+            "description": "Workbench and Agent middleware tools for draw.io diagrams."
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": ["workbench-view", "assistant-tool", "business-app"],
+      "capabilities": [
+        "drawio",
+        "drawio-workbench",
+        "drawio-agent-drawing",
+        "drawio-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "drawio",
+            "displayName": "draw.io",
+            "description": "Create, update, review, version, import, export, and convert Agent-generated draw.io diagrams.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"42\" y=\"48\" width=\"172\" height=\"132\" rx=\"20\" fill=\"#FFFFFF\" stroke=\"#F59E0B\" stroke-width=\"10\"/><rect x=\"72\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#FEF3C7\" stroke=\"#92400E\" stroke-width=\"7\"/><rect x=\"144\" y=\"84\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DBEAFE\" stroke=\"#1D4ED8\" stroke-width=\"7\"/><rect x=\"108\" y=\"136\" width=\"46\" height=\"34\" rx=\"8\" fill=\"#DCFCE7\" stroke=\"#15803D\" stroke-width=\"7\"/><path d=\"M118 101H144\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M158 118L138 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M96 118L116 136\" stroke=\"#0F172A\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M76 206C99 188 126 184 154 195C170 201 187 198 202 184\" stroke=\"#F59E0B\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+              "color": "#f59e0b"
+            },
+            "operations": [
+              {
+                "name": "create-drawio-diagrams",
+                "displayName": "Create draw.io diagrams",
+                "description": "Create reviewable draw.io diagram records with XML or Mermaid drafts.",
+                "access": "write"
+              },
+              {
+                "name": "save-drawio-versions",
+                "displayName": "Save draw.io versions",
+                "description": "Save complete or patched diagrams.net XML scenes as reviewable versions.",
+                "access": "write"
+              },
+              {
+                "name": "review-drawio-workbench",
+                "displayName": "Review diagrams in Workbench",
+                "description": "Review, edit, import, export, restore, archive, and ask the Assistant to update diagrams.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "drawio_workbench",
+            "displayName": "draw.io Workbench",
+            "description": "Workbench view for draw.io diagram versions, Mermaid drafts, import/export, and Agent redraw requests."
+          },
+          {
+            "type": "tool",
+            "name": "DrawioMiddleware",
+            "displayName": "draw.io Agent Tools",
+            "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, and failure-reporting draw.io diagrams."
+          },
+          {
+            "type": "assistant-template",
+            "name": "drawio-assistant",
+            "displayName": "draw.io Drawing Assistant Template",
+            "description": "Prebuilt assistant template for draw.io diagram generation and version management."
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/drawio#readme",
+        "updatedAt": "2026-06-15T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": ["DrawioMiddleware"],
+        "viewProviders": ["drawio"],
+        "templateProviders": ["drawioTemplates"]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/drawio#readme",
+  "updatedAt": "2026-06-15T00:00:00.000Z"
+}

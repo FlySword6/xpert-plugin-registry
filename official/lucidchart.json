@@ -1,0 +1,151 @@
+{
+  "name": "@xpert-ai/plugin-lucidchart",
+  "packageName": "@xpert-ai/plugin-lucidchart",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "Lucidchart",
+    "zh_Hans": "Lucidchart 绘图"
+  },
+  "description": {
+    "en_US": "Lucidchart app plugin for Agent-created Standard Import drafts, Lucid document references, reviewable versions, and a workbench.",
+    "zh_Hans": "面向 Agent 自动绘图的 Lucidchart 插件，支持 Standard Import 草稿、Lucid 文档引用、可审核版本和工作台。"
+  },
+  "level": "system",
+  "category": "middleware",
+  "keywords": [
+    "lucidchart",
+    "standard-import",
+    "diagram",
+    "mermaid",
+    "agent-drawing",
+    "workbench",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/lucidchart"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
+    "color": "#2563eb"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-lucidchart",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-lucidchart"
+  },
+  "targetApps": ["xpert", "data-xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "types": ["assistant-template", "skill", "app", "xpertai-bundle"],
+      "capabilities": [
+        "lucidchart",
+        "lucidchart-workbench",
+        "lucidchart-agent-drawing",
+        "lucidchart-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "skill",
+            "name": "index",
+            "displayName": "Lucidchart Agent Drawing",
+            "description": "Workflow skill for Agent-managed Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, and Workbench review.",
+            "tags": ["skill", "lucidchart", "agent-drawing"]
+          },
+          {
+            "type": "assistant-template",
+            "name": "lucidchart-assistant",
+            "displayName": "Lucidchart Drawing Assistant",
+            "description": "Assistant template for Lucidchart draft workflows."
+          },
+          {
+            "type": "app",
+            "name": "lucidchart",
+            "displayName": "Lucidchart",
+            "description": "Workbench and Agent middleware tools for Lucidchart drafts."
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": ["workbench-view", "assistant-tool", "business-app"],
+      "capabilities": [
+        "lucidchart",
+        "lucidchart-workbench",
+        "lucidchart-agent-drawing",
+        "lucidchart-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "lucidchart",
+            "displayName": "Lucidchart",
+            "description": "Create, update, review, version, import, and register Agent-generated Lucidchart Standard Import drafts and Lucid links.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
+              "color": "#2563eb"
+            },
+            "operations": [
+              {
+                "name": "create-lucidchart-documents",
+                "displayName": "Create Lucidchart documents",
+                "description": "Create reviewable Lucidchart document records with Standard Import JSON, Mermaid drafts, or external Lucid links.",
+                "access": "write"
+              },
+              {
+                "name": "save-lucidchart-versions",
+                "displayName": "Save Lucidchart versions",
+                "description": "Save complete or patched Lucid Standard Import document.json versions.",
+                "access": "write"
+              },
+              {
+                "name": "review-lucidchart-workbench",
+                "displayName": "Review Lucidchart drafts",
+                "description": "Review, import, export JSON, restore, archive, register Lucid links, and ask the Assistant to update drafts.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "lucidchart_workbench",
+            "displayName": "Lucidchart Workbench",
+            "description": "Workbench view for Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, versions, and Agent redraw requests."
+          },
+          {
+            "type": "tool",
+            "name": "LucidchartMiddleware",
+            "displayName": "Lucidchart Agent Tools",
+            "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, external-link registration, and failure-reporting Lucidchart documents."
+          },
+          {
+            "type": "assistant-template",
+            "name": "lucidchart-assistant",
+            "displayName": "Lucidchart Drawing Assistant Template",
+            "description": "Prebuilt assistant template for Lucidchart draft generation and version management."
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
+        "updatedAt": "2026-06-15T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": ["LucidchartMiddleware"],
+        "viewProviders": ["lucidchart"],
+        "templateProviders": ["lucidchartTemplates"]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
+  "updatedAt": "2026-06-15T00:00:00.000Z"
+}

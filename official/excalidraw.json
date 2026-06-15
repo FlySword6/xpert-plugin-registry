@@ -1,0 +1,151 @@
+{
+  "name": "@xpert-ai/plugin-excalidraw",
+  "packageName": "@xpert-ai/plugin-excalidraw",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "Excalidraw",
+    "zh_Hans": "Excalidraw 绘图"
+  },
+  "description": {
+    "en_US": "Excalidraw app plugin for Agent-created diagrams, reviewable scene versions, Mermaid drafts, and an editable workbench.",
+    "zh_Hans": "面向 Agent 自动绘图的 Excalidraw 插件，支持可审核场景版本、Mermaid 草稿和可编辑工作台。"
+  },
+  "level": "system",
+  "category": "middleware",
+  "keywords": [
+    "excalidraw",
+    "diagram",
+    "whiteboard",
+    "mermaid",
+    "agent-drawing",
+    "workbench",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/excalidraw"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/excalidraw",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#6965DB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#14B8A6\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#6965DB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#14B8A6\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#14B8A6\"/></svg>",
+    "color": "#6965db"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-excalidraw",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-excalidraw"
+  },
+  "targetApps": ["xpert", "data-xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "types": ["assistant-template", "skill", "app", "xpertai-bundle"],
+      "capabilities": [
+        "excalidraw",
+        "diagram-workbench",
+        "agent-drawing",
+        "excalidraw-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "skill",
+            "name": "index",
+            "displayName": "Excalidraw Agent Drawing",
+            "description": "Workflow skill for Agent-managed Excalidraw diagrams, Mermaid drafts, scene versions, and Workbench review.",
+            "tags": ["skill", "excalidraw", "agent-drawing"]
+          },
+          {
+            "type": "assistant-template",
+            "name": "excalidraw-assistant",
+            "displayName": "Excalidraw Drawing Assistant",
+            "description": "Assistant template for Excalidraw drawing workflows."
+          },
+          {
+            "type": "app",
+            "name": "excalidraw",
+            "displayName": "Excalidraw",
+            "description": "Workbench and Agent middleware tools for Excalidraw diagrams."
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": ["workbench-view", "assistant-tool", "business-app"],
+      "capabilities": [
+        "excalidraw",
+        "diagram-workbench",
+        "agent-drawing",
+        "excalidraw-assistant-template"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "excalidraw",
+            "displayName": "Excalidraw",
+            "description": "Create, update, review, version, import, export, and convert Agent-generated Excalidraw scenes.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#6965DB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#14B8A6\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#6965DB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#14B8A6\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#14B8A6\"/></svg>",
+              "color": "#6965db"
+            },
+            "operations": [
+              {
+                "name": "create-excalidraw-drawings",
+                "displayName": "Create Excalidraw drawings",
+                "description": "Create reviewable Excalidraw drawing records with JSON scenes or Mermaid drafts.",
+                "access": "write"
+              },
+              {
+                "name": "save-excalidraw-versions",
+                "displayName": "Save Excalidraw versions",
+                "description": "Save complete scenes or targeted element patches as reviewable Excalidraw versions.",
+                "access": "write"
+              },
+              {
+                "name": "review-excalidraw-workbench",
+                "displayName": "Review drawings in Workbench",
+                "description": "Review, edit, import, export, convert Mermaid, restore, archive, and ask the Assistant to update drawings.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "excalidraw_workbench",
+            "displayName": "Excalidraw Workbench",
+            "description": "Workbench view for Excalidraw scene versions, Mermaid conversion, import/export, and Agent redraw requests."
+          },
+          {
+            "type": "tool",
+            "name": "ExcalidrawMiddleware",
+            "displayName": "Excalidraw Agent Tools",
+            "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, and failure-reporting Excalidraw drawings."
+          },
+          {
+            "type": "assistant-template",
+            "name": "excalidraw-assistant",
+            "displayName": "Excalidraw Drawing Assistant Template",
+            "description": "Prebuilt assistant template for Excalidraw drawing generation and version management."
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/excalidraw#readme",
+        "updatedAt": "2026-06-15T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": ["ExcalidrawMiddleware"],
+        "viewProviders": ["excalidraw"],
+        "templateProviders": ["excalidrawTemplates"]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/excalidraw#readme",
+  "updatedAt": "2026-06-15T00:00:00.000Z"
+}
