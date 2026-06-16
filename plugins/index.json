@@ -1,9 +1,10 @@
 {
-  "updatedAt": "2026-06-16T02:55:55.871Z",
-  "total": 60,
+  "updatedAt": "2026-06-16T07:16:02.905Z",
+  "total": 61,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-dify",
+    "@xpert-ai/plugin-docx-editor",
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
     "@xpert-ai/plugin-fastgpt",
@@ -132,9 +133,185 @@
       "updatedAt": "2025-10-21T03:00:00.000Z"
     },
     {
+      "name": "@xpert-ai/plugin-docx-editor",
+      "packageName": "@xpert-ai/plugin-docx-editor",
+      "displayName": {
+        "en_US": "DOCX Editor",
+        "zh_Hans": "DOCX 文档编辑器"
+      },
+      "description": {
+        "en_US": "Agentic DOCX editor plugin for browser editing, versioning, comments, tracked changes, and AI-assisted review.",
+        "zh_Hans": "面向浏览器编辑、版本管理、批注、修订痕迹和 AI 辅助审阅的 Agentic DOCX 文档编辑插件。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "docx",
+        "word",
+        "document",
+        "editor",
+        "comments",
+        "tracked-changes",
+        "middleware",
+        "view-extension",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/docx-editor"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/docx-editor",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"DOCX Editor\"><rect x=\"14\" y=\"6\" width=\"34\" height=\"52\" rx=\"6\" fill=\"#2563eb\"/><path d=\"M40 6v14h8\" fill=\"#93c5fd\"/><rect x=\"20\" y=\"25\" width=\"22\" height=\"3\" rx=\"1.5\" fill=\"#fff\"/><rect x=\"20\" y=\"33\" width=\"18\" height=\"3\" rx=\"1.5\" fill=\"#dbeafe\"/><rect x=\"20\" y=\"41\" width=\"22\" height=\"3\" rx=\"1.5\" fill=\"#bfdbfe\"/><path d=\"M48 20 40 6v10a4 4 0 0 0 4 4h4z\" fill=\"#60a5fa\"/></svg>",
+        "color": "#2563eb"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-docx-editor",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-docx-editor"
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "docx-editor",
+            "docx-editor-workbench",
+            "docx-editor-agent-review",
+            "docx-editor-assistant-template"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "docx-editor",
+                "displayName": "DOCX Editor Review Skill",
+                "description": "Workflow skill for DOCX reading, paraId selection, comments, tracked changes, formatting, and version confirmation.",
+                "tags": [
+                  "skill",
+                  "docx",
+                  "document-review"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "docx-editor-assistant",
+                "displayName": "DOCX Editor Assistant",
+                "description": "Assistant template for DOCX editing and review workflows."
+              },
+              {
+                "type": "app",
+                "name": "docx-editor",
+                "displayName": "DOCX Editor",
+                "description": "Workbench and Agent middleware tools for DOCX documents."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "docx-editor",
+            "docx-editor-workbench",
+            "docx-editor-agent-review",
+            "docx-editor-assistant-template"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "docx-editor",
+                "displayName": "DOCX Editor",
+                "description": "Upload, edit, version, comment, and review .docx files in a Workbench.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"DOCX Editor\"><rect x=\"14\" y=\"6\" width=\"34\" height=\"52\" rx=\"6\" fill=\"#2563eb\"/><path d=\"M40 6v14h8\" fill=\"#93c5fd\"/><rect x=\"20\" y=\"25\" width=\"22\" height=\"3\" rx=\"1.5\" fill=\"#fff\"/><rect x=\"20\" y=\"33\" width=\"18\" height=\"3\" rx=\"1.5\" fill=\"#dbeafe\"/><rect x=\"20\" y=\"41\" width=\"22\" height=\"3\" rx=\"1.5\" fill=\"#bfdbfe\"/><path d=\"M48 20 40 6v10a4 4 0 0 0 4 4h4z\" fill=\"#60a5fa\"/></svg>",
+                  "color": "#2563eb"
+                },
+                "operations": [
+                  {
+                    "name": "edit-docx",
+                    "displayName": "Edit DOCX",
+                    "description": "Open and edit .docx documents in the browser.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-docx",
+                    "displayName": "Review DOCX",
+                    "description": "Use Agent tools to add comments and tracked changes.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "version-docx",
+                    "displayName": "Version DOCX",
+                    "description": "Save and restore DOCX document versions.",
+                    "access": "write"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "docx_editor",
+                "displayName": "DOCX Editor Workbench",
+                "description": "Workbench view for DOCX editing, comments, tracked changes, snapshots, and version history."
+              },
+              {
+                "type": "tool",
+                "name": "DocxEditorMiddleware",
+                "displayName": "DOCX Editor Agent Tools",
+                "description": "Assistant middleware tools for DOCX reading, comments, tracked changes, formatting, and live Workbench actions."
+              },
+              {
+                "type": "assistant-template",
+                "name": "docx-editor-assistant",
+                "displayName": "DOCX Editor Assistant Template",
+                "description": "Prebuilt assistant template for DOCX document editing and review workflows."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/docx-editor#readme",
+            "updatedAt": "2026-06-16T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "DocxEditorMiddleware"
+            ],
+            "viewProviders": [
+              "docx-editor-view-provider"
+            ],
+            "templateProviders": [
+              "docx-editor-template-provider"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/docx-editor#readme",
+      "updatedAt": "2026-06-16T00:00:00.000Z",
+      "verified": true
+    },
+    {
       "name": "@xpert-ai/plugin-drawio",
       "packageName": "@xpert-ai/plugin-drawio",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "draw.io",
         "zh_Hans": "draw.io 绘图"
@@ -310,7 +487,6 @@
     {
       "name": "@xpert-ai/plugin-excalidraw",
       "packageName": "@xpert-ai/plugin-excalidraw",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "Excalidraw",
         "zh_Hans": "Excalidraw 绘图"
@@ -740,7 +916,6 @@
     {
       "name": "@xpert-ai/plugin-lucidchart",
       "packageName": "@xpert-ai/plugin-lucidchart",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "Lucidchart",
         "zh_Hans": "Lucidchart 绘图"
