@@ -46,6 +46,11 @@
     "data-xpert"
   ],
   "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication"
+      }
+    },
     "data-xpert": {
       "types": [
         "integration",
@@ -61,6 +66,7 @@
         "wechat-personal-user-assistant-template"
       ],
       "marketplace": {
+        "category": "communication",
         "contents": [
           {
             "type": "app",
