@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T01:45:45.897Z",
+  "updatedAt": "2026-06-16T02:11:44.140Z",
   "total": 60,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -646,6 +646,13 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-dingtalk"
       },
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "communication"
+          }
+        }
+      },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/dingtalk/README.md",
       "updatedAt": "2026-03-16T03:00:00.000Z"
     },
@@ -680,6 +687,13 @@
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-lark"
       },
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "communication"
+          }
+        }
+      },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/lark/README.md",
       "updatedAt": "2025-10-28T03:00:00.000Z"
     },
@@ -712,6 +726,13 @@
       "source": {
         "type": "npm",
         "url": "https://www.npmjs.com/package/@xpert-ai/plugin-wecom"
+      },
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "communication"
+          }
+        }
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/wecom/README.md",
       "updatedAt": "2026-03-16T03:00:00.000Z"
@@ -4614,6 +4635,11 @@
         "data-xpert"
       ],
       "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "communication"
+          }
+        },
         "data-xpert": {
           "types": [
             "integration",
@@ -4629,6 +4655,7 @@
             "wechat-personal-user-assistant-template"
           ],
           "marketplace": {
+            "category": "communication",
             "contents": [
               {
                 "type": "app",
