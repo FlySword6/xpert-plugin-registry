@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T12:04:24.529Z",
+  "updatedAt": "2026-06-16T01:45:45.897Z",
   "total": 60,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -194,6 +194,7 @@
             "drawio-assistant-template"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "skill",
@@ -234,6 +235,7 @@
             "drawio-assistant-template"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "app",
@@ -368,6 +370,7 @@
             "excalidraw-assistant-template"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "skill",
@@ -408,6 +411,7 @@
             "excalidraw-assistant-template"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "app",
@@ -775,6 +779,7 @@
             "lucidchart-assistant-template"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "skill",
@@ -815,6 +820,7 @@
             "lucidchart-assistant-template"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "app",
