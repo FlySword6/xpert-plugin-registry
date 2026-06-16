@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T02:11:44.140Z",
+  "updatedAt": "2026-06-16T02:55:55.871Z",
   "total": 60,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -2392,6 +2392,7 @@
             "metric-diagnostics"
           ],
           "marketplace": {
+            "category": "data-analytics",
             "contents": [
               {
                 "type": "skill",
@@ -2851,6 +2852,7 @@
             "long-short"
           ],
           "marketplace": {
+            "category": "finance",
             "contents": [
               {
                 "type": "skill",
@@ -3292,6 +3294,11 @@
         "data-xpert"
       ],
       "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "business-operations"
+          }
+        },
         "data-xpert": {
           "types": [
             "workbench-view",
@@ -3305,6 +3312,7 @@
             "procurement-quote-comparison-assistant-template"
           ],
           "marketplace": {
+            "category": "business-operations",
             "contents": [
               {
                 "type": "app",
@@ -3443,6 +3451,7 @@
             "ideation"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "skill",
@@ -3634,7 +3643,10 @@
             "sales-ontology-core",
             "sales-ontology-decision-workbench",
             "sales-ontology-business-assistant-template"
-          ]
+          ],
+          "marketplace": {
+            "category": "sales"
+          }
         },
         "data-xpert": {
           "types": [
@@ -3649,6 +3661,7 @@
             "sales-ontology-business-assistant-template"
           ],
           "marketplace": {
+            "category": "sales",
             "contents": [
               {
                 "type": "app",
@@ -3814,6 +3827,7 @@
             "coaching"
           ],
           "marketplace": {
+            "category": "sales",
             "contents": [
               {
                 "type": "skill",
@@ -4365,6 +4379,11 @@
         "data-xpert"
       ],
       "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "creativity"
+          }
+        },
         "data-xpert": {
           "types": [
             "workbench-view",
@@ -4379,6 +4398,7 @@
             "sites-local-hosting"
           ],
           "marketplace": {
+            "category": "creativity",
             "contents": [
               {
                 "type": "app",
@@ -4503,6 +4523,11 @@
         "data-xpert"
       ],
       "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "business-operations"
+          }
+        },
         "data-xpert": {
           "types": [
             "workbench-view",
@@ -4516,6 +4541,7 @@
             "smart-maintenance-assistant-template"
           ],
           "marketplace": {
+            "category": "business-operations",
             "contents": [
               {
                 "type": "app",
