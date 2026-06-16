@@ -47,7 +47,10 @@
         "sales-ontology-core",
         "sales-ontology-decision-workbench",
         "sales-ontology-business-assistant-template"
-      ]
+      ],
+      "marketplace": {
+        "category": "sales"
+      }
     },
     "data-xpert": {
       "types": ["workbench-view", "assistant-tool", "business-app"],
@@ -58,6 +61,7 @@
         "sales-ontology-business-assistant-template"
       ],
       "marketplace": {
+        "category": "sales",
         "contents": [
           {
             "type": "app",

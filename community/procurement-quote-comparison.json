@@ -42,6 +42,11 @@
   },
   "targetApps": ["data-xpert"],
   "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "business-operations"
+      }
+    },
     "data-xpert": {
       "types": ["workbench-view", "assistant-tool", "business-app"],
       "capabilities": [
@@ -51,6 +56,7 @@
         "procurement-quote-comparison-assistant-template"
       ],
       "marketplace": {
+        "category": "business-operations",
         "contents": [
           {
             "type": "app",

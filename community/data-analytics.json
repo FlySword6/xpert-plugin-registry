@@ -82,6 +82,7 @@
         "metric-diagnostics"
       ],
       "marketplace": {
+        "category": "data-analytics",
         "contents": [
           {
             "type": "skill",

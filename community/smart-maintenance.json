@@ -43,6 +43,11 @@
   },
   "targetApps": ["data-xpert"],
   "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "business-operations"
+      }
+    },
     "data-xpert": {
       "types": ["workbench-view", "assistant-tool", "business-app"],
       "capabilities": [
@@ -52,6 +57,7 @@
         "smart-maintenance-assistant-template"
       ],
       "marketplace": {
+        "category": "business-operations",
         "contents": [
           {
             "type": "app",

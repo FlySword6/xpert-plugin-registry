@@ -65,6 +65,7 @@
         "ideation"
       ],
       "marketplace": {
+        "category": "creativity",
         "contents": [
           {
             "type": "skill",

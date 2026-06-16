@@ -64,6 +64,7 @@
         "coaching"
       ],
       "marketplace": {
+        "category": "sales",
         "contents": [
           {
             "type": "skill",
