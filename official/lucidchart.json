@@ -53,6 +53,7 @@
         "lucidchart-assistant-template"
       ],
       "marketplace": {
+        "category": "creativity",
         "contents": [
           {
             "type": "skill",
@@ -85,6 +86,7 @@
         "lucidchart-assistant-template"
       ],
       "marketplace": {
+        "category": "creativity",
         "contents": [
           {
             "type": "app",
