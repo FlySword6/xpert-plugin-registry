@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-drawio",
   "packageName": "@xpert-ai/plugin-drawio",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "draw.io",
     "zh_Hans": "draw.io 绘图"

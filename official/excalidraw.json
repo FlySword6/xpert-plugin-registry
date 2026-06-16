@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-excalidraw",
   "packageName": "@xpert-ai/plugin-excalidraw",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "Excalidraw",
     "zh_Hans": "Excalidraw 绘图"

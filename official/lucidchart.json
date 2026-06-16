@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-lucidchart",
   "packageName": "@xpert-ai/plugin-lucidchart",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "Lucidchart",
     "zh_Hans": "Lucidchart 绘图"
