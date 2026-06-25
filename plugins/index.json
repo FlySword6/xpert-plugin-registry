@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T07:16:02.905Z",
+  "updatedAt": "2026-06-25T03:11:09.570Z",
   "total": 61,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -4791,20 +4791,18 @@
     {
       "name": "@xpert-ai/plugin-community-wechat",
       "packageName": "@xpert-ai/plugin-community-wechat",
-      "version": "0.1.0",
       "displayName": {
-        "en_US": "Personal WeChat Integration",
-        "zh_Hans": "个人微信集成"
+        "en_US": "WeChat Integration",
+        "zh_Hans": "微信集成"
       },
       "description": {
-        "en_US": "Connect personal WeChat message callbacks with Xpert Agents, operational workbench views, and final text replies.",
-        "zh_Hans": "连接个人微信消息回调、Xpert 智能体、运行工作台视图和最终文本回复。"
+        "en_US": "Connect WeChat message callbacks with Xpert Agents, operational workbench views, and final text replies.",
+        "zh_Hans": "连接微信消息回调、Xpert 智能体、运行工作台视图和最终文本回复。"
       },
       "level": "system",
       "category": "integration",
       "keywords": [
         "wechat",
-        "personal-wechat",
         "integration",
         "webhook",
         "agent",
@@ -4849,93 +4847,68 @@
             "assistant-template"
           ],
           "capabilities": [
-            "wechat_personal_bridge",
-            "wechat-personal-runtime",
-            "wechat-personal-workbench",
-            "wechat-personal-admin-assistant-template",
-            "wechat-personal-user-assistant-template"
+            "wechat-bridge",
+            "wechat-runtime",
+            "wechat-workbench",
+            "wechat-admin-assistant-template",
+            "wechat-user-assistant-template"
           ],
           "marketplace": {
             "category": "communication",
             "contents": [
               {
                 "type": "app",
-                "name": "wechat_personal",
-                "displayName": "Personal WeChat",
-                "description": "Bridge personal WeChat message callbacks with Xpert Agents and text replies.",
-                "icon": {
-                  "type": "svg",
-                  "value": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.5 7.5C4.57 7.5 3 8.87 3 10.56c0 1 .55 1.89 1.41 2.45l-.37 1.43 1.6-.78c.28.05.57.08.86.08 1.93 0 3.5-1.37 3.5-3.06S8.43 7.5 6.5 7.5Z\" stroke=\"currentColor\" stroke-width=\"1.45\" stroke-linejoin=\"round\"/><path d=\"M13.4 5c4.2 0 7.6 2.82 7.6 6.3 0 1.94-1.06 3.68-2.72 4.83l.62 2.37-2.6-1.3c-.9.26-1.88.4-2.9.4-4.2 0-7.6-2.82-7.6-6.3S9.2 5 13.4 5Z\" stroke=\"currentColor\" stroke-width=\"1.45\" stroke-linejoin=\"round\"/><path d=\"M11 10.4h.01M15.8 10.4h.01\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>",
-                  "color": "#16a34a"
-                },
-                "operations": [
-                  {
-                    "name": "receive-wechat-messages",
-                    "displayName": "Receive personal WeChat messages",
-                    "description": "Receive callbacks and dispatch normalized text messages to an Agent.",
-                    "access": "read"
-                  },
-                  {
-                    "name": "send-wechat-replies",
-                    "displayName": "Send personal WeChat replies",
-                    "description": "Send final Agent text replies through the configured outbound message API.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "manage-wechat-runtime",
-                    "displayName": "Manage WeChat runtime",
-                    "description": "Review accounts, conversation bindings, message logs, callbacks, and configuration.",
-                    "access": "write"
-                  }
-                ]
+                "name": "wechat",
+                "displayName": "WeChat",
+                "description": "Bridge wx2.0 WeChat messages with Xpert agents."
               },
               {
                 "type": "view",
-                "name": "wechat_personal_workbench",
-                "displayName": "Personal WeChat Workbench",
-                "description": "Workbench for accounts, conversations, message logs, callback setup, and runtime analytics."
+                "name": "wechat_workbench",
+                "displayName": "WeChat Workbench",
+                "description": "Workbench for wx2.0 accounts, conversations, message logs, and callback setup."
               },
               {
                 "type": "tool",
-                "name": "WechatPersonalRuntimeMiddleware",
-                "displayName": "Personal WeChat Runtime Tools",
-                "description": "Assistant middleware for runtime discovery, callback setup, account management, conversations, and logs."
+                "name": "WechatRuntimeMiddleware",
+                "displayName": "WeChat Runtime Tools",
+                "description": "Assistant middleware for WeChat runtime discovery, callback setup, account management, conversations, and logs."
               },
               {
                 "type": "assistant-template",
-                "name": "wechat-personal-admin-assistant",
-                "displayName": "Personal WeChat Admin Assistant Template",
-                "description": "Organization-level assistant template for managing Personal WeChat integrations, callbacks, accounts, conversations, and logs."
+                "name": "wechat-admin-assistant",
+                "displayName": "WeChat Admin Assistant Template",
+                "description": "Organization-level assistant template for managing WeChat integrations, callbacks, accounts, conversations, and logs."
               },
               {
                 "type": "assistant-template",
-                "name": "wechat-personal-user-assistant",
-                "displayName": "Personal WeChat User Assistant Template",
-                "description": "End-user assistant template with a Personal WeChat trigger and final-text reply behavior."
+                "name": "wechat-user-assistant",
+                "displayName": "WeChat User Assistant Template",
+                "description": "End-user assistant template with a WeChat trigger and final-text reply behavior."
               }
             ]
           },
           "runtime": {
             "integrationProviders": [
-              "wechat_personal"
+              "wechat"
             ],
             "channelProviders": [
-              "wechat_personal"
+              "wechat"
             ],
             "middlewareProviders": [
-              "WechatPersonalRuntimeMiddleware"
+              "WechatRuntimeMiddleware"
             ],
             "viewProviders": [
-              "wechat_personal_workbench_provider"
+              "wechat_workbench_provider"
             ],
             "templateProviders": [
-              "wechatPersonalTemplates"
+              "wechatTemplates"
             ]
           }
         }
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/community/integrations/wechat#readme",
-      "updatedAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-25T00:00:00.000Z",
       "verified": false
     }
   ]
