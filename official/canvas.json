@@ -1,0 +1,153 @@
+{
+  "name": "@xpert-ai/plugin-canvas",
+  "packageName": "@xpert-ai/plugin-canvas",
+  "displayName": {
+    "en_US": "Canvas",
+    "zh_Hans": "Canvas 画布"
+  },
+  "description": {
+    "en_US": "Canvas app plugin for Agent-managed tldraw infinite canvases, AI image holders, annotation workflows, autosaved viewport snapshots, reviewable versions, and an editable workbench.",
+    "zh_Hans": "面向 Agent 协作创作的 Canvas 画布插件，支持 tldraw 无限画布、AI 图片占位、标注迭代、视口快照自动保存、可审核版本和可编辑工作台。"
+  },
+  "level": "system",
+  "category": "创意设计",
+  "keywords": [
+    "canvas",
+    "tldraw",
+    "whiteboard",
+    "image-generation",
+    "annotation",
+    "agent-canvas",
+    "workbench",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/canvas"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/canvas",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M52 72C52 60.9543 60.9543 52 72 52H184C195.046 52 204 60.9543 204 72V184C204 195.046 195.046 204 184 204H72C60.9543 204 52 195.046 52 184V72Z\" fill=\"#FFFFFF\" stroke=\"#0F766E\" stroke-width=\"10\"/><path d=\"M82 96H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M82 126H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M82 160C109 133 139 130 174 151\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"178\" cy=\"154\" r=\"11\" fill=\"#14B8A6\"/><path d=\"M150 86L180 116L150 146\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    "color": "#0f766e"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-canvas",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-canvas"
+  },
+  "targetApps": ["xpert", "data-xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "types": ["assistant-template", "skill", "app", "xpertai-bundle"],
+      "capabilities": [
+        "canvas",
+        "canvas-workbench",
+        "agent-canvas",
+        "canvas-assistant-template"
+      ],
+      "marketplace": {
+        "category": "creativity",
+        "contents": [
+          {
+            "type": "skill",
+            "name": "canvas-agent-skill",
+            "displayName": "Canvas Agent Workflow",
+            "description": "Workflow skill for Agent-managed tldraw canvases, image holders, annotations, autosaved snapshots, and Workbench review.",
+            "tags": ["skill", "canvas", "agent-canvas"]
+          },
+          {
+            "type": "assistant-template",
+            "name": "xpert-canvas-assistant",
+            "displayName": "Canvas Assistant",
+            "description": "Assistant template for Canvas creation, image iteration, visual snapshot review, and version management."
+          },
+          {
+            "type": "app",
+            "name": "canvas",
+            "displayName": "Canvas",
+            "description": "Workbench and Agent middleware tools for tldraw infinite canvases."
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": ["workbench-view", "assistant-tool", "business-app"],
+      "capabilities": [
+        "canvas",
+        "canvas-workbench",
+        "agent-canvas",
+        "canvas-assistant-template"
+      ],
+      "marketplace": {
+        "category": "creativity",
+        "contents": [
+          {
+            "type": "app",
+            "name": "canvas",
+            "displayName": "Canvas",
+            "description": "Create, update, review, version, annotate, import, export, and visually inspect Agent-managed tldraw canvases.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M52 72C52 60.9543 60.9543 52 72 52H184C195.046 52 204 60.9543 204 72V184C204 195.046 195.046 204 184 204H72C60.9543 204 52 195.046 52 184V72Z\" fill=\"#FFFFFF\" stroke=\"#0F766E\" stroke-width=\"10\"/><path d=\"M82 96H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M82 126H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M82 160C109 133 139 130 174 151\" stroke=\"#0F766E\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"178\" cy=\"154\" r=\"11\" fill=\"#14B8A6\"/><path d=\"M150 86L180 116L150 146\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+              "color": "#0f766e"
+            },
+            "operations": [
+              {
+                "name": "create-canvas-documents",
+                "displayName": "Create Canvas documents",
+                "description": "Create reviewable tldraw infinite canvas documents with snapshots, image holders, annotations, and project context.",
+                "access": "write"
+              },
+              {
+                "name": "save-canvas-versions",
+                "displayName": "Save Canvas versions",
+                "description": "Save complete tldraw snapshots, record patches, inserted images, viewport snapshots, and reviewable versions.",
+                "access": "write"
+              },
+              {
+                "name": "review-canvas-workbench",
+                "displayName": "Review canvases in Workbench",
+                "description": "Review, edit, annotate, import, export, restore, autosave, version, and ask the Assistant to update canvases.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "canvas_workbench",
+            "displayName": "Canvas Workbench",
+            "description": "Workbench view for tldraw infinite canvases, autosaved working copies, viewport snapshots, image holders, annotations, versions, and Agent update requests."
+          },
+          {
+            "type": "tool",
+            "name": "CanvasMiddleware",
+            "displayName": "Canvas Agent Tools",
+            "description": "Assistant middleware tools for creating, autosaving, saving, patching, searching, reading, image-inserting, status-updating, and failure-reporting Canvas documents."
+          },
+          {
+            "type": "assistant-template",
+            "name": "xpert-canvas-assistant",
+            "displayName": "Canvas Assistant Template",
+            "description": "Prebuilt assistant template for Canvas creation, image iteration, visual snapshot reading, and version management."
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/canvas#readme",
+        "updatedAt": "2026-06-26T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": ["CanvasMiddleware"],
+        "viewProviders": ["canvas"],
+        "templateProviders": ["canvasTemplates"]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/canvas#readme",
+  "updatedAt": "2026-06-26T00:00:00.000Z"
+}

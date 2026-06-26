@@ -25,6 +25,17 @@
     "type": "npm",
     "url": "https://www.npmjs.com/package/@xpert-ai/plugin-tool-retry"
   },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "middleware"
+      }
+    }
+  },
   "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/tool-retry/README.md",
   "updatedAt": "2026-02-27T03:00:00.000Z"
 }

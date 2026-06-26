@@ -24,6 +24,17 @@
     "type": "npm",
     "url": "https://www.npmjs.com/package/@xpert-ai/plugin-file-system"
   },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "integration"
+      }
+    }
+  },
   "readme": "https://github.com/xpert-ai/plugins/tree/main/packages/plugin-file-system/README.md",
   "updatedAt": "2025-10-21T03:00:00.000Z"
 }

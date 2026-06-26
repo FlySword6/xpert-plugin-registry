@@ -30,6 +30,17 @@
     "type": "npm",
     "url": "https://www.npmjs.com/package/@xpert-ai/plugin-file-memory"
   },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "middleware"
+      }
+    }
+  },
   "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/file-memory/README.md",
   "updatedAt": "2026-04-12T06:27:00.000Z"
 }
