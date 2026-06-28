@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T05:22:14.529Z",
+  "updatedAt": "2026-06-28T06:30:45.626Z",
   "total": 62,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -188,12 +188,6 @@
                 ]
               },
               {
-                "type": "assistant-template",
-                "name": "xpert-canvas-assistant",
-                "displayName": "Canvas Assistant",
-                "description": "Assistant template for Canvas creation, image iteration, visual snapshot review, and version management."
-              },
-              {
                 "type": "app",
                 "name": "canvas",
                 "displayName": "Canvas",
@@ -259,12 +253,6 @@
                 "name": "CanvasMiddleware",
                 "displayName": "Canvas Agent Tools",
                 "description": "Assistant middleware tools for creating, autosaving, saving, patching, searching, reading, image-inserting, status-updating, and failure-reporting Canvas documents."
-              },
-              {
-                "type": "assistant-template",
-                "name": "xpert-canvas-assistant",
-                "displayName": "Canvas Assistant Template",
-                "description": "Prebuilt assistant template for Canvas creation, image iteration, visual snapshot reading, and version management."
               }
             ],
             "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/canvas#readme",
