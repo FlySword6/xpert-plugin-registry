@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-06-28T08:29:49.411Z",
-  "total": 62,
+  "updatedAt": "2026-07-03T13:02:41.545Z",
+  "total": 65,
   "official": [
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-dify",
+    "@xpert-ai/plugin-documents",
     "@xpert-ai/plugin-docx-editor",
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
@@ -50,8 +51,10 @@
     "@xpert-ai/plugin-zhipuai",
     "@xpert-ai/plugin-mysql",
     "@xpert-ai/plugin-pdfium",
+    "@xpert-ai/plugin-presentations",
     "@xpert-ai/plugin-rag-vlm",
     "@xpert-ai/plugin-ragflow",
+    "@xpert-ai/plugin-spreadsheets",
     "@xpert-ai/plugin-unstructured",
     "@xpert-ai/plugin-zip"
   ],
@@ -330,6 +333,221 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/dify/README.md",
       "updatedAt": "2025-10-21T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-documents",
+      "packageName": "@xpert-ai/plugin-documents",
+      "displayName": {
+        "en_US": "Documents",
+        "zh_Hans": "文档"
+      },
+      "description": {
+        "en_US": "Create, edit, redline, and review document artifacts in Xpert. Converted from the Codex Documents skill plugin 26.630.12135.",
+        "zh_Hans": "在 Xpert 中创建、编辑、批注、修订和审阅文档制品。由 Codex Documents skill plugin 26.630.12135 转换而来。"
+      },
+      "level": "system",
+      "category": "productivity",
+      "keywords": [
+        "doc",
+        "docs",
+        "document",
+        "documents",
+        "word",
+        "google docs",
+        "memo",
+        "docx",
+        "artifacts",
+        "skill"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/skills/documents"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/skills/documents",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Documents\"><rect x=\"14\" y=\"6\" width=\"36\" height=\"52\" rx=\"6\" fill=\"#2563EB\"/><path d=\"M40 6v15h10\" fill=\"#93C5FD\"/><path d=\"M40 6v11a4 4 0 0 0 4 4h6\" fill=\"#60A5FA\"/><rect x=\"21\" y=\"28\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#FFFFFF\"/><rect x=\"21\" y=\"37\" width=\"20\" height=\"4\" rx=\"2\" fill=\"#DBEAFE\"/><rect x=\"21\" y=\"46\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#BFDBFE\"/></svg>",
+        "color": "#2563EB"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-documents",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-documents"
+      },
+      "license": "MIT",
+      "skills": "./skills",
+      "interface": {
+        "displayName": "Documents",
+        "shortDescription": "Create and edit document artifacts",
+        "longDescription": "Create, edit, inspect, render, verify, and export DOCX document artifacts locally. Converted from Codex primary-runtime skill plugin 26.630.12135 for installation into Xpert workspaces.",
+        "developerName": "XpertAI",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "Write"
+        ],
+        "websiteURL": "https://xpertai.cn",
+        "privacyPolicyURL": "https://xpertai.cn",
+        "termsOfServiceURL": "https://xpertai.cn",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "defaultPrompt": [
+          "Draft a project memo as a document",
+          "Create a document from this outline",
+          "Write a polished doc for this plan"
+        ],
+        "brandColor": "#2563EB",
+        "screenshots": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dbeafe%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.46%22%20stop-color%3D%22%23eef2ff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e9d5ff%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.25%22%20cy%3D%220.1%22%20r%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23g%29%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23r%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M90%20330C210%20210%20280%2080%20440%20115c125%2027%20145%20140%20275%20117%20122-21%20167-145%20312-127%2084%2011%20144%2058%20205%20125v150H90z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.25%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate%28770%2042%29%20rotate%288%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h145l55%2055v210H0z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M145%200v55h55%22%20fill%3D%22%23bfdbfe%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2294%22%20width%3D%22118%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22130%22%20width%3D%22142%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22166%22%20width%3D%2296%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        ]
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "NONE",
+        "pluginSharing": true
+      },
+      "assets": {
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": []
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "skill",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "documents",
+            "documents-skill"
+          ],
+          "runtime": {
+            "requiredTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "read_skill_file",
+                "required": true,
+                "purpose": "Read bundled skill instructions, references, scripts, and assets before use."
+              },
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "skill_shell",
+                "required": true,
+                "purpose": "Run shell commands from the installed skill runtime directory for DOCX creation and verification."
+              }
+            ],
+            "compatibleTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SandboxShell",
+                "name": "sandbox_shell",
+                "required": false,
+                "purpose": "Alternative general shell execution tool when skill_shell is unavailable."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "bash",
+                "name": "bash_execute",
+                "required": false,
+                "purpose": "Alternative Bash execution tool for Xpert templates that bind builtin toolsets."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "file",
+                "name": "file_edit",
+                "required": false,
+                "purpose": "Optional workspace file inspection and edits for generated artifact support files."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "python",
+                "name": "python_execute",
+                "required": false,
+                "purpose": "Optional Python execution helper when shell access is delegated to the Python toolset."
+              }
+            ],
+            "requiredRuntime": {
+              "filesystem": {
+                "read": true,
+                "write": true,
+                "workspace": true
+              },
+              "shell": true,
+              "workspaceDependencies": true,
+              "executables": [
+                "python",
+                "node"
+              ],
+              "packages": [
+                "python-docx",
+                "Pillow"
+              ]
+            },
+            "optionalRuntime": {
+              "executables": [
+                "soffice",
+                "pdfinfo",
+                "pdftoppm"
+              ],
+              "packages": [
+                "pdf2image",
+                "reportlab"
+              ],
+              "integrations": [
+                "Google Drive document import for native Google Docs output"
+              ]
+            }
+          },
+          "marketplace": {
+            "category": "productivity",
+            "screenshots": [
+              "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dbeafe%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.46%22%20stop-color%3D%22%23eef2ff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e9d5ff%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.25%22%20cy%3D%220.1%22%20r%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23g%29%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23r%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M90%20330C210%20210%20280%2080%20440%20115c125%2027%20145%20140%20275%20117%20122-21%20167-145%20312-127%2084%2011%20144%2058%20205%20125v150H90z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.25%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate%28770%2042%29%20rotate%288%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h145l55%2055v210H0z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M145%200v55h55%22%20fill%3D%22%23bfdbfe%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2294%22%20width%3D%22118%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22130%22%20width%3D%22142%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22166%22%20width%3D%2296%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+            ],
+            "trialShortcuts": [
+              {
+                "id": "documents-1",
+                "prompt": "Draft a project memo as a document",
+                "skillKey": "documents",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "documents-2",
+                "prompt": "Create a document from this outline",
+                "skillKey": "documents",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "documents-3",
+                "prompt": "Write a polished doc for this plan",
+                "skillKey": "documents",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/skills/documents/README.md",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-docx-editor",
@@ -2838,6 +3056,223 @@
       "updatedAt": "2025-11-30T03:00:00.000Z"
     },
     {
+      "name": "@xpert-ai/plugin-presentations",
+      "packageName": "@xpert-ai/plugin-presentations",
+      "displayName": {
+        "en_US": "Presentations",
+        "zh_Hans": "演示文稿"
+      },
+      "description": {
+        "en_US": "Create, edit, render, verify, and export presentation slide decks in Xpert. Converted from the Codex Presentations skill plugin 26.630.12135.",
+        "zh_Hans": "在 Xpert 中创建、编辑、渲染、校验和导出演示文稿。由 Codex Presentations skill plugin 26.630.12135 转换而来。"
+      },
+      "level": "system",
+      "category": "productivity",
+      "keywords": [
+        "slides",
+        "slide",
+        "deck",
+        "presentation",
+        "presentations",
+        "google slides",
+        "powerpoint",
+        "ppt",
+        "pptx",
+        "skill"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/skills/presentations"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/skills/presentations",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Presentations\"><rect x=\"8\" y=\"12\" width=\"48\" height=\"36\" rx=\"6\" fill=\"#C43E1C\"/><rect x=\"14\" y=\"18\" width=\"36\" height=\"24\" rx=\"3\" fill=\"#FFF7ED\"/><rect x=\"19\" y=\"24\" width=\"20\" height=\"4\" rx=\"2\" fill=\"#C43E1C\"/><rect x=\"19\" y=\"32\" width=\"12\" height=\"6\" rx=\"2\" fill=\"#FDBA74\"/><path d=\"M34 36h11\" stroke=\"#C43E1C\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M28 48v7m8-7 8 7m-16 0h16\" stroke=\"#7C2D12\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+        "color": "#C43E1C"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-presentations",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-presentations"
+      },
+      "license": "MIT",
+      "skills": "./skills",
+      "interface": {
+        "displayName": "Presentations",
+        "shortDescription": "Create and edit presentations",
+        "longDescription": "Create, edit, inspect, render, verify, and export presentation slide decks locally. Converted from Codex primary-runtime skill plugin 26.630.12135 for installation into Xpert workspaces.",
+        "developerName": "XpertAI",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "Write"
+        ],
+        "websiteURL": "https://xpertai.cn",
+        "privacyPolicyURL": "https://xpertai.cn",
+        "termsOfServiceURL": "https://xpertai.cn",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "defaultPrompt": [
+          "Create a slide deck about the solar system",
+          "Research this company's latest earnings and create a slide deck on the company's financial performance",
+          "Create a visually stunning slide deck about the latest AI trends"
+        ],
+        "brandColor": "#C43E1C",
+        "screenshots": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffedd5%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.52%22%20stop-color%3D%22%23fff7ed%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fed7aa%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.24%22%20cy%3D%220.08%22%20r%3D%220.9%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23r)%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M80%20315C205%20238%20303%20102%20458%20133c126%2026%20157%20137%20292%20100%20128-35%20170-145%20320-94%2058%2020%20100%2058%20148%20110v131H80z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.24%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.3%22%20transform%3D%22translate(780%2072)%20rotate(7)%22%3E%0A%20%20%20%20%3Crect%20width%3D%22260%22%20height%3D%22172%22%20rx%3D%2224%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2236%22%20y%3D%2242%22%20width%3D%22188%22%20height%3D%2218%22%20rx%3D%229%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.68%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2236%22%20y%3D%2282%22%20width%3D%22118%22%20height%3D%2254%22%20rx%3D%2218%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22170%22%20y%3D%2288%22%20width%3D%2254%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22170%22%20y%3D%22112%22%20width%3D%2242%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        ]
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "NONE",
+        "pluginSharing": true
+      },
+      "assets": {
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffedd5%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.52%22%20stop-color%3D%22%23fff7ed%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fed7aa%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.24%22%20cy%3D%220.08%22%20r%3D%220.9%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23r)%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M80%20315C205%20238%20303%20102%20458%20133c126%2026%20157%20137%20292%20100%20128-35%20170-145%20320-94%2058%2020%20100%2058%20148%20110v131H80z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.24%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.3%22%20transform%3D%22translate(780%2072)%20rotate(7)%22%3E%0A%20%20%20%20%3Crect%20width%3D%22260%22%20height%3D%22172%22%20rx%3D%2224%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2236%22%20y%3D%2242%22%20width%3D%22188%22%20height%3D%2218%22%20rx%3D%229%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.68%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2236%22%20y%3D%2282%22%20width%3D%22118%22%20height%3D%2254%22%20rx%3D%2218%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22170%22%20y%3D%2288%22%20width%3D%2254%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22170%22%20y%3D%22112%22%20width%3D%2242%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        ]
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "skill",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "presentations",
+            "presentations-skill"
+          ],
+          "runtime": {
+            "requiredTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "read_skill_file",
+                "required": true,
+                "purpose": "Read bundled skill instructions, references, scripts, and assets before use."
+              },
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "skill_shell",
+                "required": true,
+                "purpose": "Run shell commands from the installed skill runtime directory for deck generation, rendering, and QA."
+              }
+            ],
+            "compatibleTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SandboxShell",
+                "name": "sandbox_shell",
+                "required": false,
+                "purpose": "Alternative general shell execution tool when skill_shell is unavailable."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "bash",
+                "name": "bash_execute",
+                "required": false,
+                "purpose": "Alternative Bash execution tool for Xpert templates that bind builtin toolsets."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "file",
+                "name": "file_edit",
+                "required": false,
+                "purpose": "Optional workspace file inspection and edits for generated artifact support files."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "python",
+                "name": "python_execute",
+                "required": false,
+                "purpose": "Optional Python execution helper for bundled rendering and inspection scripts."
+              }
+            ],
+            "requiredRuntime": {
+              "filesystem": {
+                "read": true,
+                "write": true,
+                "workspace": true
+              },
+              "shell": true,
+              "workspaceDependencies": true,
+              "executables": [
+                "node",
+                "python"
+              ],
+              "packages": [
+                "@oai/artifact-tool"
+              ]
+            },
+            "optionalRuntime": {
+              "executables": [
+                "dot"
+              ],
+              "packages": [
+                "Pillow"
+              ],
+              "tools": [
+                "image_gen",
+                "image_search"
+              ],
+              "integrations": [
+                "Google Drive presentation import for native Google Slides output"
+              ]
+            }
+          },
+          "marketplace": {
+            "category": "productivity",
+            "screenshots": [
+              "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffedd5%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.52%22%20stop-color%3D%22%23fff7ed%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fed7aa%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.24%22%20cy%3D%220.08%22%20r%3D%220.9%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23r)%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M80%20315C205%20238%20303%20102%20458%20133c126%2026%20157%20137%20292%20100%20128-35%20170-145%20320-94%2058%2020%20100%2058%20148%20110v131H80z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.24%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.3%22%20transform%3D%22translate(780%2072)%20rotate(7)%22%3E%0A%20%20%20%20%3Crect%20width%3D%22260%22%20height%3D%22172%22%20rx%3D%2224%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2236%22%20y%3D%2242%22%20width%3D%22188%22%20height%3D%2218%22%20rx%3D%229%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.68%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2236%22%20y%3D%2282%22%20width%3D%22118%22%20height%3D%2254%22%20rx%3D%2218%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22170%22%20y%3D%2288%22%20width%3D%2254%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.42%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22170%22%20y%3D%22112%22%20width%3D%2242%22%20height%3D%2210%22%20rx%3D%225%22%20fill%3D%22%23C43E1C%22%20opacity%3D%220.32%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+            ],
+            "trialShortcuts": [
+              {
+                "id": "presentations-1",
+                "prompt": "Create a slide deck about the solar system",
+                "skillKey": "presentations",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "presentations-2",
+                "prompt": "Research this company's latest earnings and create a slide deck on the company's financial performance",
+                "skillKey": "presentations",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "presentations-3",
+                "prompt": "Create a visually stunning slide deck about the latest AI trends",
+                "skillKey": "presentations",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/skills/presentations/README.md",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "verified": true
+    },
+    {
       "name": "@xpert-ai/plugin-rag-vlm",
       "displayName": {
         "en_US": "VLM Image Understander",
@@ -2926,6 +3361,223 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/ragflow/README.md",
       "updatedAt": "2025-10-28T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-spreadsheets",
+      "packageName": "@xpert-ai/plugin-spreadsheets",
+      "displayName": {
+        "en_US": "Spreadsheets",
+        "zh_Hans": "电子表格"
+      },
+      "description": {
+        "en_US": "Create, edit, analyze, visualize, render, and export spreadsheet artifacts in Xpert. Converted from the Codex Spreadsheets skill plugin 26.630.12135.",
+        "zh_Hans": "在 Xpert 中创建、编辑、分析、可视化、渲染和导出电子表格制品。由 Codex Spreadsheets skill plugin 26.630.12135 转换而来。"
+      },
+      "level": "system",
+      "category": "productivity",
+      "keywords": [
+        "sheet",
+        "sheets",
+        "google sheet",
+        "google sheets",
+        "spreadsheet",
+        "spreadsheets",
+        "excel",
+        "csv",
+        "xlsx",
+        "workbook",
+        "skill"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/skills/spreadsheets"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/skills/spreadsheets",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Spreadsheets\"><rect x=\"10\" y=\"8\" width=\"44\" height=\"48\" rx=\"6\" fill=\"#107C41\"/><rect x=\"17\" y=\"16\" width=\"30\" height=\"32\" rx=\"3\" fill=\"#ECFDF5\"/><path d=\"M17 26h30M17 36h30M27 16v32M37 16v32\" stroke=\"#107C41\" stroke-width=\"3\"/><rect x=\"18.5\" y=\"17.5\" width=\"8.5\" height=\"8.5\" fill=\"#BBF7D0\"/><rect x=\"27\" y=\"26\" width=\"10\" height=\"10\" fill=\"#DCFCE7\"/><rect x=\"37\" y=\"36\" width=\"10\" height=\"10\" fill=\"#A7F3D0\"/></svg>",
+        "color": "#107C41"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-spreadsheets",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-spreadsheets"
+      },
+      "license": "MIT",
+      "skills": "./skills",
+      "interface": {
+        "displayName": "Spreadsheets",
+        "shortDescription": "Create and edit spreadsheet files",
+        "longDescription": "Create, edit, inspect, render, verify, and export XLSX, CSV, and TSV spreadsheets locally. Converted from Codex primary-runtime skill plugin 26.630.12135 for installation into Xpert workspaces.",
+        "developerName": "XpertAI",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "Write"
+        ],
+        "websiteURL": "https://xpertai.cn",
+        "privacyPolicyURL": "https://xpertai.cn",
+        "termsOfServiceURL": "https://xpertai.cn",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "defaultPrompt": [
+          "Create a spreadsheet to analyze this company's financials",
+          "Create a corporate expense report template for my company",
+          "Take this bank statement CSV and create a full spreadsheet to analyze my transactions"
+        ],
+        "brandColor": "#107C41",
+        "screenshots": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dcfce7%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.48%22%20stop-color%3D%22%23f0fdf4%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23bbf7d0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.2%22%20cy%3D%220.05%22%20r%3D%220.9%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23r)%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.22%22%20stroke%3D%22%23107C41%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M90%2092h1020M90%20150h1020M90%20208h1020M90%20266h1020M90%20324h1020%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M172%2064v292M304%2064v292M436%2064v292M568%2064v292M700%2064v292M832%2064v292M964%2064v292%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate(820%2056)%20rotate(-6)%22%3E%0A%20%20%20%20%3Crect%20width%3D%22220%22%20height%3D%22220%22%20rx%3D%2234%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%2072h220M0%20144h220M72%200v220M144%200v220%22%20stroke%3D%22%23107C41%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.66%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        ]
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "NONE",
+        "pluginSharing": true
+      },
+      "assets": {
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dcfce7%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.48%22%20stop-color%3D%22%23f0fdf4%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23bbf7d0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.2%22%20cy%3D%220.05%22%20r%3D%220.9%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23r)%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.22%22%20stroke%3D%22%23107C41%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M90%2092h1020M90%20150h1020M90%20208h1020M90%20266h1020M90%20324h1020%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M172%2064v292M304%2064v292M436%2064v292M568%2064v292M700%2064v292M832%2064v292M964%2064v292%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate(820%2056)%20rotate(-6)%22%3E%0A%20%20%20%20%3Crect%20width%3D%22220%22%20height%3D%22220%22%20rx%3D%2234%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%2072h220M0%20144h220M72%200v220M144%200v220%22%20stroke%3D%22%23107C41%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.66%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        ]
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "skill",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "spreadsheets",
+            "spreadsheets-skill"
+          ],
+          "runtime": {
+            "requiredTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "read_skill_file",
+                "required": true,
+                "purpose": "Read bundled skill instructions, references, scripts, and assets before use."
+              },
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "skill_shell",
+                "required": true,
+                "purpose": "Run shell commands from the installed skill runtime directory for workbook generation and verification."
+              }
+            ],
+            "compatibleTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SandboxShell",
+                "name": "sandbox_shell",
+                "required": false,
+                "purpose": "Alternative general shell execution tool when skill_shell is unavailable."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "bash",
+                "name": "bash_execute",
+                "required": false,
+                "purpose": "Alternative Bash execution tool for Xpert templates that bind builtin toolsets."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "file",
+                "name": "file_edit",
+                "required": false,
+                "purpose": "Optional workspace file inspection and edits for generated artifact support files."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "python",
+                "name": "python_execute",
+                "required": false,
+                "purpose": "Optional Python execution helper for analysis and extraction scripts."
+              }
+            ],
+            "requiredRuntime": {
+              "filesystem": {
+                "read": true,
+                "write": true,
+                "workspace": true
+              },
+              "shell": true,
+              "workspaceDependencies": true,
+              "executables": [
+                "node"
+              ],
+              "packages": [
+                "@oai/artifact-tool"
+              ]
+            },
+            "optionalRuntime": {
+              "executables": [
+                "python"
+              ],
+              "packages": [
+                "pandas",
+                "numpy",
+                "pypdf",
+                "python-docx",
+                "reportlab"
+              ],
+              "integrations": [
+                "Google Drive spreadsheet import for native Google Sheets output"
+              ]
+            }
+          },
+          "marketplace": {
+            "category": "productivity",
+            "screenshots": [
+              "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dcfce7%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.48%22%20stop-color%3D%22%23f0fdf4%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23bbf7d0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.2%22%20cy%3D%220.05%22%20r%3D%220.9%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url(%23r)%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.22%22%20stroke%3D%22%23107C41%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M90%2092h1020M90%20150h1020M90%20208h1020M90%20266h1020M90%20324h1020%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M172%2064v292M304%2064v292M436%2064v292M568%2064v292M700%2064v292M832%2064v292M964%2064v292%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate(820%2056)%20rotate(-6)%22%3E%0A%20%20%20%20%3Crect%20width%3D%22220%22%20height%3D%22220%22%20rx%3D%2234%22%20fill%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%2072h220M0%20144h220M72%200v220M144%200v220%22%20stroke%3D%22%23107C41%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.66%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+            ],
+            "trialShortcuts": [
+              {
+                "id": "spreadsheets-1",
+                "prompt": "Create a spreadsheet to analyze this company's financials",
+                "skillKey": "spreadsheets",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "spreadsheets-2",
+                "prompt": "Create a corporate expense report template for my company",
+                "skillKey": "spreadsheets",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "spreadsheets-3",
+                "prompt": "Take this bank statement CSV and create a full spreadsheet to analyze my transactions",
+                "skillKey": "spreadsheets",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/skills/spreadsheets/README.md",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-unstructured",
