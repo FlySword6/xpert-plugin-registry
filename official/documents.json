@@ -9,7 +9,6 @@
     "en_US": "Create, edit, redline, and review document artifacts in Xpert. Converted from the Codex Documents skill plugin 26.630.12135.",
     "zh_Hans": "在 Xpert 中创建、编辑、批注、修订和审阅文档制品。由 Codex Documents skill plugin 26.630.12135 转换而来。"
   },
-  "level": "system",
   "category": "productivity",
   "keywords": [
     "doc",

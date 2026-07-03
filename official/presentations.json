@@ -9,7 +9,6 @@
     "en_US": "Create, edit, render, verify, and export presentation slide decks in Xpert. Converted from the Codex Presentations skill plugin 26.630.12135.",
     "zh_Hans": "在 Xpert 中创建、编辑、渲染、校验和导出演示文稿。由 Codex Presentations skill plugin 26.630.12135 转换而来。"
   },
-  "level": "system",
   "category": "productivity",
   "keywords": [
     "slides",
