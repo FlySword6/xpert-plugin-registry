@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T13:02:41.545Z",
+  "updatedAt": "2026-07-03T13:04:23.590Z",
   "total": 65,
   "official": [
     "@xpert-ai/plugin-calculator",
@@ -345,7 +345,6 @@
         "en_US": "Create, edit, redline, and review document artifacts in Xpert. Converted from the Codex Documents skill plugin 26.630.12135.",
         "zh_Hans": "在 Xpert 中创建、编辑、批注、修订和审阅文档制品。由 Codex Documents skill plugin 26.630.12135 转换而来。"
       },
-      "level": "system",
       "category": "productivity",
       "keywords": [
         "doc",
@@ -3066,7 +3065,6 @@
         "en_US": "Create, edit, render, verify, and export presentation slide decks in Xpert. Converted from the Codex Presentations skill plugin 26.630.12135.",
         "zh_Hans": "在 Xpert 中创建、编辑、渲染、校验和导出演示文稿。由 Codex Presentations skill plugin 26.630.12135 转换而来。"
       },
-      "level": "system",
       "category": "productivity",
       "keywords": [
         "slides",
@@ -3373,7 +3371,6 @@
         "en_US": "Create, edit, analyze, visualize, render, and export spreadsheet artifacts in Xpert. Converted from the Codex Spreadsheets skill plugin 26.630.12135.",
         "zh_Hans": "在 Xpert 中创建、编辑、分析、可视化、渲染和导出电子表格制品。由 Codex Spreadsheets skill plugin 26.630.12135 转换而来。"
       },
-      "level": "system",
       "category": "productivity",
       "keywords": [
         "sheet",
