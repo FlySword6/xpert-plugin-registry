@@ -1,0 +1,263 @@
+{
+  "name": "@xpert-ai/plugin-pencil",
+  "packageName": "@xpert-ai/plugin-pencil",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "Pencil",
+    "zh_Hans": "Pencil 设计"
+  },
+  "description": {
+    "en_US": "Pencil app plugin for Agent-managed design documents, editable workbench review, selected design graph tools, imports, exports, drafts, and reviewable versions.",
+    "zh_Hans": "Pencil 设计应用插件，支持 Agent 管理设计文档、可编辑工作台审核、精选设计图层工具、导入导出、草稿和可审阅版本。"
+  },
+  "level": "system",
+  "category": "创意设计",
+  "keywords": [
+    "pencil",
+    "design",
+    "figma",
+    "fig",
+    "pen",
+    "canvas",
+    "auto-layout",
+    "agent-pencil",
+    "workbench",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/pencil"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M64 188L84 98C87 84 99 74 113 74H184C191 74 196 81 194 88L174 178C171 192 159 202 145 202H74C67 202 62 195 64 188Z\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"10\"/><path d=\"M105 126H160\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M98 154H144\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M70 190L96 176L84 164L70 190Z\" fill=\"#F59E0B\" stroke=\"#0F172A\" stroke-width=\"6\" stroke-linejoin=\"round\"/><path d=\"M85 165L169 81\" stroke=\"#F59E0B\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M166 78L178 66C184 60 193 60 199 66C205 72 205 81 199 87L187 99\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+    "color": "#2563eb"
+  },
+  "source": {
+    "type": "git",
+    "packageName": "@xpert-ai/plugin-pencil",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "sparsePath": "xpertai/apps/pencil"
+  },
+  "license": "AGPL-3.0",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Pencil",
+    "shortDescription": "Agentic design documents and editable workbench",
+    "longDescription": "Create, inspect, edit, version, import, and export Pencil design documents from natural-language intent. Includes Pencil Assistant, middleware tools, multi-page design workbench, layout and property editing, code view, draft persistence, and file export workflows.",
+    "developerName": "XpertAI",
+    "category": "Design",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://xpertai.cn",
+    "privacyPolicyURL": "https://xpertai.cn",
+    "termsOfServiceURL": "https://xpertai.cn",
+    "composerIcon": "./assets/composerIcon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Create a new Pencil design document for this product screen.",
+      "Create a realistic Pencil sample dashboard with complex auto-layout.",
+      "Import this .fig file into Pencil and summarize the pages.",
+      "Export the current Pencil document as SVG."
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  },
+  "policy": {
+    "installation": "AVAILABLE",
+    "authentication": "ON_FIRST_USE",
+    "pluginSharing": true
+  },
+  "assets": {
+    "composerIcon": "./assets/composerIcon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  },
+  "targetApps": [
+    "xpert",
+    "data-xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "assistant-template",
+        "skill",
+        "app",
+        "xpertai-bundle"
+      ],
+      "capabilities": [
+        "pencil",
+        "pencil-workbench",
+        "agent-pencil",
+        "pencil-assistant-template"
+      ],
+      "marketplace": {
+        "category": "creativity",
+        "contents": [
+          {
+            "type": "skill",
+            "name": "pencil-agent-skill",
+            "displayName": "Pencil Agent Skill",
+            "description": "Skill for using Pencil Workbench context, middleware tools, graph snapshots, node edits, file import/export, versioning, and recovery.",
+            "tags": [
+              "skill",
+              "pencil",
+              "figma",
+              "design",
+              "agentic-app",
+              "middleware-tools"
+            ]
+          },
+          {
+            "type": "assistant-template",
+            "name": "pencil-assistant",
+            "displayName": "Pencil Assistant",
+            "description": "Assistant template for Pencil design workflows.",
+            "metadata": {
+              "app": "pencil"
+            }
+          },
+          {
+            "type": "app",
+            "name": "pencil",
+            "displayName": "Pencil",
+            "description": "Use Pencil Assistant with Workbench and Agent middleware tools for design documents.",
+            "operations": [
+              {
+                "name": "create-pencil-documents",
+                "displayName": "Create Pencil documents",
+                "description": "Create persistent Pencil design documents and graph working copies.",
+                "access": "write"
+              },
+              {
+                "name": "import-export-pencil-files",
+                "displayName": "Import and export Pencil files",
+                "description": "Import .fig/.pen files and export .fig, PNG, JPG, WebP, SVG, PDF, and JSX workspace files.",
+                "access": "write"
+              },
+              {
+                "name": "review-pencil-workbench",
+                "displayName": "Review Pencil Workbench",
+                "description": "Open the Pencil Workbench to inspect, edit, version, restore, archive, and delete design documents.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "pencil_workbench",
+            "displayName": "Pencil Workbench",
+            "description": "Workbench view for Pencil design documents, imports, exports, versions, and logs.",
+            "metadata": {
+              "app": "pencil"
+            }
+          },
+          {
+            "type": "middleware",
+            "name": "PencilMiddleware",
+            "displayName": "Pencil Agent Tools",
+            "description": "Assistant middleware tools for creating, importing, editing, exporting, searching, versioning, and recovering Pencil documents.",
+            "metadata": {
+              "app": "pencil"
+            }
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": [
+        "workbench-view",
+        "assistant-tool",
+        "business-app"
+      ],
+      "capabilities": [
+        "pencil",
+        "pencil-workbench",
+        "agent-pencil",
+        "pencil-assistant-template"
+      ],
+      "marketplace": {
+        "category": "creativity",
+        "contents": [
+          {
+            "type": "app",
+            "name": "pencil",
+            "displayName": "Pencil",
+            "description": "Create, inspect, edit, version, import, export, and review Agent-managed Pencil design documents.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M64 188L84 98C87 84 99 74 113 74H184C191 74 196 81 194 88L174 178C171 192 159 202 145 202H74C67 202 62 195 64 188Z\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"10\"/><path d=\"M105 126H160\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M98 154H144\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M70 190L96 176L84 164L70 190Z\" fill=\"#F59E0B\" stroke=\"#0F172A\" stroke-width=\"6\" stroke-linejoin=\"round\"/><path d=\"M85 165L169 81\" stroke=\"#F59E0B\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M166 78L178 66C184 60 193 60 199 66C205 72 205 81 199 87L187 99\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+              "color": "#2563eb"
+            },
+            "operations": [
+              {
+                "name": "create-pencil-documents",
+                "displayName": "Create Pencil documents",
+                "description": "Create persistent Pencil design documents and graph working copies from natural-language intent.",
+                "access": "write"
+              },
+              {
+                "name": "import-export-pencil-files",
+                "displayName": "Import and export Pencil files",
+                "description": "Import .fig/.pen files and export .fig, PNG, JPG, WebP, SVG, PDF, and JSX workspace files.",
+                "access": "write"
+              },
+              {
+                "name": "review-pencil-workbench",
+                "displayName": "Review Pencil Workbench",
+                "description": "Review, edit, draft-save, version, restore, archive, delete, import, and export design documents in the Workbench.",
+                "access": "read"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "pencil_workbench",
+            "displayName": "Pencil Workbench",
+            "description": "Workbench view for multi-page Pencil graph editing, layers, properties, code view, imports, exports, review status, versions, and logs."
+          },
+          {
+            "type": "middleware",
+            "name": "PencilMiddleware",
+            "displayName": "Pencil Agent Tools",
+            "description": "Assistant middleware tools for creating Pencil documents, importing files, reading nodes, saving versions, exporting workspace files, applying selected design graph tools, and recovering failed drafts."
+          },
+          {
+            "type": "assistant-template",
+            "name": "pencil-assistant",
+            "displayName": "Pencil Assistant Template",
+            "description": "Prebuilt assistant template for Pencil Agentic App workflows.",
+            "metadata": {
+              "app": "pencil"
+            }
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil#readme",
+        "updatedAt": "2026-07-10T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": [
+          "PencilMiddleware"
+        ],
+        "viewProviders": [
+          "pencil"
+        ],
+        "templateProviders": [
+          "pencilTemplates"
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil#readme",
+  "updatedAt": "2026-07-10T00:00:00.000Z"
+}
