@@ -1,0 +1,90 @@
+{
+  "name": "@xpert-ai/plugin-presentation-studio",
+  "packageName": "@xpert-ai/plugin-presentation-studio",
+  "displayName": {
+    "en_US": "Presentation Studio",
+    "zh_Hans": "Presentation Studio 演示工作室"
+  },
+  "description": {
+    "en_US": "Agentic presentation studio with the DashiAI layout catalog, native editing Workbench, Yjs collaboration, versioning, and HTML/PDF/PPTX export.",
+    "zh_Hans": "基于 DashiAI 版式目录的 Agentic 演示文稿工作室，支持原生编辑工作台、Yjs 协作、版本管理以及 HTML/PDF/PPTX 导出。"
+  },
+  "level": "system",
+  "category": "app",
+  "keywords": [
+    "presentation",
+    "slides",
+    "ppt",
+    "pptx",
+    "pdf",
+    "html",
+    "dashi",
+    "dashiai",
+    "collaboration",
+    "yjs",
+    "workbench",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/presentation-studio"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Presentation Studio\"><rect x=\"7\" y=\"9\" width=\"50\" height=\"38\" rx=\"7\" fill=\"#7c3aed\"/><rect x=\"14\" y=\"16\" width=\"22\" height=\"5\" rx=\"2.5\" fill=\"#ede9fe\"/><rect x=\"14\" y=\"26\" width=\"14\" height=\"3\" rx=\"1.5\" fill=\"#c4b5fd\"/><rect x=\"39\" y=\"17\" width=\"11\" height=\"17\" rx=\"3\" fill=\"#a78bfa\"/><path d=\"M32 47v8M23 55h18\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>",
+    "color": "#7c3aed"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-presentation-studio",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-presentation-studio"
+  },
+  "license": "AGPL-3.0",
+  "targetApps": ["data-xpert", "xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "types": ["assistant-template", "skill", "app", "xpertai-bundle"],
+      "capabilities": [
+        "presentation-studio",
+        "presentation-generation",
+        "presentation-workbench",
+        "presentation-collaboration",
+        "presentation-export",
+        "presentation-assistant-template"
+      ],
+      "marketplace": {
+        "category": "productivity",
+        "contents": [
+          {
+            "type": "skill",
+            "name": "presentation-studio",
+            "displayName": "Presentation Studio Skill",
+            "description": "Agent workflow for DashiAI presentation generation, Workbench editing, versioning, collaboration, and export.",
+            "tags": ["presentation", "pptx", "dashi", "yjs"]
+          },
+          {
+            "type": "assistant-template",
+            "name": "presentation-studio-assistant",
+            "displayName": "Presentation Studio Assistant",
+            "description": "Assistant template for presentation workflows."
+          },
+          {
+            "type": "app",
+            "name": "presentation-studio",
+            "displayName": "Presentation Studio",
+            "description": "Presentation Workbench and Agent middleware tools."
+          }
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio#readme",
+  "updatedAt": "2026-07-13T00:00:00.000Z"
+}
