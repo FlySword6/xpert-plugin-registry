@@ -1,14 +1,18 @@
 {
-  "updatedAt": "2026-07-13T03:32:36.647Z",
-  "total": 69,
+  "updatedAt": "2026-07-19T06:33:04.651Z",
+  "total": 70,
   "official": [
-    "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-canvas",
-    "@xpert-ai/plugin-dify",
-    "@xpert-ai/plugin-documents",
+    "@xpert-ai/plugin-cut",
     "@xpert-ai/plugin-docx-editor",
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
+    "@xpert-ai/plugin-lucidchart",
+    "@xpert-ai/plugin-pencil",
+    "@xpert-ai/plugin-presentation-studio",
+    "@xpert-ai/plugin-calculator",
+    "@xpert-ai/plugin-dify",
+    "@xpert-ai/plugin-documents",
     "@xpert-ai/plugin-fastgpt",
     "@xpert-ai/plugin-file-system",
     "@xpert-ai/plugin-firecrawl",
@@ -16,7 +20,6 @@
     "@xpert-ai/plugin-dingtalk",
     "@xpert-ai/plugin-lark",
     "@xpert-ai/plugin-wecom",
-    "@xpert-ai/plugin-lucidchart",
     "@xpert-ai/plugin-advisor",
     "@xpert-ai/plugin-clarification",
     "@xpert-ai/plugin-context-editing",
@@ -53,8 +56,6 @@
     "@xpert-ai/plugin-motion",
     "@xpert-ai/plugin-mysql",
     "@xpert-ai/plugin-pdfium",
-    "@xpert-ai/plugin-pencil",
-    "@xpert-ai/plugin-presentation-studio",
     "@xpert-ai/plugin-presentations",
     "@xpert-ai/plugin-product-design",
     "@xpert-ai/plugin-rag-vlm",
@@ -76,49 +77,6 @@
   ],
   "plugins": [
     {
-      "name": "@xpert-ai/plugin-calculator",
-      "displayName": {
-        "en_US": "Calculator toolset",
-        "zh_Hans": "计算器工具集"
-      },
-      "description": {
-        "en_US": "Provide calculator toolset",
-        "zh_Hans": "提供计算器工具集"
-      },
-      "category": "tools",
-      "keywords": [
-        "calculator",
-        "toolset"
-      ],
-      "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cn"
-      },
-      "repository": "https://github.com/xpert-ai/xpert-plugins",
-      "icon": {
-        "type": "image",
-        "value": "data:image/png;base64,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"
-      },
-      "verified": true,
-      "source": {
-        "type": "npm",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-calculator"
-      },
-      "targetApps": [
-        "xpert"
-      ],
-      "targetAppMeta": {
-        "xpert": {
-          "marketplace": {
-            "category": "developer-tools",
-            "subcategory": "tools"
-          }
-        }
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/calculator/README.md",
-      "updatedAt": "2025-11-10T03:00:00.000Z"
-    },
-    {
       "name": "@xpert-ai/plugin-canvas",
       "packageName": "@xpert-ai/plugin-canvas",
       "displayName": {
@@ -130,7 +88,7 @@
         "zh_Hans": "面向 Agent 协作创作的 Canvas 画布插件，支持 tldraw 无限画布、AI 图片占位、标注迭代、视口快照自动保存、可审核版本和可编辑工作台。"
       },
       "level": "system",
-      "category": "创意设计",
+      "category": "middleware",
       "keywords": [
         "canvas",
         "tldraw",
@@ -295,261 +253,291 @@
       "verified": true
     },
     {
-      "name": "@xpert-ai/plugin-dify",
+      "name": "@xpert-ai/plugin-cut",
+      "packageName": "@xpert-ai/plugin-cut",
+      "version": "0.1.0",
       "displayName": {
-        "en_US": "Dify Integration",
-        "zh_Hans": "Dify 集成"
+        "en_US": "Cut",
+        "zh_Hans": "Cut 剪辑"
       },
       "description": {
-        "en_US": "Provide Dify integration and external knowledgebase connector",
-        "zh_Hans": "提供 Dify 集成和外部知识库连接器"
+        "en_US": "Agentic non-linear video editor with scoped media intelligence, evidence-backed edit proposals, deterministic timeline editing, reviewable captions, versioning, and browser or Sandbox Job export.",
+        "zh_Hans": "智能非线性视频剪辑应用，支持作用域媒体内容理解、证据化剪辑提案、确定性时间线编辑、可审阅字幕、版本管理以及浏览器或 Sandbox Job 导出。"
       },
-      "category": "Integration",
+      "level": "system",
+      "artifactNamespace": "cut",
+      "category": "middleware",
       "keywords": [
-        "dify",
-        "integration",
-        "external knowledgebase"
+        "cut",
+        "video",
+        "timeline",
+        "opencut",
+        "editor",
+        "workbench",
+        "agent",
+        "captions",
+        "speech-to-text",
+        "sandbox-job",
+        "assistant-template",
+        "data-xpert"
       ],
       "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cloud"
-      },
-      "repository": "https://github.com/xpert-ai/xpert-plugins",
-      "icon": {
-        "type": "svg",
-        "value": "<svg width=\"200\" height=\"89\" viewBox=\"0 0 200 89\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M88.3295 15.5795C94.0043 15.5795 96.1098 12.0962 96.1098 7.78976C96.1098 3.48331 94.0143 0 88.3295 0C82.6448 0 80.5493 3.48331 80.5493 7.78976C80.5493 12.0962 82.6448 15.5795 88.3295 15.5795Z\" fill=\"#0033FF\"/>\n<path d=\"M23.6114 0.0100098H0V72.3162H23.6114C52.7772 72.3162 61.1089 55.6325 61.1089 36.1581C61.1089 16.6837 52.7772 0.0100098 23.6114 0.0100098ZM23.8921 61.1938H13.3347V11.1325H23.8921C40.6657 11.1325 47.7842 19.374 47.7842 36.1581C47.7842 52.9422 40.6657 61.1837 23.8921 61.1837V61.1938Z\" fill=\"black\"/>\n<path d=\"M115.55 17.2559V22.265H102.777V33.3875H115.55V61.2038H94.4354V22.255H66.6632V33.3775H82.2137V61.1938H63.876V72.3162H147.203V61.1938H127.762V33.3775H147.203V22.255H127.762V11.1325H147.203V0.0100098H132.755C123.26 0.0100098 115.53 7.74958 115.53 17.2559H115.55Z\" fill=\"#0033FF\"/>\n<path d=\"M186.806 22.255L175.697 58.4131L164.588 22.255H151.394L167.505 69.0237C169.18 73.8923 166.342 77.8775 161.199 77.8775H155.554V89H163.856C171.095 89 177.612 84.4125 180.058 77.5964L200 22.255H186.806Z\" fill=\"black\"/>\n</svg>"
-      },
-      "verified": true,
-      "source": {
-        "type": "npm",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-dify"
-      },
-      "targetApps": [
-        "xpert"
-      ],
-      "targetAppMeta": {
-        "xpert": {
-          "marketplace": {
-            "category": "developer-tools",
-            "subcategory": "integration"
-          }
-        }
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/dify/README.md",
-      "updatedAt": "2025-10-21T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-documents",
-      "packageName": "@xpert-ai/plugin-documents",
-      "displayName": {
-        "en_US": "Documents",
-        "zh_Hans": "文档"
-      },
-      "description": {
-        "en_US": "Create, edit, redline, and review document artifacts in Xpert. Converted from the Codex Documents skill plugin 26.630.12135.",
-        "zh_Hans": "在 Xpert 中创建、编辑、批注、修订和审阅文档制品。由 Codex Documents skill plugin 26.630.12135 转换而来。"
-      },
-      "category": "productivity",
-      "keywords": [
-        "doc",
-        "docs",
-        "document",
-        "documents",
-        "word",
-        "google docs",
-        "memo",
-        "docx",
-        "artifacts",
-        "skill"
-      ],
-      "author": {
-        "name": "XpertAI",
+        "name": "XpertAI Team",
         "url": "https://xpertai.cn"
       },
       "repository": {
         "type": "git",
         "url": "https://github.com/xpert-ai/xpert-plugins.git",
-        "directory": "xpertai/skills/documents"
+        "directory": "xpertai/apps/cut"
       },
-      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/skills/documents",
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/cut",
       "icon": {
         "type": "svg",
-        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Documents\"><rect x=\"14\" y=\"6\" width=\"36\" height=\"52\" rx=\"6\" fill=\"#2563EB\"/><path d=\"M40 6v15h10\" fill=\"#93C5FD\"/><path d=\"M40 6v11a4 4 0 0 0 4 4h6\" fill=\"#60A5FA\"/><rect x=\"21\" y=\"28\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#FFFFFF\"/><rect x=\"21\" y=\"37\" width=\"20\" height=\"4\" rx=\"2\" fill=\"#DBEAFE\"/><rect x=\"21\" y=\"46\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#BFDBFE\"/></svg>",
-        "color": "#2563EB"
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"48\" fill=\"#0B1020\"/><path d=\"M51 76h154M51 180h154\" stroke=\"#7DD3FC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M84 48v160M172 48v160\" stroke=\"#F8FAFC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"m106 103 48 25-48 25v-50Z\" fill=\"#FB7185\"/></svg>",
+        "color": "#0EA5E9"
       },
       "source": {
-        "type": "npm",
-        "packageName": "@xpert-ai/plugin-documents",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-documents"
+        "type": "git",
+        "packageName": "@xpert-ai/plugin-cut",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "sparsePath": "xpertai/apps/cut"
       },
-      "license": "MIT",
+      "license": "AGPL-3.0",
       "skills": "./skills",
       "interface": {
-        "displayName": "Documents",
-        "shortDescription": "Create and edit document artifacts",
-        "longDescription": "Create, edit, inspect, render, verify, and export DOCX document artifacts locally. Converted from Codex primary-runtime skill plugin 26.630.12135 for installation into Xpert workspaces.",
+        "displayName": "Cut",
+        "shortDescription": "Agentic non-linear video editor",
+        "longDescription": "Import Workspace media, understand transcript and visual evidence, edit revision-safe timelines with Agent tools or Cut Workbench, review captions and edit proposals, and export videos in the browser or through Managed Queue and Sandbox Jobs.",
         "developerName": "XpertAI",
         "category": "Productivity",
         "capabilities": [
           "Interactive",
+          "Read",
           "Write"
         ],
         "websiteURL": "https://xpertai.cn",
         "privacyPolicyURL": "https://xpertai.cn",
         "termsOfServiceURL": "https://xpertai.cn",
-        "composerIcon": "./assets/icon.png",
-        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/composerIcon.svg",
+        "logo": "./assets/logo.svg",
         "defaultPrompt": [
-          "Draft a project memo as a document",
-          "Create a document from this outline",
-          "Write a polished doc for this plan"
+          "Create a 30-second 1080p Cut project.",
+          "Import this media and make a rough cut.",
+          "Split and trim the selected clip."
         ],
-        "brandColor": "#2563EB",
-        "screenshots": [
-          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dbeafe%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.46%22%20stop-color%3D%22%23eef2ff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e9d5ff%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.25%22%20cy%3D%220.1%22%20r%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23g%29%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23r%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M90%20330C210%20210%20280%2080%20440%20115c125%2027%20145%20140%20275%20117%20122-21%20167-145%20312-127%2084%2011%20144%2058%20205%20125v150H90z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.25%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate%28770%2042%29%20rotate%288%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h145l55%2055v210H0z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M145%200v55h55%22%20fill%3D%22%23bfdbfe%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2294%22%20width%3D%22118%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22130%22%20width%3D%22142%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22166%22%20width%3D%2296%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
-        ]
+        "brandColor": "#0EA5E9",
+        "screenshots": []
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "NONE",
+        "authentication": "ON_FIRST_USE",
         "pluginSharing": true
       },
       "assets": {
-        "composerIcon": "./assets/icon.png",
-        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/composerIcon.svg",
+        "logo": "./assets/logo.svg",
         "screenshots": []
       },
       "targetApps": [
+        "data-xpert",
         "xpert"
       ],
       "targetAppMeta": {
-        "xpert": {
+        "data-xpert": {
           "types": [
-            "skill",
-            "xpertai-bundle"
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
           ],
           "capabilities": [
-            "documents",
-            "documents-skill"
+            "cut",
+            "cut-workbench",
+            "cut-agent",
+            "cut-assistant-template"
           ],
-          "runtime": {
-            "requiredTools": [
-              {
-                "kind": "agent-middleware-tool",
-                "provider": "SkillsMiddleware",
-                "name": "read_skill_file",
-                "required": true,
-                "purpose": "Read bundled skill instructions, references, scripts, and assets before use."
-              },
-              {
-                "kind": "agent-middleware-tool",
-                "provider": "SkillsMiddleware",
-                "name": "skill_shell",
-                "required": true,
-                "purpose": "Run shell commands from the installed skill runtime directory for DOCX creation and verification."
-              }
-            ],
-            "compatibleTools": [
-              {
-                "kind": "agent-middleware-tool",
-                "provider": "SandboxShell",
-                "name": "sandbox_shell",
-                "required": false,
-                "purpose": "Alternative general shell execution tool when skill_shell is unavailable."
-              },
-              {
-                "kind": "builtin-toolset-tool",
-                "provider": "bash",
-                "name": "bash_execute",
-                "required": false,
-                "purpose": "Alternative Bash execution tool for Xpert templates that bind builtin toolsets."
-              },
-              {
-                "kind": "builtin-toolset-tool",
-                "provider": "file",
-                "name": "file_edit",
-                "required": false,
-                "purpose": "Optional workspace file inspection and edits for generated artifact support files."
-              },
-              {
-                "kind": "builtin-toolset-tool",
-                "provider": "python",
-                "name": "python_execute",
-                "required": false,
-                "purpose": "Optional Python execution helper when shell access is delegated to the Python toolset."
-              }
-            ],
-            "requiredRuntime": {
-              "filesystem": {
-                "read": true,
-                "write": true,
-                "workspace": true
-              },
-              "shell": true,
-              "workspaceDependencies": true,
-              "executables": [
-                "python",
-                "node"
-              ],
-              "packages": [
-                "python-docx",
-                "Pillow"
-              ]
-            },
-            "optionalRuntime": {
-              "executables": [
-                "soffice",
-                "pdfinfo",
-                "pdftoppm"
-              ],
-              "packages": [
-                "pdf2image",
-                "reportlab"
-              ],
-              "integrations": [
-                "Google Drive document import for native Google Docs output"
-              ]
-            }
-          },
           "marketplace": {
-            "category": "productivity",
-            "screenshots": [
-              "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dbeafe%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.46%22%20stop-color%3D%22%23eef2ff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e9d5ff%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.25%22%20cy%3D%220.1%22%20r%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23g%29%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23r%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M90%20330C210%20210%20280%2080%20440%20115c125%2027%20145%20140%20275%20117%20122-21%20167-145%20312-127%2084%2011%20144%2058%20205%20125v150H90z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.25%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate%28770%2042%29%20rotate%288%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h145l55%2055v210H0z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M145%200v55h55%22%20fill%3D%22%23bfdbfe%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2294%22%20width%3D%22118%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22130%22%20width%3D%22142%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22166%22%20width%3D%2296%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+            "category": "creativity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "cut",
+                "displayName": "Cut",
+                "description": "Agentic non-linear video editor with browser and headless MP4 export.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"48\" fill=\"#0B1020\"/><path d=\"M51 76h154M51 180h154\" stroke=\"#7DD3FC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M84 48v160M172 48v160\" stroke=\"#F8FAFC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"m106 103 48 25-48 25v-50Z\" fill=\"#FB7185\"/></svg>",
+                  "color": "#0EA5E9"
+                },
+                "operations": [
+                  {
+                    "name": "cut_create_projects",
+                    "displayName": "Create Cut projects",
+                    "description": "Create scoped, versioned video-editing projects.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "cut_edit_timelines",
+                    "displayName": "Edit Cut timelines",
+                    "description": "Import media, create evidence-backed review proposals, and apply revision-safe timeline edits.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "cut_transcribe_captions",
+                    "displayName": "Transcribe and review captions",
+                    "description": "Queue transcription, import or export subtitles, review drafts, and commit approved captions.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "cut_review_export",
+                    "displayName": "Review and export",
+                    "description": "Review timelines and export video locally or through a bounded Sandbox Job.",
+                    "access": "write"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "cut_workbench",
+                "displayName": "Cut Workbench",
+                "description": "Media preview, timeline editing, version review, caption workflows, and export."
+              },
+              {
+                "type": "middleware",
+                "name": "CutMiddleware",
+                "displayName": "Cut Agent Tools",
+                "description": "Tools for project, media, timeline, transcription, caption review, version, and failure operations."
+              },
+              {
+                "type": "assistant-template",
+                "name": "cut-assistant",
+                "displayName": "Cut Assistant Template",
+                "description": "Prebuilt assistant for Agentic video editing workflows.",
+                "metadata": {
+                  "app": "cut"
+                }
+              }
             ],
-            "trialShortcuts": [
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/cut#readme",
+            "updatedAt": "2026-07-19T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "CutMiddleware"
+            ],
+            "viewProviders": [
+              "cut"
+            ],
+            "templateProviders": [
+              "cutTemplates"
+            ]
+          }
+        },
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle",
+            "mcp-server",
+            "tool"
+          ],
+          "capabilities": [
+            "cut",
+            "cut-workbench",
+            "cut-agent",
+            "cut-assistant-template",
+            "cut-mcp"
+          ],
+          "marketplace": {
+            "category": "creativity",
+            "contents": [
               {
-                "id": "documents-1",
-                "prompt": "Draft a project memo as a document",
-                "skillKey": "documents",
-                "icon": {
-                  "type": "image",
-                  "value": "./assets/icon.png"
+                "type": "skill",
+                "name": "cut-agent-skill",
+                "displayName": "Cut Agent Skill",
+                "description": "Use Cut project, media, timeline edit, version, and failure tools.",
+                "tags": [
+                  "skill",
+                  "cut",
+                  "video",
+                  "timeline"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "cut-assistant",
+                "displayName": "Cut Assistant",
+                "description": "Assistant template for video editing.",
+                "metadata": {
+                  "app": "cut"
                 }
               },
               {
-                "id": "documents-2",
-                "prompt": "Create a document from this outline",
-                "skillKey": "documents",
-                "icon": {
-                  "type": "image",
-                  "value": "./assets/icon.png"
+                "type": "app",
+                "name": "cut",
+                "displayName": "Cut",
+                "description": "Agentic non-linear video editor.",
+                "operations": [
+                  {
+                    "name": "cut_create_projects",
+                    "displayName": "Create Cut projects",
+                    "description": "Create scoped, versioned video-editing projects.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "cut_edit_timelines",
+                    "displayName": "Edit Cut timelines",
+                    "description": "Import media, create evidence-backed review proposals, and apply revision-safe timeline edits.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "cut_transcribe_captions",
+                    "displayName": "Transcribe and review captions",
+                    "description": "Queue transcription, import or export subtitles, review drafts, and commit approved captions.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "cut_review_export",
+                    "displayName": "Review and export",
+                    "description": "Review timelines and export video locally or through a bounded Sandbox Job.",
+                    "access": "write"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "cut_workbench",
+                "displayName": "Cut Workbench",
+                "description": "Video editing Workbench.",
+                "metadata": {
+                  "app": "cut"
                 }
               },
               {
-                "id": "documents-3",
-                "prompt": "Write a polished doc for this plan",
-                "skillKey": "documents",
-                "icon": {
-                  "type": "image",
-                  "value": "./assets/icon.png"
+                "type": "middleware",
+                "name": "CutMiddleware",
+                "displayName": "Cut Agent Tools",
+                "description": "Scoped Cut editing tools.",
+                "metadata": {
+                  "app": "cut"
+                }
+              },
+              {
+                "type": "tool",
+                "name": "cut-ir-mcp",
+                "displayName": "Cut IR MCP Tools",
+                "description": "Portable, side-effect-free Cut project validation, comparison, and in-memory editing tools.",
+                "metadata": {
+                  "app": "cut",
+                  "protocol": "mcp"
                 }
               }
             ]
           }
         }
       },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/skills/documents/README.md",
-      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/cut#readme",
+      "updatedAt": "2026-07-19T00:00:00.000Z",
       "verified": true
     },
     {
@@ -1080,6 +1068,850 @@
       "verified": true
     },
     {
+      "name": "@xpert-ai/plugin-lucidchart",
+      "packageName": "@xpert-ai/plugin-lucidchart",
+      "displayName": {
+        "en_US": "Lucidchart",
+        "zh_Hans": "Lucidchart 绘图"
+      },
+      "description": {
+        "en_US": "Lucidchart app plugin for Agent-created Standard Import drafts, Lucid document references, reviewable versions, and a workbench.",
+        "zh_Hans": "面向 Agent 自动绘图的 Lucidchart 插件，支持 Standard Import 草稿、Lucid 文档引用、可审核版本和工作台。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "lucidchart",
+        "standard-import",
+        "diagram",
+        "mermaid",
+        "agent-drawing",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/lucidchart"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
+        "color": "#2563eb"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-lucidchart",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-lucidchart"
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "lucidchart",
+            "lucidchart-workbench",
+            "lucidchart-agent-drawing",
+            "lucidchart-assistant-template"
+          ],
+          "marketplace": {
+            "category": "creativity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "index",
+                "displayName": "Lucidchart Agent Drawing",
+                "description": "Workflow skill for Agent-managed Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, and Workbench review.",
+                "tags": [
+                  "skill",
+                  "lucidchart",
+                  "agent-drawing"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "lucidchart-assistant",
+                "displayName": "Lucidchart Drawing Assistant",
+                "description": "Assistant template for Lucidchart draft workflows."
+              },
+              {
+                "type": "app",
+                "name": "lucidchart",
+                "displayName": "Lucidchart",
+                "description": "Workbench and Agent middleware tools for Lucidchart drafts."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "lucidchart",
+            "lucidchart-workbench",
+            "lucidchart-agent-drawing",
+            "lucidchart-assistant-template"
+          ],
+          "marketplace": {
+            "category": "creativity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "lucidchart",
+                "displayName": "Lucidchart",
+                "description": "Create, update, review, version, import, and register Agent-generated Lucidchart Standard Import drafts and Lucid links.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
+                  "color": "#2563eb"
+                },
+                "operations": [
+                  {
+                    "name": "create-lucidchart-documents",
+                    "displayName": "Create Lucidchart documents",
+                    "description": "Create reviewable Lucidchart document records with Standard Import JSON, Mermaid drafts, or external Lucid links.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "save-lucidchart-versions",
+                    "displayName": "Save Lucidchart versions",
+                    "description": "Save complete or patched Lucid Standard Import document.json versions.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-lucidchart-workbench",
+                    "displayName": "Review Lucidchart drafts",
+                    "description": "Review, import, export JSON, restore, archive, register Lucid links, and ask the Assistant to update drafts.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "lucidchart_workbench",
+                "displayName": "Lucidchart Workbench",
+                "description": "Workbench view for Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, versions, and Agent redraw requests."
+              },
+              {
+                "type": "tool",
+                "name": "LucidchartMiddleware",
+                "displayName": "Lucidchart Agent Tools",
+                "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, external-link registration, and failure-reporting Lucidchart documents."
+              },
+              {
+                "type": "assistant-template",
+                "name": "lucidchart-assistant",
+                "displayName": "Lucidchart Drawing Assistant Template",
+                "description": "Prebuilt assistant template for Lucidchart draft generation and version management."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
+            "updatedAt": "2026-06-15T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "LucidchartMiddleware"
+            ],
+            "viewProviders": [
+              "lucidchart"
+            ],
+            "templateProviders": [
+              "lucidchartTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
+      "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-pencil",
+      "packageName": "@xpert-ai/plugin-pencil",
+      "version": "0.1.0",
+      "displayName": {
+        "en_US": "Pencil",
+        "zh_Hans": "Pencil 设计"
+      },
+      "description": {
+        "en_US": "Pencil app plugin for Agent-managed design documents, editable workbench review, selected design graph tools, imports, exports, drafts, and reviewable versions.",
+        "zh_Hans": "Pencil 设计应用插件，支持 Agent 管理设计文档、可编辑工作台审核、精选设计图层工具、导入导出、草稿和可审阅版本。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "pencil",
+        "design",
+        "figma",
+        "fig",
+        "pen",
+        "canvas",
+        "auto-layout",
+        "agent-pencil",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/pencil"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M64 188L84 98C87 84 99 74 113 74H184C191 74 196 81 194 88L174 178C171 192 159 202 145 202H74C67 202 62 195 64 188Z\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"10\"/><path d=\"M105 126H160\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M98 154H144\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M70 190L96 176L84 164L70 190Z\" fill=\"#F59E0B\" stroke=\"#0F172A\" stroke-width=\"6\" stroke-linejoin=\"round\"/><path d=\"M85 165L169 81\" stroke=\"#F59E0B\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M166 78L178 66C184 60 193 60 199 66C205 72 205 81 199 87L187 99\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+        "color": "#2563eb"
+      },
+      "source": {
+        "type": "git",
+        "packageName": "@xpert-ai/plugin-pencil",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "sparsePath": "xpertai/apps/pencil"
+      },
+      "license": "AGPL-3.0",
+      "skills": "./skills",
+      "interface": {
+        "displayName": "Pencil",
+        "shortDescription": "Agentic design documents and editable workbench",
+        "longDescription": "Create, inspect, edit, version, import, and export Pencil design documents from natural-language intent. Includes Pencil Assistant, middleware tools, multi-page design workbench, layout and property editing, code view, draft persistence, and file export workflows.",
+        "developerName": "XpertAI",
+        "category": "Design",
+        "capabilities": [
+          "Interactive",
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://xpertai.cn",
+        "privacyPolicyURL": "https://xpertai.cn",
+        "termsOfServiceURL": "https://xpertai.cn",
+        "composerIcon": "./assets/composerIcon.svg",
+        "logo": "./assets/logo.svg",
+        "defaultPrompt": [
+          "Create a new Pencil design document for this product screen.",
+          "Create a realistic Pencil sample dashboard with complex auto-layout.",
+          "Import this .fig file into Pencil and summarize the pages.",
+          "Export the current Pencil document as SVG."
+        ],
+        "brandColor": "#2563EB",
+        "screenshots": []
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE",
+        "pluginSharing": true
+      },
+      "assets": {
+        "composerIcon": "./assets/composerIcon.svg",
+        "logo": "./assets/logo.svg",
+        "screenshots": []
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "pencil",
+            "pencil-workbench",
+            "agent-pencil",
+            "pencil-assistant-template"
+          ],
+          "marketplace": {
+            "category": "creativity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "pencil-agent-skill",
+                "displayName": "Pencil Agent Skill",
+                "description": "Skill for using Pencil Workbench context, middleware tools, graph snapshots, node edits, file import/export, versioning, and recovery.",
+                "tags": [
+                  "skill",
+                  "pencil",
+                  "figma",
+                  "design",
+                  "agentic-app",
+                  "middleware-tools"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "pencil-assistant",
+                "displayName": "Pencil Assistant",
+                "description": "Assistant template for Pencil design workflows.",
+                "metadata": {
+                  "app": "pencil"
+                }
+              },
+              {
+                "type": "app",
+                "name": "pencil",
+                "displayName": "Pencil",
+                "description": "Use Pencil Assistant with Workbench and Agent middleware tools for design documents.",
+                "operations": [
+                  {
+                    "name": "create-pencil-documents",
+                    "displayName": "Create Pencil documents",
+                    "description": "Create persistent Pencil design documents and graph working copies.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "import-export-pencil-files",
+                    "displayName": "Import and export Pencil files",
+                    "description": "Import .fig/.pen files and export .fig, PNG, JPG, WebP, SVG, PDF, and JSX workspace files.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-pencil-workbench",
+                    "displayName": "Review Pencil Workbench",
+                    "description": "Open the Pencil Workbench to inspect, edit, version, restore, archive, and delete design documents.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "pencil_workbench",
+                "displayName": "Pencil Workbench",
+                "description": "Workbench view for Pencil design documents, imports, exports, versions, and logs.",
+                "metadata": {
+                  "app": "pencil"
+                }
+              },
+              {
+                "type": "middleware",
+                "name": "PencilMiddleware",
+                "displayName": "Pencil Agent Tools",
+                "description": "Assistant middleware tools for creating, importing, editing, exporting, searching, versioning, and recovering Pencil documents.",
+                "metadata": {
+                  "app": "pencil"
+                }
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "pencil",
+            "pencil-workbench",
+            "agent-pencil",
+            "pencil-assistant-template"
+          ],
+          "marketplace": {
+            "category": "creativity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "pencil",
+                "displayName": "Pencil",
+                "description": "Create, inspect, edit, version, import, export, and review Agent-managed Pencil design documents.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M64 188L84 98C87 84 99 74 113 74H184C191 74 196 81 194 88L174 178C171 192 159 202 145 202H74C67 202 62 195 64 188Z\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"10\"/><path d=\"M105 126H160\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M98 154H144\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M70 190L96 176L84 164L70 190Z\" fill=\"#F59E0B\" stroke=\"#0F172A\" stroke-width=\"6\" stroke-linejoin=\"round\"/><path d=\"M85 165L169 81\" stroke=\"#F59E0B\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M166 78L178 66C184 60 193 60 199 66C205 72 205 81 199 87L187 99\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
+                  "color": "#2563eb"
+                },
+                "operations": [
+                  {
+                    "name": "create-pencil-documents",
+                    "displayName": "Create Pencil documents",
+                    "description": "Create persistent Pencil design documents and graph working copies from natural-language intent.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "import-export-pencil-files",
+                    "displayName": "Import and export Pencil files",
+                    "description": "Import .fig/.pen files and export .fig, PNG, JPG, WebP, SVG, PDF, and JSX workspace files.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-pencil-workbench",
+                    "displayName": "Review Pencil Workbench",
+                    "description": "Review, edit, draft-save, version, restore, archive, delete, import, and export design documents in the Workbench.",
+                    "access": "read"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "pencil_workbench",
+                "displayName": "Pencil Workbench",
+                "description": "Workbench view for multi-page Pencil graph editing, layers, properties, code view, imports, exports, review status, versions, and logs."
+              },
+              {
+                "type": "middleware",
+                "name": "PencilMiddleware",
+                "displayName": "Pencil Agent Tools",
+                "description": "Assistant middleware tools for creating Pencil documents, importing files, reading nodes, saving versions, exporting workspace files, applying selected design graph tools, and recovering failed drafts."
+              },
+              {
+                "type": "assistant-template",
+                "name": "pencil-assistant",
+                "displayName": "Pencil Assistant Template",
+                "description": "Prebuilt assistant template for Pencil Agentic App workflows.",
+                "metadata": {
+                  "app": "pencil"
+                }
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil#readme",
+            "updatedAt": "2026-07-10T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "PencilMiddleware"
+            ],
+            "viewProviders": [
+              "pencil"
+            ],
+            "templateProviders": [
+              "pencilTemplates"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil#readme",
+      "updatedAt": "2026-07-10T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-presentation-studio",
+      "packageName": "@xpert-ai/plugin-presentation-studio",
+      "displayName": {
+        "en_US": "Presentation Studio",
+        "zh_Hans": "Presentation Studio 演示工作室"
+      },
+      "description": {
+        "en_US": "Agentic presentation studio with the DashiAI layout catalog, native editing Workbench, Yjs collaboration, versioning, and HTML/PDF/PPTX export.",
+        "zh_Hans": "基于 DashiAI 版式目录的 Agentic 演示文稿工作室，支持原生编辑工作台、Yjs 协作、版本管理以及 HTML/PDF/PPTX 导出。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "presentation",
+        "slides",
+        "ppt",
+        "pptx",
+        "pdf",
+        "html",
+        "dashi",
+        "dashiai",
+        "collaboration",
+        "yjs",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/presentation-studio"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Presentation Studio\"><rect x=\"7\" y=\"9\" width=\"50\" height=\"38\" rx=\"7\" fill=\"#7c3aed\"/><rect x=\"14\" y=\"16\" width=\"22\" height=\"5\" rx=\"2.5\" fill=\"#ede9fe\"/><rect x=\"14\" y=\"26\" width=\"14\" height=\"3\" rx=\"1.5\" fill=\"#c4b5fd\"/><rect x=\"39\" y=\"17\" width=\"11\" height=\"17\" rx=\"3\" fill=\"#a78bfa\"/><path d=\"M32 47v8M23 55h18\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>",
+        "color": "#7c3aed"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-presentation-studio",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-presentation-studio"
+      },
+      "license": "AGPL-3.0",
+      "targetApps": [
+        "data-xpert",
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "presentation-studio",
+            "presentation-generation",
+            "presentation-workbench",
+            "presentation-collaboration",
+            "presentation-export",
+            "presentation-assistant-template"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "presentation-studio",
+                "displayName": "Presentation Studio Skill",
+                "description": "Agent workflow for DashiAI presentation generation, Workbench editing, versioning, collaboration, and export.",
+                "tags": [
+                  "presentation",
+                  "pptx",
+                  "dashi",
+                  "yjs"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "presentation-studio-assistant",
+                "displayName": "Presentation Studio Assistant",
+                "description": "Assistant template for presentation workflows."
+              },
+              {
+                "type": "app",
+                "name": "presentation-studio",
+                "displayName": "Presentation Studio",
+                "description": "Presentation Workbench and Agent middleware tools."
+              }
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio#readme",
+      "updatedAt": "2026-07-13T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-calculator",
+      "displayName": {
+        "en_US": "Calculator toolset",
+        "zh_Hans": "计算器工具集"
+      },
+      "description": {
+        "en_US": "Provide calculator toolset",
+        "zh_Hans": "提供计算器工具集"
+      },
+      "category": "tools",
+      "keywords": [
+        "calculator",
+        "toolset"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "image",
+        "value": "data:image/png;base64,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"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-calculator"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "tools"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/calculator/README.md",
+      "updatedAt": "2025-11-10T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-dify",
+      "displayName": {
+        "en_US": "Dify Integration",
+        "zh_Hans": "Dify 集成"
+      },
+      "description": {
+        "en_US": "Provide Dify integration and external knowledgebase connector",
+        "zh_Hans": "提供 Dify 集成和外部知识库连接器"
+      },
+      "category": "Integration",
+      "keywords": [
+        "dify",
+        "integration",
+        "external knowledgebase"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cloud"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"200\" height=\"89\" viewBox=\"0 0 200 89\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M88.3295 15.5795C94.0043 15.5795 96.1098 12.0962 96.1098 7.78976C96.1098 3.48331 94.0143 0 88.3295 0C82.6448 0 80.5493 3.48331 80.5493 7.78976C80.5493 12.0962 82.6448 15.5795 88.3295 15.5795Z\" fill=\"#0033FF\"/>\n<path d=\"M23.6114 0.0100098H0V72.3162H23.6114C52.7772 72.3162 61.1089 55.6325 61.1089 36.1581C61.1089 16.6837 52.7772 0.0100098 23.6114 0.0100098ZM23.8921 61.1938H13.3347V11.1325H23.8921C40.6657 11.1325 47.7842 19.374 47.7842 36.1581C47.7842 52.9422 40.6657 61.1837 23.8921 61.1837V61.1938Z\" fill=\"black\"/>\n<path d=\"M115.55 17.2559V22.265H102.777V33.3875H115.55V61.2038H94.4354V22.255H66.6632V33.3775H82.2137V61.1938H63.876V72.3162H147.203V61.1938H127.762V33.3775H147.203V22.255H127.762V11.1325H147.203V0.0100098H132.755C123.26 0.0100098 115.53 7.74958 115.53 17.2559H115.55Z\" fill=\"#0033FF\"/>\n<path d=\"M186.806 22.255L175.697 58.4131L164.588 22.255H151.394L167.505 69.0237C169.18 73.8923 166.342 77.8775 161.199 77.8775H155.554V89H163.856C171.095 89 177.612 84.4125 180.058 77.5964L200 22.255H186.806Z\" fill=\"black\"/>\n</svg>"
+      },
+      "verified": true,
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-dify"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "integration"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/dify/README.md",
+      "updatedAt": "2025-10-21T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-documents",
+      "packageName": "@xpert-ai/plugin-documents",
+      "displayName": {
+        "en_US": "Documents",
+        "zh_Hans": "文档"
+      },
+      "description": {
+        "en_US": "Create, edit, redline, and review document artifacts in Xpert. Converted from the Codex Documents skill plugin 26.630.12135.",
+        "zh_Hans": "在 Xpert 中创建、编辑、批注、修订和审阅文档制品。由 Codex Documents skill plugin 26.630.12135 转换而来。"
+      },
+      "category": "productivity",
+      "keywords": [
+        "doc",
+        "docs",
+        "document",
+        "documents",
+        "word",
+        "google docs",
+        "memo",
+        "docx",
+        "artifacts",
+        "skill"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/skills/documents"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/skills/documents",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Documents\"><rect x=\"14\" y=\"6\" width=\"36\" height=\"52\" rx=\"6\" fill=\"#2563EB\"/><path d=\"M40 6v15h10\" fill=\"#93C5FD\"/><path d=\"M40 6v11a4 4 0 0 0 4 4h6\" fill=\"#60A5FA\"/><rect x=\"21\" y=\"28\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#FFFFFF\"/><rect x=\"21\" y=\"37\" width=\"20\" height=\"4\" rx=\"2\" fill=\"#DBEAFE\"/><rect x=\"21\" y=\"46\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#BFDBFE\"/></svg>",
+        "color": "#2563EB"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-documents",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-documents"
+      },
+      "license": "MIT",
+      "skills": "./skills",
+      "interface": {
+        "displayName": "Documents",
+        "shortDescription": "Create and edit document artifacts",
+        "longDescription": "Create, edit, inspect, render, verify, and export DOCX document artifacts locally. Converted from Codex primary-runtime skill plugin 26.630.12135 for installation into Xpert workspaces.",
+        "developerName": "XpertAI",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "Write"
+        ],
+        "websiteURL": "https://xpertai.cn",
+        "privacyPolicyURL": "https://xpertai.cn",
+        "termsOfServiceURL": "https://xpertai.cn",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "defaultPrompt": [
+          "Draft a project memo as a document",
+          "Create a document from this outline",
+          "Write a polished doc for this plan"
+        ],
+        "brandColor": "#2563EB",
+        "screenshots": [
+          "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dbeafe%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.46%22%20stop-color%3D%22%23eef2ff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e9d5ff%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.25%22%20cy%3D%220.1%22%20r%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23g%29%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23r%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M90%20330C210%20210%20280%2080%20440%20115c125%2027%20145%20140%20275%20117%20122-21%20167-145%20312-127%2084%2011%20144%2058%20205%20125v150H90z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.25%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate%28770%2042%29%20rotate%288%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h145l55%2055v210H0z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M145%200v55h55%22%20fill%3D%22%23bfdbfe%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2294%22%20width%3D%22118%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22130%22%20width%3D%22142%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22166%22%20width%3D%2296%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        ]
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "NONE",
+        "pluginSharing": true
+      },
+      "assets": {
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": []
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "skill",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "documents",
+            "documents-skill"
+          ],
+          "runtime": {
+            "requiredTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "read_skill_file",
+                "required": true,
+                "purpose": "Read bundled skill instructions, references, scripts, and assets before use."
+              },
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SkillsMiddleware",
+                "name": "skill_shell",
+                "required": true,
+                "purpose": "Run shell commands from the installed skill runtime directory for DOCX creation and verification."
+              }
+            ],
+            "compatibleTools": [
+              {
+                "kind": "agent-middleware-tool",
+                "provider": "SandboxShell",
+                "name": "sandbox_shell",
+                "required": false,
+                "purpose": "Alternative general shell execution tool when skill_shell is unavailable."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "bash",
+                "name": "bash_execute",
+                "required": false,
+                "purpose": "Alternative Bash execution tool for Xpert templates that bind builtin toolsets."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "file",
+                "name": "file_edit",
+                "required": false,
+                "purpose": "Optional workspace file inspection and edits for generated artifact support files."
+              },
+              {
+                "kind": "builtin-toolset-tool",
+                "provider": "python",
+                "name": "python_execute",
+                "required": false,
+                "purpose": "Optional Python execution helper when shell access is delegated to the Python toolset."
+              }
+            ],
+            "requiredRuntime": {
+              "filesystem": {
+                "read": true,
+                "write": true,
+                "workspace": true
+              },
+              "shell": true,
+              "workspaceDependencies": true,
+              "executables": [
+                "python",
+                "node"
+              ],
+              "packages": [
+                "python-docx",
+                "Pillow"
+              ]
+            },
+            "optionalRuntime": {
+              "executables": [
+                "soffice",
+                "pdfinfo",
+                "pdftoppm"
+              ],
+              "packages": [
+                "pdf2image",
+                "reportlab"
+              ],
+              "integrations": [
+                "Google Drive document import for native Google Docs output"
+              ]
+            }
+          },
+          "marketplace": {
+            "category": "productivity",
+            "screenshots": [
+              "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20380%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23dbeafe%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220.46%22%20stop-color%3D%22%23eef2ff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e9d5ff%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%220.25%22%20cy%3D%220.1%22%20r%3D%220.85%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23g%29%22%2F%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22380%22%20fill%3D%22url%28%23r%29%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M90%20330C210%20210%20280%2080%20440%20115c125%2027%20145%20140%20275%20117%20122-21%20167-145%20312-127%2084%2011%20144%2058%20205%20125v150H90z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.25%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.28%22%20transform%3D%22translate%28770%2042%29%20rotate%288%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h145l55%2055v210H0z%22%20fill%3D%22%23fff%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M145%200v55h55%22%20fill%3D%22%23bfdbfe%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%2294%22%20width%3D%22118%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22130%22%20width%3D%22142%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2234%22%20y%3D%22166%22%20width%3D%2296%22%20height%3D%2214%22%20rx%3D%227%22%20fill%3D%22%232563eb%22%20opacity%3D%220.36%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+            ],
+            "trialShortcuts": [
+              {
+                "id": "documents-1",
+                "prompt": "Draft a project memo as a document",
+                "skillKey": "documents",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "documents-2",
+                "prompt": "Create a document from this outline",
+                "skillKey": "documents",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              },
+              {
+                "id": "documents-3",
+                "prompt": "Write a polished doc for this plan",
+                "skillKey": "documents",
+                "icon": {
+                  "type": "image",
+                  "value": "./assets/icon.png"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/skills/documents/README.md",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "verified": true
+    },
+    {
       "name": "@xpert-ai/plugin-fastgpt",
       "displayName": {
         "en_US": "FastGPT Integration",
@@ -1376,181 +2208,6 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/wecom/README.md",
       "updatedAt": "2026-03-16T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-lucidchart",
-      "packageName": "@xpert-ai/plugin-lucidchart",
-      "displayName": {
-        "en_US": "Lucidchart",
-        "zh_Hans": "Lucidchart 绘图"
-      },
-      "description": {
-        "en_US": "Lucidchart app plugin for Agent-created Standard Import drafts, Lucid document references, reviewable versions, and a workbench.",
-        "zh_Hans": "面向 Agent 自动绘图的 Lucidchart 插件，支持 Standard Import 草稿、Lucid 文档引用、可审核版本和工作台。"
-      },
-      "level": "system",
-      "category": "middleware",
-      "keywords": [
-        "lucidchart",
-        "standard-import",
-        "diagram",
-        "mermaid",
-        "agent-drawing",
-        "workbench",
-        "assistant-template",
-        "data-xpert"
-      ],
-      "author": {
-        "name": "XpertAI Team",
-        "url": "https://xpertai.cn"
-      },
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/xpert-ai/xpert-plugins.git",
-        "directory": "xpertai/apps/lucidchart"
-      },
-      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart",
-      "icon": {
-        "type": "svg",
-        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
-        "color": "#2563eb"
-      },
-      "source": {
-        "type": "npm",
-        "packageName": "@xpert-ai/plugin-lucidchart",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-lucidchart"
-      },
-      "targetApps": [
-        "xpert",
-        "data-xpert"
-      ],
-      "targetAppMeta": {
-        "xpert": {
-          "types": [
-            "assistant-template",
-            "skill",
-            "app",
-            "xpertai-bundle"
-          ],
-          "capabilities": [
-            "lucidchart",
-            "lucidchart-workbench",
-            "lucidchart-agent-drawing",
-            "lucidchart-assistant-template"
-          ],
-          "marketplace": {
-            "category": "creativity",
-            "contents": [
-              {
-                "type": "skill",
-                "name": "index",
-                "displayName": "Lucidchart Agent Drawing",
-                "description": "Workflow skill for Agent-managed Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, and Workbench review.",
-                "tags": [
-                  "skill",
-                  "lucidchart",
-                  "agent-drawing"
-                ]
-              },
-              {
-                "type": "assistant-template",
-                "name": "lucidchart-assistant",
-                "displayName": "Lucidchart Drawing Assistant",
-                "description": "Assistant template for Lucidchart draft workflows."
-              },
-              {
-                "type": "app",
-                "name": "lucidchart",
-                "displayName": "Lucidchart",
-                "description": "Workbench and Agent middleware tools for Lucidchart drafts."
-              }
-            ]
-          }
-        },
-        "data-xpert": {
-          "types": [
-            "workbench-view",
-            "assistant-tool",
-            "business-app"
-          ],
-          "capabilities": [
-            "lucidchart",
-            "lucidchart-workbench",
-            "lucidchart-agent-drawing",
-            "lucidchart-assistant-template"
-          ],
-          "marketplace": {
-            "category": "creativity",
-            "contents": [
-              {
-                "type": "app",
-                "name": "lucidchart",
-                "displayName": "Lucidchart",
-                "description": "Create, update, review, version, import, and register Agent-generated Lucidchart Standard Import drafts and Lucid links.",
-                "icon": {
-                  "type": "svg",
-                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><rect x=\"44\" y=\"52\" width=\"168\" height=\"124\" rx=\"18\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"9\"/><path d=\"M76 92H132\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M76 124H112\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M154 86L184 116L154 146\" stroke=\"#F97316\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M74 202C96 178 124 172 158 185C170 190 184 190 196 180\" stroke=\"#2563EB\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"202\" r=\"10\" fill=\"#F97316\"/><circle cx=\"202\" cy=\"178\" r=\"10\" fill=\"#F97316\"/></svg>",
-                  "color": "#2563eb"
-                },
-                "operations": [
-                  {
-                    "name": "create-lucidchart-documents",
-                    "displayName": "Create Lucidchart documents",
-                    "description": "Create reviewable Lucidchart document records with Standard Import JSON, Mermaid drafts, or external Lucid links.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "save-lucidchart-versions",
-                    "displayName": "Save Lucidchart versions",
-                    "description": "Save complete or patched Lucid Standard Import document.json versions.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "review-lucidchart-workbench",
-                    "displayName": "Review Lucidchart drafts",
-                    "description": "Review, import, export JSON, restore, archive, register Lucid links, and ask the Assistant to update drafts.",
-                    "access": "read"
-                  }
-                ]
-              },
-              {
-                "type": "view",
-                "name": "lucidchart_workbench",
-                "displayName": "Lucidchart Workbench",
-                "description": "Workbench view for Lucidchart Standard Import drafts, Mermaid drafts, Lucid links, versions, and Agent redraw requests."
-              },
-              {
-                "type": "tool",
-                "name": "LucidchartMiddleware",
-                "displayName": "Lucidchart Agent Tools",
-                "description": "Assistant middleware tools for creating, saving, patching, searching, reading, status-updating, external-link registration, and failure-reporting Lucidchart documents."
-              },
-              {
-                "type": "assistant-template",
-                "name": "lucidchart-assistant",
-                "displayName": "Lucidchart Drawing Assistant Template",
-                "description": "Prebuilt assistant template for Lucidchart draft generation and version management."
-              }
-            ],
-            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
-            "updatedAt": "2026-06-15T00:00:00.000Z"
-          },
-          "runtime": {
-            "middlewareProviders": [
-              "LucidchartMiddleware"
-            ],
-            "viewProviders": [
-              "lucidchart"
-            ],
-            "templateProviders": [
-              "lucidchartTemplates"
-            ]
-          }
-        }
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
-      "updatedAt": "2026-06-15T00:00:00.000Z",
-      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-advisor",
@@ -3350,374 +4007,6 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/pdfium/README.md",
       "updatedAt": "2025-11-30T03:00:00.000Z"
-    },
-    {
-      "name": "@xpert-ai/plugin-pencil",
-      "packageName": "@xpert-ai/plugin-pencil",
-      "version": "0.1.0",
-      "displayName": {
-        "en_US": "Pencil",
-        "zh_Hans": "Pencil 设计"
-      },
-      "description": {
-        "en_US": "Pencil app plugin for Agent-managed design documents, editable workbench review, selected design graph tools, imports, exports, drafts, and reviewable versions.",
-        "zh_Hans": "Pencil 设计应用插件，支持 Agent 管理设计文档、可编辑工作台审核、精选设计图层工具、导入导出、草稿和可审阅版本。"
-      },
-      "level": "system",
-      "category": "创意设计",
-      "keywords": [
-        "pencil",
-        "design",
-        "figma",
-        "fig",
-        "pen",
-        "canvas",
-        "auto-layout",
-        "agent-pencil",
-        "workbench",
-        "assistant-template",
-        "data-xpert"
-      ],
-      "author": {
-        "name": "XpertAI",
-        "url": "https://xpertai.cn"
-      },
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/xpert-ai/xpert-plugins.git",
-        "directory": "xpertai/apps/pencil"
-      },
-      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil",
-      "icon": {
-        "type": "svg",
-        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M64 188L84 98C87 84 99 74 113 74H184C191 74 196 81 194 88L174 178C171 192 159 202 145 202H74C67 202 62 195 64 188Z\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"10\"/><path d=\"M105 126H160\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M98 154H144\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M70 190L96 176L84 164L70 190Z\" fill=\"#F59E0B\" stroke=\"#0F172A\" stroke-width=\"6\" stroke-linejoin=\"round\"/><path d=\"M85 165L169 81\" stroke=\"#F59E0B\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M166 78L178 66C184 60 193 60 199 66C205 72 205 81 199 87L187 99\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
-        "color": "#2563eb"
-      },
-      "source": {
-        "type": "git",
-        "packageName": "@xpert-ai/plugin-pencil",
-        "url": "https://github.com/xpert-ai/xpert-plugins.git",
-        "sparsePath": "xpertai/apps/pencil"
-      },
-      "license": "AGPL-3.0",
-      "skills": "./skills",
-      "interface": {
-        "displayName": "Pencil",
-        "shortDescription": "Agentic design documents and editable workbench",
-        "longDescription": "Create, inspect, edit, version, import, and export Pencil design documents from natural-language intent. Includes Pencil Assistant, middleware tools, multi-page design workbench, layout and property editing, code view, draft persistence, and file export workflows.",
-        "developerName": "XpertAI",
-        "category": "Design",
-        "capabilities": [
-          "Interactive",
-          "Read",
-          "Write"
-        ],
-        "websiteURL": "https://xpertai.cn",
-        "privacyPolicyURL": "https://xpertai.cn",
-        "termsOfServiceURL": "https://xpertai.cn",
-        "composerIcon": "./assets/composerIcon.svg",
-        "logo": "./assets/logo.svg",
-        "defaultPrompt": [
-          "Create a new Pencil design document for this product screen.",
-          "Create a realistic Pencil sample dashboard with complex auto-layout.",
-          "Import this .fig file into Pencil and summarize the pages.",
-          "Export the current Pencil document as SVG."
-        ],
-        "brandColor": "#2563EB",
-        "screenshots": []
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_FIRST_USE",
-        "pluginSharing": true
-      },
-      "assets": {
-        "composerIcon": "./assets/composerIcon.svg",
-        "logo": "./assets/logo.svg",
-        "screenshots": []
-      },
-      "targetApps": [
-        "xpert",
-        "data-xpert"
-      ],
-      "targetAppMeta": {
-        "xpert": {
-          "types": [
-            "assistant-template",
-            "skill",
-            "app",
-            "xpertai-bundle"
-          ],
-          "capabilities": [
-            "pencil",
-            "pencil-workbench",
-            "agent-pencil",
-            "pencil-assistant-template"
-          ],
-          "marketplace": {
-            "category": "creativity",
-            "contents": [
-              {
-                "type": "skill",
-                "name": "pencil-agent-skill",
-                "displayName": "Pencil Agent Skill",
-                "description": "Skill for using Pencil Workbench context, middleware tools, graph snapshots, node edits, file import/export, versioning, and recovery.",
-                "tags": [
-                  "skill",
-                  "pencil",
-                  "figma",
-                  "design",
-                  "agentic-app",
-                  "middleware-tools"
-                ]
-              },
-              {
-                "type": "assistant-template",
-                "name": "pencil-assistant",
-                "displayName": "Pencil Assistant",
-                "description": "Assistant template for Pencil design workflows.",
-                "metadata": {
-                  "app": "pencil"
-                }
-              },
-              {
-                "type": "app",
-                "name": "pencil",
-                "displayName": "Pencil",
-                "description": "Use Pencil Assistant with Workbench and Agent middleware tools for design documents.",
-                "operations": [
-                  {
-                    "name": "create-pencil-documents",
-                    "displayName": "Create Pencil documents",
-                    "description": "Create persistent Pencil design documents and graph working copies.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "import-export-pencil-files",
-                    "displayName": "Import and export Pencil files",
-                    "description": "Import .fig/.pen files and export .fig, PNG, JPG, WebP, SVG, PDF, and JSX workspace files.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "review-pencil-workbench",
-                    "displayName": "Review Pencil Workbench",
-                    "description": "Open the Pencil Workbench to inspect, edit, version, restore, archive, and delete design documents.",
-                    "access": "read"
-                  }
-                ]
-              },
-              {
-                "type": "view",
-                "name": "pencil_workbench",
-                "displayName": "Pencil Workbench",
-                "description": "Workbench view for Pencil design documents, imports, exports, versions, and logs.",
-                "metadata": {
-                  "app": "pencil"
-                }
-              },
-              {
-                "type": "middleware",
-                "name": "PencilMiddleware",
-                "displayName": "Pencil Agent Tools",
-                "description": "Assistant middleware tools for creating, importing, editing, exporting, searching, versioning, and recovering Pencil documents.",
-                "metadata": {
-                  "app": "pencil"
-                }
-              }
-            ]
-          }
-        },
-        "data-xpert": {
-          "types": [
-            "workbench-view",
-            "assistant-tool",
-            "business-app"
-          ],
-          "capabilities": [
-            "pencil",
-            "pencil-workbench",
-            "agent-pencil",
-            "pencil-assistant-template"
-          ],
-          "marketplace": {
-            "category": "creativity",
-            "contents": [
-              {
-                "type": "app",
-                "name": "pencil",
-                "displayName": "Pencil",
-                "description": "Create, inspect, edit, version, import, export, and review Agent-managed Pencil design documents.",
-                "icon": {
-                  "type": "svg",
-                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"40\" fill=\"#F8FAFC\"/><path d=\"M64 188L84 98C87 84 99 74 113 74H184C191 74 196 81 194 88L174 178C171 192 159 202 145 202H74C67 202 62 195 64 188Z\" fill=\"#FFFFFF\" stroke=\"#2563EB\" stroke-width=\"10\"/><path d=\"M105 126H160\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M98 154H144\" stroke=\"#64748B\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M70 190L96 176L84 164L70 190Z\" fill=\"#F59E0B\" stroke=\"#0F172A\" stroke-width=\"6\" stroke-linejoin=\"round\"/><path d=\"M85 165L169 81\" stroke=\"#F59E0B\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M166 78L178 66C184 60 193 60 199 66C205 72 205 81 199 87L187 99\" stroke=\"#0F172A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg>",
-                  "color": "#2563eb"
-                },
-                "operations": [
-                  {
-                    "name": "create-pencil-documents",
-                    "displayName": "Create Pencil documents",
-                    "description": "Create persistent Pencil design documents and graph working copies from natural-language intent.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "import-export-pencil-files",
-                    "displayName": "Import and export Pencil files",
-                    "description": "Import .fig/.pen files and export .fig, PNG, JPG, WebP, SVG, PDF, and JSX workspace files.",
-                    "access": "write"
-                  },
-                  {
-                    "name": "review-pencil-workbench",
-                    "displayName": "Review Pencil Workbench",
-                    "description": "Review, edit, draft-save, version, restore, archive, delete, import, and export design documents in the Workbench.",
-                    "access": "read"
-                  }
-                ]
-              },
-              {
-                "type": "view",
-                "name": "pencil_workbench",
-                "displayName": "Pencil Workbench",
-                "description": "Workbench view for multi-page Pencil graph editing, layers, properties, code view, imports, exports, review status, versions, and logs."
-              },
-              {
-                "type": "middleware",
-                "name": "PencilMiddleware",
-                "displayName": "Pencil Agent Tools",
-                "description": "Assistant middleware tools for creating Pencil documents, importing files, reading nodes, saving versions, exporting workspace files, applying selected design graph tools, and recovering failed drafts."
-              },
-              {
-                "type": "assistant-template",
-                "name": "pencil-assistant",
-                "displayName": "Pencil Assistant Template",
-                "description": "Prebuilt assistant template for Pencil Agentic App workflows.",
-                "metadata": {
-                  "app": "pencil"
-                }
-              }
-            ],
-            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil#readme",
-            "updatedAt": "2026-07-10T00:00:00.000Z"
-          },
-          "runtime": {
-            "middlewareProviders": [
-              "PencilMiddleware"
-            ],
-            "viewProviders": [
-              "pencil"
-            ],
-            "templateProviders": [
-              "pencilTemplates"
-            ]
-          }
-        }
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/pencil#readme",
-      "updatedAt": "2026-07-10T00:00:00.000Z",
-      "verified": true
-    },
-    {
-      "name": "@xpert-ai/plugin-presentation-studio",
-      "packageName": "@xpert-ai/plugin-presentation-studio",
-      "displayName": {
-        "en_US": "Presentation Studio",
-        "zh_Hans": "Presentation Studio 演示工作室"
-      },
-      "description": {
-        "en_US": "Agentic presentation studio with the DashiAI layout catalog, native editing Workbench, Yjs collaboration, versioning, and HTML/PDF/PPTX export.",
-        "zh_Hans": "基于 DashiAI 版式目录的 Agentic 演示文稿工作室，支持原生编辑工作台、Yjs 协作、版本管理以及 HTML/PDF/PPTX 导出。"
-      },
-      "level": "system",
-      "category": "app",
-      "keywords": [
-        "presentation",
-        "slides",
-        "ppt",
-        "pptx",
-        "pdf",
-        "html",
-        "dashi",
-        "dashiai",
-        "collaboration",
-        "yjs",
-        "workbench",
-        "assistant-template",
-        "data-xpert"
-      ],
-      "author": {
-        "name": "XpertAI Team",
-        "url": "https://xpertai.cn"
-      },
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/xpert-ai/xpert-plugins.git",
-        "directory": "xpertai/apps/presentation-studio"
-      },
-      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio",
-      "icon": {
-        "type": "svg",
-        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Presentation Studio\"><rect x=\"7\" y=\"9\" width=\"50\" height=\"38\" rx=\"7\" fill=\"#7c3aed\"/><rect x=\"14\" y=\"16\" width=\"22\" height=\"5\" rx=\"2.5\" fill=\"#ede9fe\"/><rect x=\"14\" y=\"26\" width=\"14\" height=\"3\" rx=\"1.5\" fill=\"#c4b5fd\"/><rect x=\"39\" y=\"17\" width=\"11\" height=\"17\" rx=\"3\" fill=\"#a78bfa\"/><path d=\"M32 47v8M23 55h18\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>",
-        "color": "#7c3aed"
-      },
-      "source": {
-        "type": "npm",
-        "packageName": "@xpert-ai/plugin-presentation-studio",
-        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-presentation-studio"
-      },
-      "license": "AGPL-3.0",
-      "targetApps": [
-        "data-xpert",
-        "xpert"
-      ],
-      "targetAppMeta": {
-        "xpert": {
-          "types": [
-            "assistant-template",
-            "skill",
-            "app",
-            "xpertai-bundle"
-          ],
-          "capabilities": [
-            "presentation-studio",
-            "presentation-generation",
-            "presentation-workbench",
-            "presentation-collaboration",
-            "presentation-export",
-            "presentation-assistant-template"
-          ],
-          "marketplace": {
-            "category": "productivity",
-            "contents": [
-              {
-                "type": "skill",
-                "name": "presentation-studio",
-                "displayName": "Presentation Studio Skill",
-                "description": "Agent workflow for DashiAI presentation generation, Workbench editing, versioning, collaboration, and export.",
-                "tags": [
-                  "presentation",
-                  "pptx",
-                  "dashi",
-                  "yjs"
-                ]
-              },
-              {
-                "type": "assistant-template",
-                "name": "presentation-studio-assistant",
-                "displayName": "Presentation Studio Assistant",
-                "description": "Assistant template for presentation workflows."
-              },
-              {
-                "type": "app",
-                "name": "presentation-studio",
-                "displayName": "Presentation Studio",
-                "description": "Presentation Workbench and Agent middleware tools."
-              }
-            ]
-          }
-        }
-      },
-      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio#readme",
-      "updatedAt": "2026-07-13T00:00:00.000Z",
-      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-presentations",
