@@ -1,0 +1,287 @@
+{
+  "name": "@xpert-ai/plugin-cut",
+  "packageName": "@xpert-ai/plugin-cut",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "Cut",
+    "zh_Hans": "Cut 剪辑"
+  },
+  "description": {
+    "en_US": "Agentic non-linear video editor with scoped media intelligence, evidence-backed edit proposals, deterministic timeline editing, reviewable captions, versioning, and browser or Sandbox Job export.",
+    "zh_Hans": "智能非线性视频剪辑应用，支持作用域媒体内容理解、证据化剪辑提案、确定性时间线编辑、可审阅字幕、版本管理以及浏览器或 Sandbox Job 导出。"
+  },
+  "level": "system",
+  "artifactNamespace": "cut",
+  "category": "middleware",
+  "keywords": [
+    "cut",
+    "video",
+    "timeline",
+    "opencut",
+    "editor",
+    "workbench",
+    "agent",
+    "captions",
+    "speech-to-text",
+    "sandbox-job",
+    "assistant-template",
+    "data-xpert"
+  ],
+  "author": {
+    "name": "XpertAI Team",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/cut"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/cut",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"48\" fill=\"#0B1020\"/><path d=\"M51 76h154M51 180h154\" stroke=\"#7DD3FC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M84 48v160M172 48v160\" stroke=\"#F8FAFC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"m106 103 48 25-48 25v-50Z\" fill=\"#FB7185\"/></svg>",
+    "color": "#0EA5E9"
+  },
+  "source": {
+    "type": "git",
+    "packageName": "@xpert-ai/plugin-cut",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "sparsePath": "xpertai/apps/cut"
+  },
+  "license": "AGPL-3.0",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Cut",
+    "shortDescription": "Agentic non-linear video editor",
+    "longDescription": "Import Workspace media, understand transcript and visual evidence, edit revision-safe timelines with Agent tools or Cut Workbench, review captions and edit proposals, and export videos in the browser or through Managed Queue and Sandbox Jobs.",
+    "developerName": "XpertAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://xpertai.cn",
+    "privacyPolicyURL": "https://xpertai.cn",
+    "termsOfServiceURL": "https://xpertai.cn",
+    "composerIcon": "./assets/composerIcon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Create a 30-second 1080p Cut project.",
+      "Import this media and make a rough cut.",
+      "Split and trim the selected clip."
+    ],
+    "brandColor": "#0EA5E9",
+    "screenshots": []
+  },
+  "policy": {
+    "installation": "AVAILABLE",
+    "authentication": "ON_FIRST_USE",
+    "pluginSharing": true
+  },
+  "assets": {
+    "composerIcon": "./assets/composerIcon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  },
+  "targetApps": [
+    "data-xpert",
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "data-xpert": {
+      "types": [
+        "workbench-view",
+        "assistant-tool",
+        "business-app"
+      ],
+      "capabilities": [
+        "cut",
+        "cut-workbench",
+        "cut-agent",
+        "cut-assistant-template"
+      ],
+      "marketplace": {
+        "category": "creativity",
+        "contents": [
+          {
+            "type": "app",
+            "name": "cut",
+            "displayName": "Cut",
+            "description": "Agentic non-linear video editor with browser and headless MP4 export.",
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" fill=\"none\"><rect width=\"256\" height=\"256\" rx=\"48\" fill=\"#0B1020\"/><path d=\"M51 76h154M51 180h154\" stroke=\"#7DD3FC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M84 48v160M172 48v160\" stroke=\"#F8FAFC\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"m106 103 48 25-48 25v-50Z\" fill=\"#FB7185\"/></svg>",
+              "color": "#0EA5E9"
+            },
+            "operations": [
+              {
+                "name": "cut_create_projects",
+                "displayName": "Create Cut projects",
+                "description": "Create scoped, versioned video-editing projects.",
+                "access": "write"
+              },
+              {
+                "name": "cut_edit_timelines",
+                "displayName": "Edit Cut timelines",
+                "description": "Import media, create evidence-backed review proposals, and apply revision-safe timeline edits.",
+                "access": "write"
+              },
+              {
+                "name": "cut_transcribe_captions",
+                "displayName": "Transcribe and review captions",
+                "description": "Queue transcription, import or export subtitles, review drafts, and commit approved captions.",
+                "access": "write"
+              },
+              {
+                "name": "cut_review_export",
+                "displayName": "Review and export",
+                "description": "Review timelines and export video locally or through a bounded Sandbox Job.",
+                "access": "write"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "cut_workbench",
+            "displayName": "Cut Workbench",
+            "description": "Media preview, timeline editing, version review, caption workflows, and export."
+          },
+          {
+            "type": "middleware",
+            "name": "CutMiddleware",
+            "displayName": "Cut Agent Tools",
+            "description": "Tools for project, media, timeline, transcription, caption review, version, and failure operations."
+          },
+          {
+            "type": "assistant-template",
+            "name": "cut-assistant",
+            "displayName": "Cut Assistant Template",
+            "description": "Prebuilt assistant for Agentic video editing workflows.",
+            "metadata": {
+              "app": "cut"
+            }
+          }
+        ],
+        "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/cut#readme",
+        "updatedAt": "2026-07-19T00:00:00.000Z"
+      },
+      "runtime": {
+        "middlewareProviders": [
+          "CutMiddleware"
+        ],
+        "viewProviders": [
+          "cut"
+        ],
+        "templateProviders": [
+          "cutTemplates"
+        ]
+      }
+    },
+    "xpert": {
+      "types": [
+        "assistant-template",
+        "skill",
+        "app",
+        "xpertai-bundle",
+        "mcp-server",
+        "tool"
+      ],
+      "capabilities": [
+        "cut",
+        "cut-workbench",
+        "cut-agent",
+        "cut-assistant-template",
+        "cut-mcp"
+      ],
+      "marketplace": {
+        "category": "creativity",
+        "contents": [
+          {
+            "type": "skill",
+            "name": "cut-agent-skill",
+            "displayName": "Cut Agent Skill",
+            "description": "Use Cut project, media, timeline edit, version, and failure tools.",
+            "tags": [
+              "skill",
+              "cut",
+              "video",
+              "timeline"
+            ]
+          },
+          {
+            "type": "assistant-template",
+            "name": "cut-assistant",
+            "displayName": "Cut Assistant",
+            "description": "Assistant template for video editing.",
+            "metadata": {
+              "app": "cut"
+            }
+          },
+          {
+            "type": "app",
+            "name": "cut",
+            "displayName": "Cut",
+            "description": "Agentic non-linear video editor.",
+            "operations": [
+              {
+                "name": "cut_create_projects",
+                "displayName": "Create Cut projects",
+                "description": "Create scoped, versioned video-editing projects.",
+                "access": "write"
+              },
+              {
+                "name": "cut_edit_timelines",
+                "displayName": "Edit Cut timelines",
+                "description": "Import media, create evidence-backed review proposals, and apply revision-safe timeline edits.",
+                "access": "write"
+              },
+              {
+                "name": "cut_transcribe_captions",
+                "displayName": "Transcribe and review captions",
+                "description": "Queue transcription, import or export subtitles, review drafts, and commit approved captions.",
+                "access": "write"
+              },
+              {
+                "name": "cut_review_export",
+                "displayName": "Review and export",
+                "description": "Review timelines and export video locally or through a bounded Sandbox Job.",
+                "access": "write"
+              }
+            ]
+          },
+          {
+            "type": "view",
+            "name": "cut_workbench",
+            "displayName": "Cut Workbench",
+            "description": "Video editing Workbench.",
+            "metadata": {
+              "app": "cut"
+            }
+          },
+          {
+            "type": "middleware",
+            "name": "CutMiddleware",
+            "displayName": "Cut Agent Tools",
+            "description": "Scoped Cut editing tools.",
+            "metadata": {
+              "app": "cut"
+            }
+          },
+          {
+            "type": "tool",
+            "name": "cut-ir-mcp",
+            "displayName": "Cut IR MCP Tools",
+            "description": "Portable, side-effect-free Cut project validation, comparison, and in-memory editing tools.",
+            "metadata": {
+              "app": "cut",
+              "protocol": "mcp"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/cut#readme",
+  "updatedAt": "2026-07-19T00:00:00.000Z"
+}

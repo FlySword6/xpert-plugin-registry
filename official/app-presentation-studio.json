@@ -10,7 +10,7 @@
     "zh_Hans": "基于 DashiAI 版式目录的 Agentic 演示文稿工作室，支持原生编辑工作台、Yjs 协作、版本管理以及 HTML/PDF/PPTX 导出。"
   },
   "level": "system",
-  "category": "app",
+  "category": "middleware",
   "keywords": [
     "presentation",
     "slides",

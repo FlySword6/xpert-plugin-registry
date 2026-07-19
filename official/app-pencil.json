@@ -11,7 +11,7 @@
     "zh_Hans": "Pencil 设计应用插件，支持 Agent 管理设计文档、可编辑工作台审核、精选设计图层工具、导入导出、草稿和可审阅版本。"
   },
   "level": "system",
-  "category": "创意设计",
+  "category": "middleware",
   "keywords": [
     "pencil",
     "design",
