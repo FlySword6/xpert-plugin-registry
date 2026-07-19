@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T06:33:04.651Z",
+  "updatedAt": "2026-07-19T06:33:36.378Z",
   "total": 70,
   "official": [
     "@xpert-ai/plugin-canvas",
@@ -255,7 +255,6 @@
     {
       "name": "@xpert-ai/plugin-cut",
       "packageName": "@xpert-ai/plugin-cut",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "Cut",
         "zh_Hans": "Cut 剪辑"
@@ -1245,7 +1244,6 @@
     {
       "name": "@xpert-ai/plugin-pencil",
       "packageName": "@xpert-ai/plugin-pencil",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "Pencil",
         "zh_Hans": "Pencil 设计"
