@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-cut",
   "packageName": "@xpert-ai/plugin-cut",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "Cut",
     "zh_Hans": "Cut 剪辑"
