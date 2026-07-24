@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-19T06:33:36.378Z",
-  "total": 70,
+  "updatedAt": "2026-07-24T05:56:30.341Z",
+  "total": 71,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -8,6 +8,7 @@
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
     "@xpert-ai/plugin-lucidchart",
+    "@xpert-ai/plugin-office-editor",
     "@xpert-ai/plugin-pencil",
     "@xpert-ai/plugin-presentation-studio",
     "@xpert-ai/plugin-calculator",
@@ -1239,6 +1240,193 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
       "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-office-editor",
+      "packageName": "@xpert-ai/plugin-office-editor",
+      "version": "0.4.1",
+      "displayName": {
+        "en_US": "Office Editor",
+        "zh_Hans": "Office 编辑器"
+      },
+      "description": {
+        "en_US": "Agentic Office editor with server-side XLSX automation, immutable file versions, Univer editing, Yjs collaboration, and human review.",
+        "zh_Hans": "面向 Agent 的 Office 编辑器，支持服务端 XLSX 自动化编辑、不可变文件版本、Univer 在线编辑、Yjs 协作和人工审核。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "office",
+        "excel",
+        "xlsx",
+        "spreadsheet",
+        "document",
+        "presentation",
+        "univer",
+        "file-versioning",
+        "yjs",
+        "collaboration",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/office-editor"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/office-editor",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Office Editor\"><rect x=\"8\" y=\"10\" width=\"48\" height=\"44\" rx=\"8\" fill=\"#0f766e\"/><rect x=\"16\" y=\"18\" width=\"14\" height=\"12\" rx=\"2\" fill=\"#ccfbf1\"/><rect x=\"34\" y=\"18\" width=\"14\" height=\"12\" rx=\"2\" fill=\"#99f6e4\"/><rect x=\"16\" y=\"34\" width=\"32\" height=\"4\" rx=\"2\" fill=\"#f0fdfa\"/><rect x=\"16\" y=\"43\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#5eead4\"/></svg>",
+        "color": "#0f766e"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-office-editor",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-office-editor"
+      },
+      "license": "AGPL-3.0",
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "office-editor",
+            "office-editor-workbench",
+            "office-editor-agent-review",
+            "office-editor-assistant-template",
+            "office-editor-collaboration"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "office-editor",
+                "displayName": "Office Editor Skill",
+                "description": "Workflow skill for server-side XLSX automation, file versioning, Univer-native Office editing, collaboration, and human review.",
+                "tags": [
+                  "skill",
+                  "office",
+                  "excel",
+                  "xlsx",
+                  "univer",
+                  "collaboration"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "office-editor-assistant",
+                "displayName": "Office Editor Assistant",
+                "description": "Assistant template for automated spreadsheet, document, and presentation editing workflows."
+              },
+              {
+                "type": "app",
+                "name": "office-editor",
+                "displayName": "Office Editor",
+                "description": "Workbench and Agent middleware tools for automated XLSX and collaborative Office document editing."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "office-editor",
+            "office-editor-workbench",
+            "office-editor-agent-review",
+            "office-editor-assistant-template",
+            "office-editor-collaboration"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "office-editor",
+                "displayName": "Office Editor",
+                "description": "Import, automatically edit, version, restore, and download XLSX files, or collaborate on Univer-native Office documents.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Office Editor\"><rect x=\"8\" y=\"10\" width=\"48\" height=\"44\" rx=\"8\" fill=\"#0f766e\"/><rect x=\"16\" y=\"18\" width=\"14\" height=\"12\" rx=\"2\" fill=\"#ccfbf1\"/><rect x=\"34\" y=\"18\" width=\"14\" height=\"12\" rx=\"2\" fill=\"#99f6e4\"/><rect x=\"16\" y=\"34\" width=\"32\" height=\"4\" rx=\"2\" fill=\"#f0fdfa\"/><rect x=\"16\" y=\"43\" width=\"24\" height=\"4\" rx=\"2\" fill=\"#5eead4\"/></svg>",
+                  "color": "#0f766e"
+                },
+                "operations": [
+                  {
+                    "name": "automate-excel-workbooks",
+                    "displayName": "Automate Excel workbooks",
+                    "description": "Read ranges and automatically edit values, formulas, and worksheets while creating a new downloadable XLSX version.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "version-office-documents",
+                    "displayName": "Version Office documents",
+                    "description": "Import XLSX files, inspect immutable version history, restore previous versions, and download the current workbook.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "collaborate-office-documents",
+                    "displayName": "Collaborate on Office documents",
+                    "description": "Edit spreadsheets, documents, and presentations in a Univer Workbench synchronized through plugin-owned Yjs rooms.",
+                    "access": "write"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "office_editor",
+                "displayName": "Office Editor Workbench",
+                "description": "Workbench view for Univer-native spreadsheets, documents, presentations, XLSX file versions, Agent review, and Yjs collaboration."
+              },
+              {
+                "type": "tool",
+                "name": "OfficeEditorMiddleware",
+                "displayName": "Office Editor Agent Tools",
+                "description": "Assistant middleware tools for server-side XLSX automation, file versions, queued edits, and review."
+              },
+              {
+                "type": "assistant-template",
+                "name": "office-editor-assistant",
+                "displayName": "Office Editor Assistant Template",
+                "description": "Prebuilt assistant template for human and Agent Office editing workflows."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/office-editor#readme",
+            "updatedAt": "2026-07-24T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "OfficeEditorMiddleware"
+            ],
+            "viewProviders": [
+              "office-editor-view-provider"
+            ],
+            "templateProviders": [
+              "office-editor-template-provider"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/office-editor#readme",
+      "updatedAt": "2026-07-24T00:00:00.000Z",
       "verified": true
     },
     {
