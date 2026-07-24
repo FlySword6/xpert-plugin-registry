@@ -1,0 +1,45 @@
+{
+  "name": "@xpert-ai/plugin-lark-sso",
+  "displayName": {
+    "en_US": "Lark SSO",
+    "zh_Hans": "飞书 SSO"
+  },
+  "description": {
+    "en_US": "Adds Feishu/Lark SSO login and account binding flows for Xpert.",
+    "zh_Hans": "为 Xpert 提供飞书 SSO 登录和账号绑定流程。"
+  },
+  "version": "0.0.1",
+  "category": "integration",
+  "keywords": [
+    "lark",
+    "feishu",
+    "identity",
+    "sso",
+    "account binding"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 96 96\" fill=\"none\"><rect width=\"96\" height=\"96\" rx=\"24\" fill=\"#0F766E\"/><path d=\"M25 26h30c9.941 0 18 8.059 18 18v5H48c-9.941 0-18-8.059-18-18v-5Z\" fill=\"#5EEAD4\"/><path d=\"M71 70H41c-9.941 0-18-8.059-18-18v-5h25c9.941 0 18 8.059 18 18v5Z\" fill=\"#CCFBF1\"/><circle cx=\"60\" cy=\"36\" r=\"7\" fill=\"#F0FDFA\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-lark-sso"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/integrations/lark-sso/README.md",
+  "updatedAt": "2026-04-21T08:40:17.131Z"
+}
