@@ -1,0 +1,46 @@
+{
+  "name": "@xpert-ai/plugin-github-connector",
+  "displayName": {
+    "en_US": "GitHub Connector",
+    "zh_Hans": "GitHub 连接器"
+  },
+  "description": {
+    "en_US": "Connects a workspace to GitHub with GitHub App OAuth or a personal access token.",
+    "zh_Hans": "通过 GitHub App OAuth 或个人访问令牌将工作区连接到 GitHub。"
+  },
+  "version": "0.2.0",
+  "category": "middleware",
+  "keywords": [
+    "github",
+    "connector",
+    "oauth",
+    "pat",
+    "middleware"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.001 0C4.028-.002 0 4.133 0 9.238c0 4.036 2.52 7.467 6.029 8.727.472.122.4-.223.4-.459v-1.6c-2.729.328-2.839-1.527-3.022-1.837-.37-.648-1.245-.814-.984-1.124.622-.328 1.255.083 1.989 1.196.531.808 1.567.672 2.091.537a2.53 2.53 0 0 1 .698-1.255c-2.827-.521-4.006-2.293-4.006-4.4 0-1.023.328-1.963.972-2.721-.411-1.25.038-2.32.098-2.479 1.168-.107 2.383.86 2.478.936.663-.184 1.421-.281 2.27-.281.853 0 1.613.101 2.283.287.227-.177 1.353-1.008 2.439-.906.058.159.496 1.204.11 2.437.652.76.984 1.708.984 2.733 0 2.111-1.187 3.885-4.022 4.398.473.479.766 1.144.766 1.879v2.324c.016.186 0 .37.302.37C15.436 16.767 18 13.311 18 9.24 18 4.133 13.97 0 9.001 0Z\" fill=\"currentColor\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-github-connector"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/github-connector/README.md",
+  "updatedAt": "2026-07-20T03:26:21.060Z"
+}
