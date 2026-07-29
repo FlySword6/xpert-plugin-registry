@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-24T07:33:02.122Z",
-  "total": 73,
+  "updatedAt": "2026-07-29T01:28:58.998Z",
+  "total": 85,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -12,6 +12,18 @@
     "@xpert-ai/plugin-pencil",
     "@xpert-ai/plugin-presentation-studio",
     "@xpert-ai/plugin-calculator",
+    "@xpert-ai/plugin-clickhouse",
+    "@xpert-ai/plugin-hive",
+    "@xpert-ai/plugin-kingbase",
+    "@xpert-ai/plugin-mariadb",
+    "@xpert-ai/plugin-mssql",
+    "@xpert-ai/plugin-opengauss",
+    "@xpert-ai/plugin-postgres",
+    "@xpert-ai/plugin-presto",
+    "@xpert-ai/plugin-redshift",
+    "@xpert-ai/plugin-sap-bw",
+    "@xpert-ai/plugin-trino",
+    "@xpert-ai/plugin-xmla",
     "@xpert-ai/plugin-dify",
     "@xpert-ai/plugin-documents",
     "@xpert-ai/plugin-fastgpt",
@@ -1840,6 +1852,557 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/calculator/README.md",
       "updatedAt": "2025-11-10T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-clickhouse",
+      "displayName": {
+        "en_US": "ClickHouse Data Source",
+        "zh_Hans": "ClickHouse 数据源"
+      },
+      "description": {
+        "en_US": "Provide ClickHouse database connectivity, metadata discovery, and data import",
+        "zh_Hans": "提供 ClickHouse 数据库连接、元数据发现和数据导入功能"
+      },
+      "category": "database",
+      "keywords": [
+        "clickhouse",
+        "database",
+        "datasource",
+        "analytics"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#ffcc01\"/><g fill=\"#111\"><path d=\"M10 10h6v44h-6zM22 10h6v44h-6zM34 10h6v44h-6zM46 10h6v18h-6z\"/><path d=\"M46 36h6v18h-6z\"/></g></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-clickhouse"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/clickhouse/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-hive",
+      "displayName": {
+        "en_US": "Apache Hive Data Source",
+        "zh_Hans": "Apache Hive 数据源"
+      },
+      "description": {
+        "en_US": "Provide Apache Hive connectivity, query execution, and metadata discovery",
+        "zh_Hans": "提供 Apache Hive 连接、查询执行和元数据发现功能"
+      },
+      "category": "database",
+      "keywords": [
+        "hive",
+        "hadoop",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#f9c80e\"/><path fill=\"#1f2937\" d=\"M13 16h8v13h22V16h8v32h-8V36H21v12h-8z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-hive"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/hive/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-kingbase",
+      "displayName": {
+        "en_US": "KingbaseES Data Source",
+        "zh_Hans": "KingbaseES 数据源"
+      },
+      "description": {
+        "en_US": "Provide KingbaseES connectivity through the PostgreSQL-compatible runner",
+        "zh_Hans": "通过兼容 PostgreSQL 的运行器提供 KingbaseES 连接能力"
+      },
+      "category": "database",
+      "keywords": [
+        "kingbase",
+        "kingbasees",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#b21f2d\"/><path fill=\"#fff\" d=\"M14 13h9v16l15-16h12L33 31l18 20H39L23 33v18h-9z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-kingbase"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/kingbase/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-mariadb",
+      "displayName": {
+        "en_US": "MariaDB Data Source",
+        "zh_Hans": "MariaDB 数据源"
+      },
+      "description": {
+        "en_US": "Provide MariaDB connectivity through the MySQL-compatible runner",
+        "zh_Hans": "通过兼容 MySQL 的运行器提供 MariaDB 连接能力"
+      },
+      "category": "database",
+      "keywords": [
+        "mariadb",
+        "mysql",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#002b64\"/><path fill=\"#fff\" d=\"M11 39c7-17 21-25 42-22-4 4-5 9-7 15-3 10-12 17-23 15-5-1-9-4-12-8zm9-2c8 3 18-2 23-12-10 1-18 5-23 12z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mariadb"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mariadb/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-mssql",
+      "displayName": {
+        "en_US": "Microsoft SQL Server Data Source",
+        "zh_Hans": "Microsoft SQL Server 数据源"
+      },
+      "description": {
+        "en_US": "Provide Microsoft SQL Server connectivity, schema discovery, and data import",
+        "zh_Hans": "提供 Microsoft SQL Server 连接、模式发现和数据导入功能"
+      },
+      "category": "database",
+      "keywords": [
+        "mssql",
+        "sql-server",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#cc2927\"/><path fill=\"#fff\" d=\"M13 16l17-6v44l-17-6zm21 1h17v8H34zm0 11h17v8H34zm0 11h17v8H34z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mssql"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mssql/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-opengauss",
+      "displayName": {
+        "en_US": "OpenGauss Data Source",
+        "zh_Hans": "openGauss 数据源"
+      },
+      "description": {
+        "en_US": "Provide OpenGauss connectivity through the PostgreSQL-compatible runner",
+        "zh_Hans": "通过兼容 PostgreSQL 的运行器提供 openGauss 连接能力"
+      },
+      "category": "database",
+      "keywords": [
+        "opengauss",
+        "gaussdb",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#0b385b\"/><path fill=\"#f36f21\" d=\"M15 18h34v8H15zM15 30h26v8H15zM15 42h34v8H15z\"/><circle cx=\"47\" cy=\"34\" r=\"6\" fill=\"#18a0ae\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-opengauss"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/opengauss/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-postgres",
+      "displayName": {
+        "en_US": "PostgreSQL Data Source",
+        "zh_Hans": "PostgreSQL 数据源"
+      },
+      "description": {
+        "en_US": "Provide PostgreSQL connectivity, schema discovery, table management, and streaming CSV import",
+        "zh_Hans": "提供 PostgreSQL 数据库连接、模式发现、表管理和流式 CSV 导入功能"
+      },
+      "category": "database",
+      "keywords": [
+        "postgresql",
+        "postgres",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#336791\"/><path fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"4\" d=\"M18 42c-5-7-5-23 4-27 7-4 19-2 23 5 3 5 1 13-1 19-2 7 4 7 2 11-2 4-8 0-10-4-2-3-2-8-1-13-2 2-5 3-8 2-5-2-5-9-2-12 4-4 11-2 12 4 1 5-3 11-8 13-4 2-8 1-11-1\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-postgres"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/postgres/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-presto",
+      "displayName": {
+        "en_US": "Presto Data Source",
+        "zh_Hans": "Presto 数据源"
+      },
+      "description": {
+        "en_US": "Provide Presto connectivity, query execution, and schema discovery",
+        "zh_Hans": "提供 Presto 连接、查询执行和模式发现功能"
+      },
+      "category": "database",
+      "keywords": [
+        "presto",
+        "database",
+        "datasource",
+        "sql",
+        "federation"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#5890ff\"/><path fill=\"#fff\" d=\"M18 13h16c10 0 17 6 17 15 0 10-7 16-18 16h-7v8h-8V13zm8 8v15h7c6 0 10-3 10-8 0-4-4-7-10-7h-7z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-presto"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/presto/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-redshift",
+      "displayName": {
+        "en_US": "Amazon Redshift Data Source",
+        "zh_Hans": "Amazon Redshift 数据源"
+      },
+      "description": {
+        "en_US": "Provide Amazon Redshift Data API queries and PostgreSQL-compatible schema discovery",
+        "zh_Hans": "提供 Amazon Redshift Data API 查询和兼容 PostgreSQL 的模式发现能力"
+      },
+      "category": "database",
+      "keywords": [
+        "aws",
+        "redshift",
+        "database",
+        "datasource",
+        "sql"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#8c4fff\"/><path fill=\"#fff\" d=\"M13 18h38v28H13z\"/><path fill=\"#8c4fff\" d=\"M19 24h26v5H19zm0 11h26v5H19z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-redshift"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/redshift/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-sap-bw",
+      "displayName": {
+        "en_US": "SAP BW Data Source",
+        "zh_Hans": "SAP BW 数据源"
+      },
+      "description": {
+        "en_US": "Provide SAP Business Warehouse OLAP access through the XMLA protocol",
+        "zh_Hans": "通过 XMLA 协议提供 SAP Business Warehouse OLAP 访问能力"
+      },
+      "category": "database",
+      "keywords": [
+        "sap",
+        "sap-bw",
+        "xmla",
+        "olap",
+        "mdx"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#008fd3\"/><path fill=\"#fff\" d=\"M10 17h31l13 15-13 15H10l12-15z\"/><path fill=\"#008fd3\" d=\"M25 25h5v14h-5zm9 0h6c5 0 8 2 8 7s-3 7-8 7h-6zm5 4v6h1c2 0 3-1 3-3s-1-3-3-3z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-sap-bw"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/sap-bw/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-trino",
+      "displayName": {
+        "en_US": "Trino Data Source",
+        "zh_Hans": "Trino 数据源"
+      },
+      "description": {
+        "en_US": "Provide Trino connectivity through the shared Presto-compatible runner",
+        "zh_Hans": "通过共享的 Presto 兼容运行器提供 Trino 连接能力"
+      },
+      "category": "database",
+      "keywords": [
+        "trino",
+        "database",
+        "datasource",
+        "sql",
+        "federation"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#dd00a1\"/><circle cx=\"32\" cy=\"20\" r=\"9\" fill=\"#fff\"/><path fill=\"#fff\" d=\"M15 33h34v7H36v13h-8V40H15z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-trino"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/trino/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-xmla",
+      "displayName": {
+        "en_US": "XMLA Data Source",
+        "zh_Hans": "XMLA 数据源"
+      },
+      "description": {
+        "en_US": "Proxy XMLA SOAP requests with authentication, cookie reuse, and TLS controls",
+        "zh_Hans": "代理 XMLA SOAP 请求，并提供认证、Cookie 复用和 TLS 控制"
+      },
+      "category": "database",
+      "keywords": [
+        "xmla",
+        "olap",
+        "mdx",
+        "soap",
+        "datasource"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#335c81\"/><path fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-width=\"5\" d=\"M14 19l12 13-12 13M50 19L38 32l12 13\"/><path fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-width=\"4\" d=\"M34 14l-5 36\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-xmla"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "database"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/xmla/README.md",
+      "updatedAt": "2026-07-29T01:21:48.000Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-dify",
