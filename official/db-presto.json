@@ -1,0 +1,37 @@
+{
+  "name": "@xpert-ai/plugin-presto",
+  "displayName": {
+    "en_US": "Presto Data Source",
+    "zh_Hans": "Presto 数据源"
+  },
+  "description": {
+    "en_US": "Provide Presto connectivity, query execution, and schema discovery",
+    "zh_Hans": "提供 Presto 连接、查询执行和模式发现功能"
+  },
+  "category": "database",
+  "keywords": ["presto", "database", "datasource", "sql", "federation"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#5890ff\"/><path fill=\"#fff\" d=\"M18 13h16c10 0 17 6 17 15 0 10-7 16-18 16h-7v8h-8V13zm8 8v15h7c6 0 10-3 10-8 0-4-4-7-10-7h-7z\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-presto"
+  },
+  "targetApps": ["xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "database"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/presto/README.md",
+  "updatedAt": "2026-07-29T01:21:48.000Z"
+}

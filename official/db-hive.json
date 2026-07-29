@@ -1,0 +1,37 @@
+{
+  "name": "@xpert-ai/plugin-hive",
+  "displayName": {
+    "en_US": "Apache Hive Data Source",
+    "zh_Hans": "Apache Hive 数据源"
+  },
+  "description": {
+    "en_US": "Provide Apache Hive connectivity, query execution, and metadata discovery",
+    "zh_Hans": "提供 Apache Hive 连接、查询执行和元数据发现功能"
+  },
+  "category": "database",
+  "keywords": ["hive", "hadoop", "database", "datasource", "sql"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#f9c80e\"/><path fill=\"#1f2937\" d=\"M13 16h8v13h22V16h8v32h-8V36H21v12h-8z\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-hive"
+  },
+  "targetApps": ["xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "database"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/hive/README.md",
+  "updatedAt": "2026-07-29T01:21:48.000Z"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@xpert-ai/plugin-mariadb",
+  "displayName": {
+    "en_US": "MariaDB Data Source",
+    "zh_Hans": "MariaDB 数据源"
+  },
+  "description": {
+    "en_US": "Provide MariaDB connectivity through the MySQL-compatible runner",
+    "zh_Hans": "通过兼容 MySQL 的运行器提供 MariaDB 连接能力"
+  },
+  "category": "database",
+  "keywords": ["mariadb", "mysql", "database", "datasource", "sql"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#002b64\"/><path fill=\"#fff\" d=\"M11 39c7-17 21-25 42-22-4 4-5 9-7 15-3 10-12 17-23 15-5-1-9-4-12-8zm9-2c8 3 18-2 23-12-10 1-18 5-23 12z\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mariadb"
+  },
+  "targetApps": ["xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "database"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mariadb/README.md",
+  "updatedAt": "2026-07-29T01:21:48.000Z"
+}

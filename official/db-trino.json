@@ -1,0 +1,37 @@
+{
+  "name": "@xpert-ai/plugin-trino",
+  "displayName": {
+    "en_US": "Trino Data Source",
+    "zh_Hans": "Trino 数据源"
+  },
+  "description": {
+    "en_US": "Provide Trino connectivity through the shared Presto-compatible runner",
+    "zh_Hans": "通过共享的 Presto 兼容运行器提供 Trino 连接能力"
+  },
+  "category": "database",
+  "keywords": ["trino", "database", "datasource", "sql", "federation"],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"8\" fill=\"#dd00a1\"/><circle cx=\"32\" cy=\"20\" r=\"9\" fill=\"#fff\"/><path fill=\"#fff\" d=\"M15 33h34v7H36v13h-8V40H15z\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-trino"
+  },
+  "targetApps": ["xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "database"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/trino/README.md",
+  "updatedAt": "2026-07-29T01:21:48.000Z"
+}
