@@ -1,0 +1,44 @@
+{
+  "name": "@xpert-ai/plugin-stepfun",
+  "displayName": {
+    "en_US": "StepFun Model Provider",
+    "zh_Hans": "阶跃星辰模型提供者"
+  },
+  "description": {
+    "en_US": "Provide StepFun model provider adapter",
+    "zh_Hans": "提供阶跃星辰模型提供者适配器"
+  },
+  "version": "0.0.3",
+  "category": "model",
+  "keywords": [
+    "stepfun",
+    "step",
+    "model"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "image",
+    "value": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUQxQzE0OEYzQzA2MTFFRkE1RDU5NTcyOEQ1ODgyQUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUQxQzE0OTAzQzA2MTFFRkE1RDU5NTcyOEQ1ODgyQUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NUIzRjBDODNDMDQxMUVGQTVENTk1NzI4RDU4ODJBQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxRDFDMTQ4RTNDMDYxMUVGQTVENTk1NzI4RDU4ODJBQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pqv0mQ0AAAFxUExURQBa//v8/xxs/zR8/2+i/02M/+nx/7jR/yBv/wlg/+Xu/wVd/ydz/93p/8/g/z2B/+Pt/2Oa/wFb/7TO/7DN/yRx/wdf/z+D/0uK/yh0/4q0/4aw/yVy/zh+//r8/+jw/xdp/zd+/9vo/+Ls//n7/zJ6/+fv/+Dr/+vy/4Ov/63K//b5/9rn/zt//8ze/0+M/yp1/+bv/y13/7PO/4mz/7zU/6TE/zqA/5/B/xFl/0GE/3am/1SQ/3mo/7vU/wJb/3+s/zZ9/1qU/4Sv/0qJ/6PE/0SG/wxi/zN7/67L/6zJ/83f/1eS/zh9/7XP/w9k/zR7/z6C/+/1/3in/2ed/2GZ/1+X/2KZ/2Sb/zZ8/7bQ/1KP/97q/w1i/9nn/1mU/0OF//z9/6fH/2ac/87f/+zz/xhq/zl//0mJ/zuA/26h/x9u/7/W/+70//3+/4Ww/xpr/yZz/yJw/9Xj/4Sw/3Kk/3yr/0CD/+fw/7rS/////24V9kUAAAB7dFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AJPDqOoAAAIxSURBVHja7NrpU9NAGIDx9LAoSAW1lZbSVuipeAEKKOIth3Ko4IEHKogCioAi6l9v6eJ0xsFM2tk0edPn+bYfMslvMpndZGP89kgGECBAgAABAkQaZDRS7rZ4yHuj3EXxkJMKcgoIEM0tKMhV8ZDLCvJWIGRoPFDpXEJBXk/dKo1mRyRBrhn/b0wSpNMEEgMCpPbumEASkiBPTCAzVUCedex194FjkO7JE5WmfyhBX3k08bkKyL79jEvuz3l1OZ+qnxAPqyObxK+1gABpKMiuVyCrXoGc9gqkC8g/kJ1soJ5li3ZBXhj17YJdz8ihOkPa/574nhqnxUO6vw/E4/HiFfEQs3U6ECBAgAABAgQIECBAgAABAgQIECBAgAARBVl0EHIj2qItY8lByPOfzdp69dhByPV6by/aBQkCAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQKxBhtVl9YuHbEXL/RIPKaRCpVIZ8ZCDAwLEXRBfxqezsxsOQQqRTb/O0jcdguR0/xAx7xAkdEQzJAgEiD2QOa9A1twLWXmTb7Vc7wf3QtZFzOwWIH4fECBAgAABIgfy0N2QZHg5bKlvj9wN6bHtXQFIbZC240CAAAECBAgQIECAAAECBAgQIECAAAECBAgQeyF5ndsKTx2E5GKJo7ra/ipiD7G2gAABAgQIECBAgAABAgQIECBAgDQU5JKF73pJCZAv9wePmffx5TsJEHsDAgQIECBAgAABYl9/BBgAUQJLMKzQ0TYAAAAASUVORK5CYII="
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-stepfun"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "model"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/stepfun/README.md",
+  "updatedAt": "2026-07-28T02:37:26.134Z"
+}
