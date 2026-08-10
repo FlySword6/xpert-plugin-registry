@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-30T04:38:34.197Z",
-  "total": 88,
+  "updatedAt": "2026-08-10T01:39:19.257Z",
+  "total": 91,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -11,6 +11,8 @@
     "@xpert-ai/plugin-office-editor",
     "@xpert-ai/plugin-pencil",
     "@xpert-ai/plugin-presentation-studio",
+    "@xpert-ai/plugin-story-studio",
+    "@xpert-ai/plugin-baidu-ocr",
     "@xpert-ai/plugin-calculator",
     "@xpert-ai/plugin-clickhouse",
     "@xpert-ai/plugin-hive",
@@ -73,6 +75,7 @@
     "@xpert-ai/plugin-zhipuai",
     "@xpert-ai/plugin-motion",
     "@xpert-ai/plugin-mysql",
+    "@xpert-ai/plugin-ocr-paddle",
     "@xpert-ai/plugin-pdfium",
     "@xpert-ai/plugin-presentations",
     "@xpert-ai/plugin-product-design",
@@ -1714,7 +1717,7 @@
       "packageName": "@xpert-ai/plugin-presentation-studio",
       "displayName": {
         "en_US": "Presentation Studio",
-        "zh_Hans": "Presentation Studio 演示工作室"
+        "zh_Hans": "演示工作室"
       },
       "description": {
         "en_US": "Agentic presentation studio with the DashiAI layout catalog, native editing Workbench, Yjs collaboration, versioning, and HTML/PDF/PPTX export.",
@@ -1811,6 +1814,272 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio#readme",
       "updatedAt": "2026-07-13T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-story-studio",
+      "packageName": "@xpert-ai/plugin-story-studio",
+      "displayName": {
+        "en_US": "Story Studio",
+        "zh_Hans": "故事工作室"
+      },
+      "description": {
+        "en_US": "Agentic story-to-video studio with eight reviewable stages, Seedance media generation, and versioned Cut handoff.",
+        "zh_Hans": "面向故事到视频制作的 Agentic 工作室，支持八个可审核阶段、Seedance 媒体生成以及带版本控制的 Cut 交付。"
+      },
+      "level": "system",
+      "artifactNamespace": "story_studio",
+      "category": "middleware",
+      "keywords": [
+        "story-studio",
+        "adaptation",
+        "script",
+        "storyboard",
+        "video-production",
+        "agentic-app"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/story-studio"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/story-studio",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\" fill=\"none\"><rect x=\"24\" y=\"24\" width=\"208\" height=\"208\" rx=\"40\" fill=\"#F5F3FF\"/><path d=\"M62 72C62 62.059 70.059 54 80 54H176C185.941 54 194 62.059 194 72V184C194 193.941 185.941 202 176 202H80C70.059 202 62 193.941 62 184V72Z\" fill=\"#FFFFFF\" stroke=\"#7C3AED\" stroke-width=\"12\"/><path d=\"M92 90H164\" stroke=\"#312E81\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M92 122H142\" stroke=\"#8B5CF6\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M92 154H124\" stroke=\"#A78BFA\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M151 139L182 157L151 175V139Z\" fill=\"#F97316\"/><path d=\"M84 54V202\" stroke=\"#DDD6FE\" stroke-width=\"6\"/></svg>",
+        "color": "#7C3AED"
+      },
+      "source": {
+        "type": "git",
+        "packageName": "@xpert-ai/plugin-story-studio",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "sparsePath": "xpertai/apps/story-studio"
+      },
+      "license": "AGPL-3.0",
+      "skills": "./skills",
+      "interface": {
+        "displayName": "Story Studio",
+        "shortDescription": "Agentic story adaptation and production planning",
+        "longDescription": "Create scoped story projects through eight reviewable stages, generate and select shot videos through Seedance, preview them in sequence, then freeze a versioned StoryCutHandoff for professional editing in Cut.",
+        "developerName": "XpertAI",
+        "category": "Creativity",
+        "capabilities": [
+          "Interactive",
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://xpertai.cn",
+        "privacyPolicyURL": "https://xpertai.cn",
+        "termsOfServiceURL": "https://xpertai.cn",
+        "defaultPrompt": [
+          "Create a vertical short-drama project from my premise.",
+          "Review the current story project and recommend the next production stage.",
+          "Move the selected project into planning after I approve the brief.",
+          "Build a three-shot production plan and prepare selected videos for Cut."
+        ],
+        "composerIcon": "./assets/composerIcon.svg",
+        "logo": "./assets/logo.svg",
+        "brandColor": "#7C3AED",
+        "screenshots": []
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE",
+        "pluginSharing": true
+      },
+      "assets": {
+        "composerIcon": "./assets/composerIcon.svg",
+        "logo": "./assets/logo.svg",
+        "screenshots": []
+      },
+      "targetApps": [
+        "data-xpert",
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "story-studio",
+            "story-studio-workbench",
+            "story-production-agent",
+            "story-studio-assistant-template"
+          ],
+          "marketplace": {
+            "category": "creativity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "story-studio-agent-skill",
+                "displayName": "Story Studio Agent Skill",
+                "description": {
+                  "en_US": "Use revision-safe Story Studio tools for scoped story-production projects.",
+                  "zh_Hans": "使用支持版本保护的 Story Studio 工具管理有作用域的故事制作项目。"
+                },
+                "tags": [
+                  "skill",
+                  "story",
+                  "script",
+                  "storyboard",
+                  "production"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "story-studio-assistant",
+                "displayName": "Story Studio Assistant",
+                "description": {
+                  "en_US": "Assistant template for reviewable story adaptation workflows.",
+                  "zh_Hans": "面向可审核故事改编工作流的助手模板。"
+                },
+                "metadata": {
+                  "app": "story-studio"
+                }
+              },
+              {
+                "type": "app",
+                "name": "story-studio",
+                "displayName": "Story Studio",
+                "description": {
+                  "en_US": "Plan and review story adaptation and media-production stages.",
+                  "zh_Hans": "规划和审核故事改编与媒体制作阶段。"
+                },
+                "operations": [
+                  {
+                    "name": "create-story-projects",
+                    "displayName": "Create story projects",
+                    "description": {
+                      "en_US": "Create scoped, revision-safe story-production projects.",
+                      "zh_Hans": "创建带作用域和版本保护的故事制作项目。"
+                    },
+                    "access": "write"
+                  },
+                  {
+                    "name": "review-story-projects",
+                    "displayName": "Review story projects",
+                    "description": {
+                      "en_US": "Inspect project status, format, revision, and next production stage.",
+                      "zh_Hans": "检查项目状态、格式、版本和下一制作阶段。"
+                    },
+                    "access": "read"
+                  },
+                  {
+                    "name": "advance-story-workflows",
+                    "displayName": "Advance story workflows",
+                    "description": {
+                      "en_US": "Apply explicit, reviewable project metadata and status changes.",
+                      "zh_Hans": "应用明确、可审核的项目元数据和状态变更。"
+                    },
+                    "access": "write"
+                  },
+                  {
+                    "name": "attach-seedance-video",
+                    "displayName": "Attach Seedance video",
+                    "description": {
+                      "en_US": "Attach one completed, scoped Seedance Workspace MP4 to an exact production shot.",
+                      "zh_Hans": "将已完成且作用域匹配的 Seedance Workspace MP4 绑定到指定制作镜头。"
+                    },
+                    "access": "write"
+                  },
+                  {
+                    "name": "prepare-cut-handoff",
+                    "displayName": "Prepare Cut handoff",
+                    "description": {
+                      "en_US": "Freeze selected Workspace MP4s into StoryCutHandoff v1 and deliver a new Cut project or review proposal.",
+                      "zh_Hans": "将已选 Workspace MP4 冻结为 StoryCutHandoff v1，并交付新的 Cut 项目或审核提案。"
+                    },
+                    "access": "write"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "story_studio_workbench",
+                "displayName": "Story Studio Workbench",
+                "description": {
+                  "en_US": "Project and production-stage review Workbench.",
+                  "zh_Hans": "项目与制作阶段审核工作台。"
+                },
+                "metadata": {
+                  "app": "story-studio"
+                }
+              },
+              {
+                "type": "middleware",
+                "name": "StoryStudioMiddleware",
+                "displayName": "Story Studio Agent Tools",
+                "description": {
+                  "en_US": "Strict project lifecycle tools with scope, pagination, revision checks, and failure reporting.",
+                  "zh_Hans": "提供作用域、分页、版本检查和失败上报的严格项目生命周期工具。"
+                },
+                "metadata": {
+                  "app": "story-studio"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/story-studio#readme",
+      "updatedAt": "2026-08-10T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-baidu-ocr",
+      "displayName": {
+        "en_US": "Baidu OCR Document Transformers",
+        "zh_Hans": "百度 OCR 文档转换器"
+      },
+      "description": {
+        "en_US": "Baidu Cloud PaddleOCR-VL and Unlimited-OCR document converters with shared credentials.",
+        "zh_Hans": "使用共享凭证接入百度智能云 PaddleOCR-VL 与 Unlimited-OCR 文档转换服务。"
+      },
+      "category": "integration",
+      "keywords": [
+        "document",
+        "ocr",
+        "pdf",
+        "image",
+        "baidu",
+        "paddleocr-vl",
+        "unlimited-ocr",
+        "transformer"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#2563eb\"/><path d=\"M16 17h20l12 12v18H16z\" fill=\"#fff\" opacity=\".95\"/><path d=\"M36 17v12h12\" fill=\"none\" stroke=\"#93c5fd\" stroke-width=\"4\"/><path d=\"M22 36h20M22 42h15\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"17\" cy=\"15\" r=\"5\" fill=\"#22c55e\"/><path d=\"M12 25v-7a6 6 0 0 1 6-6h7M52 39v7a6 6 0 0 1-6 6h-7\" fill=\"none\" stroke=\"#bfdbfe\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-baidu-ocr"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "integration"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/documents/baidu-ocr/README.md",
+      "updatedAt": "2026-08-10T01:33:30.000Z",
       "verified": true
     },
     {
@@ -4945,6 +5214,52 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/databases/mysql/README.md",
       "updatedAt": "2025-11-06T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-ocr-paddle",
+      "displayName": {
+        "en_US": "PaddleOCR",
+        "zh_Hans": "PaddleOCR 图片文字识别"
+      },
+      "description": {
+        "en_US": "Extract text from document images through a deployed PaddleOCR HTTP service.",
+        "zh_Hans": "通过已部署的 PaddleOCR HTTP 服务提取文档图片中的文字。"
+      },
+      "category": "integration",
+      "keywords": [
+        "pdf",
+        "markdown",
+        "json",
+        "ocr",
+        "paddle"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg role=\"img\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><title>PaddlePaddle</title><path d=\"M12.17185 4.8315c-.6339 0-1.15033.51448-1.15033 1.14833s.51643 1.15033 1.15033 1.15033 1.14833-.51643 1.14833-1.15033-.51448-1.14833-1.14833-1.14833zm9.9916 0c-.6339 0-1.15033.51448-1.15033 1.14833s.51643 1.15033 1.15033 1.15033c.6339 0 1.14833-.51643 1.14833-1.15033S22.7973 4.8315 22.16345 4.8315zM6.67238 8.00711c-.0331 0-.06258.01885-.07617.04883l-1.95298 4.29274H.75286c-.05136 0-.09805.02932-.11913.07616l-.62691 1.39832c-.02155.04809.01363.10351.0664.10351h3.85327l-2.32796 5.1208c-.02545.0559.01465.12108.07617.12108h1.6561c.0331 0 .06438-.02064.07812-.05078l4.9977-10.99134c.02529-.0559-.01481-.11913-.07617-.11913zm3.4783 0c-.02484 0-.0483.01431-.0586.0371l-.58004 1.28513c-.01905.04216.01237.08984.05859.08984h1.02334c.21703-.00312.37745.01142.55466.03906.82499.12818 1.33602.73302 1.32412 1.5351-.01124.75786-.64035 1.36123-1.39832 1.36123H7.40865c-.06245 0-.11876.03691-.14452.09374l-.60935 1.33972c-.0295.0648.0188.13671.08984.13671h4.28495c1.77679 0 3.1942-1.5331 2.99592-3.2986-.1616-1.43981-1.34012-2.56875-2.81033-2.61894-.01327-.00047-.02641.0011-.03906.0039a.06152.06152 0 0 0-.02148-.0039zm6.4762 0c-.0331 0-.06438.0187-.07812.04883l-4.9977 10.99134c-.0253.0559.01676.12108.07812.12108h1.6561c.03294 0 .06259-.0208.07617-.05078l4.9997-10.99134c.02545-.0559-.01661-.11913-.07813-.11913zm3.4783 0c-.02498 0-.04633.01431-.05664.0371l-.58005 1.28513c-.01889.04216.01058.08984.05664.08984h1.02334c.21717-.00312.37744.01142.55465.03906.825.12818 1.33782.73302 1.32612 1.5351-.0114.75786-.64034 1.36123-1.39831 1.36123h-3.66778c-.06246 0-.11876.03691-.14452.09374l-.60935 1.33972c-.02934.0648.01864.13671.08984.13671h4.28494c1.7766 0 3.1961-1.5331 2.99782-3.2986-.16159-1.43981-1.34222-2.56875-2.81233-2.61894-.01343-.00047-.02642.0011-.03906.0039a.0611.0611 0 0 0-.02148-.0039z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-ocr-paddle"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "integration"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/documents/ocr-paddle/README.md",
+      "updatedAt": "2026-08-10T01:33:30.000Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-pdfium",
