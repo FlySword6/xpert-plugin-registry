@@ -1,0 +1,48 @@
+{
+  "name": "@xpert-ai/plugin-baidu-ocr",
+  "displayName": {
+    "en_US": "Baidu OCR Document Transformers",
+    "zh_Hans": "百度 OCR 文档转换器"
+  },
+  "description": {
+    "en_US": "Baidu Cloud PaddleOCR-VL and Unlimited-OCR document converters with shared credentials.",
+    "zh_Hans": "使用共享凭证接入百度智能云 PaddleOCR-VL 与 Unlimited-OCR 文档转换服务。"
+  },
+  "category": "integration",
+  "keywords": [
+    "document",
+    "ocr",
+    "pdf",
+    "image",
+    "baidu",
+    "paddleocr-vl",
+    "unlimited-ocr",
+    "transformer"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": "https://github.com/xpert-ai/xpert-plugins",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#2563eb\"/><path d=\"M16 17h20l12 12v18H16z\" fill=\"#fff\" opacity=\".95\"/><path d=\"M36 17v12h12\" fill=\"none\" stroke=\"#93c5fd\" stroke-width=\"4\"/><path d=\"M22 36h20M22 42h15\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"17\" cy=\"15\" r=\"5\" fill=\"#22c55e\"/><path d=\"M12 25v-7a6 6 0 0 1 6-6h7M52 39v7a6 6 0 0 1-6 6h-7\" fill=\"none\" stroke=\"#bfdbfe\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-baidu-ocr"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "integration"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/documents/baidu-ocr/README.md",
+  "updatedAt": "2026-08-10T01:33:30.000Z"
+}

@@ -3,7 +3,7 @@
   "packageName": "@xpert-ai/plugin-presentation-studio",
   "displayName": {
     "en_US": "Presentation Studio",
-    "zh_Hans": "Presentation Studio 演示工作室"
+    "zh_Hans": "演示工作室"
   },
   "description": {
     "en_US": "Agentic presentation studio with the DashiAI layout catalog, native editing Workbench, Yjs collaboration, versioning, and HTML/PDF/PPTX export.",
