@@ -1,0 +1,55 @@
+{
+  "name": "@xpert-ai/plugin-dingtalk-sso",
+  "packageName": "@xpert-ai/plugin-dingtalk-sso",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "DingTalk SSO",
+    "zh_Hans": "钉钉单点登录"
+  },
+  "description": {
+    "en_US": "Adds DingTalk OAuth2 sign-in and account binding to Xpert.",
+    "zh_Hans": "为 Xpert 提供钉钉 OAuth2 登录和账号绑定能力。"
+  },
+  "level": "system",
+  "category": "integration",
+  "keywords": [
+    "dingtalk",
+    "oauth",
+    "sso",
+    "sign-in",
+    "identity",
+    "account binding",
+    "integration"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/integrations/dingtalk-sso"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/integrations/dingtalk-sso",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"DingTalk\"><circle cx=\"32\" cy=\"32\" r=\"30\" fill=\"#4aa4f8\"/><path d=\"M45.8 25.1c-.1.6-.5 1.6-1.1 2.8l-.1.2c-3.1 6.6-11.2 19.5-11.2 19.5l-2.4 8.2 7.7-9.8h-4.8l2.9-9.6c-2.5.6-5.5 1.5-9 2.6 0 0-4.8 2.8-13.8-5.4 0 0-6.1-5.3-2.5-6.7 1.5-.6 7.3-1.3 11.8-1.9 6.1-.8 9.9-1.3 9.9-1.3s-16.8-2.5-21.3-4.8c-2.1-1.1-6.2-8.1-5.7-13.1 0 0 .2-1.3 1.9-.9 0 0 23.5 10.7 39.6 16.5 4.8 1.7 8.9 2.7 8.1 5.7Z\" fill=\"#fff\"/></svg>",
+    "color": "#4aa4f8"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-dingtalk-sso",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-dingtalk-sso"
+  },
+  "license": "AGPL-3.0",
+  "targetApps": ["xpert"],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/integrations/dingtalk-sso/README.md",
+  "updatedAt": "2026-08-12T09:27:22.822Z"
+}
